@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+ <canvas id='idcanvas' width='200' height='200'></canvas>
+ <script>
+ var cv = document.getElementById('idcanvas');
+ var ctx=cv.getContext('2d');
+  
+   for (var i = 0; i < 4; i++){         
+        ctx.fillRect(50*i,50*(i%2),50,50);      
+   }
+   for (var i = 0; i< 4; i++){          
+        ctx.fillRect(50*i,100+50*(i%2),50,50);  
+   }
+ctx.beginPath();
+ctx.lineWidth = "3";
+ctx.rect(0,0,200,200);
+ctx.stroke();
+
+ </script>
+
+</body>
+</html>
