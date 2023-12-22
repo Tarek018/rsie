@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">if else </div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">if...else...elseif</span> Statements</h1>
+<p class="yass-intro">Conditional statements are used to perform different actions based on different conditions.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>Instructions PHP <span class="color_h1">if...else...elseif</span></h1>
+<p class="yass-intro">Les instructions conditionnelles sont utilisées pour effectuer différentes actions en fonction de différentes conditions.</p>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Conditional Statements</h2>
+<p>Very often when you write code, you want to perform different actions for 
+different conditions. You can use conditional statements in your code to do this.</p>
+<p>In PHP we have the following conditional statements:</p>
+<ul>
+  <li><code class="yass-codespan">if</code> statement - executes some code if one condition is true</li>
+  <li><code class="yass-codespan">if...else</code> statement - executes some code if a condition is true and another code if that condition is false</li>
+  <li><code class="yass-codespan">if...elseif...else</code> statement  - executes different codes for more than two conditions</li>
+  <li><code class="yass-codespan">switch</code> statement - selects one of many blocks of code to be executed</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Instructions conditionnelles PHP</h2>
+<p>Très souvent, lorsque vous écrivez du code, vous souhaitez effectuer différentes actions pour
+conditions différentes. Vous pouvez utiliser des instructions conditionnelles dans votre code pour ce faire.</p>
+<p>En PHP, nous avons les instructions conditionnelles suivantes :</p>
+<ul>
+   Instruction <li><code class="yass-codespan">if</code> - exécute du code si une condition est vraie</li>
+   Instruction <li><code class="yass-codespan">if...else</code> - exécute du code si une condition est vraie et un autre code si cette condition est fausse</li>
+   Instruction <li><code class="yass-codespan">if...elseif...else</code> - exécute des codes différents pour plus de deux conditions</li>
+   Instruction <li><code class="yass-codespan">switch</code> - sélectionne l'un des nombreux blocs de code à exécuter</li>
+</ul>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - The if Statement</h2>
+<p>The <code class="yass-codespan">if</code> statement executes some code if one condition is true.</p>
+
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP - L'instruction if</h2>
+<p>L'instruction <code class="yass-codespan">if</code> exécute du code si une condition est vraie.</p>
+
+<h3>Syntaxe</h3>
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate"><div>
+if (<i>condition</i>) {<i><br>
+   code to be executed if condition is true</i>;
+
+}
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Output &quot;Have a good day!&quot; if the current time (HOUR) is less than 20:</p>
+
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+$t = date(&quot;H&quot;);
+if ($t &lt; &quot;20&quot;) {
+echo &quot;Have a good day!&quot;;
+}
+?&gt;
+</pre>
+	
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP - The if...else Statement</h2>
+<p>The <code class="yass-codespan">if...else</code> statement executes some code if a condition is true and 
+another code if that condition is false.</p>
+
+<h3>Syntax</h3>
+
+</div>
+<div class="yass-columnFr">
+<h2>PHP - L'instruction if...else</h2>
+<p>L'instruction <code class="yass-codespan">if...else</code> exécute du code si une condition est vraie et
+un autre code si cette condition est fausse.</p>
+
+<h3>Syntaxe</h3>
+
+</div>
+
+</div>
+
+
+<div class="yass-code yass-border notranslate"><div>
+if (<i>condition</i>) {<br>
+   <i>code to be executed if condition is true;</i><br>
+ }
+else {<br>
+ <i>code to be executed if condition is false;
+
+
+ </i>}
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Output &quot;Have a good day!&quot; if the current time is less than 20, and &quot;Have a 
+  good night!&quot; otherwise:</p>
+<div  class="code" id="code_12" data-ace-editor-id="12" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_12" >
+&lt;?php
+$t = date(&quot;H&quot;);
+if ($t &lt; &quot;20&quot;) {
+echo &quot;Have a good day!&quot;;
+}
+else {
+echo &quot;Have a good night!&quot;;
+}
+?&gt;
+</pre>
+	
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - The if...elseif...else Statement</h2>
+<p>The <code class="yass-codespan">if...elseif...else</code> statement executes different codes for more than two 
+conditions.</p>
+<h3>Syntax</h3>
+</div>
+<div class="yass-columnFr">
+
+<h2>PHP - L'instruction if...elseif...else</h2>
+<p>L'instruction <code class="yass-codespan">if...elseif...else</code> exécute des codes différents pour plus de deux
+conditions.</p>
+<h3>Syntaxe</h3>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+if (<i>condition</i>) {<br>
+   <i>code to be executed if this condition is true;
+
+
+ </i>}
+elseif (<i>condition</i>) {<br>
+   <i> code to be executed if first condition is false and this 
+  condition is true;
+
+
+ </i>} else {<br>
+ <i>code to be executed if all conditions are false;
+
+
+</i>}
+</div></div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Output &quot;Have a good morning!&quot; if the current time is less than 10, and 
+  &quot;Have a good day!&quot; if the current time is less than 20. Otherwise it will 
+  output &quot;Have a good night!&quot;:</p>
+<div  class="code" id="code_10" data-ace-editor-id="10" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_10" >
+&lt;?php
+$t = date(&quot;H&quot;);
+if ($t &lt; &quot;10&quot;) {
+echo &quot;Have a good morning!&quot;;
+}
+elseif ($t &lt; &quot;20&quot;) {
+  echo  &quot;Have a good day!&quot;;
+ } else {
+echo &quot;Have a good night!&quot;;
+ }
+?&gt;
+</pre>
+	
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP - The switch Statement</h2>
+<p>The <code class="yass-codespan">switch</code> statement will be explained in the next chapter.</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>PHP - L'instruction switch</h2>
+<p>L'instruction <code class="yass-codespan">switch</code> sera expliquée dans le chapitre suivant.</p>
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_operators.html">❮ Prior</a><a class="yass-right yass-btn" href="php_switch.html">Next ❯</a></div>	
+	
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

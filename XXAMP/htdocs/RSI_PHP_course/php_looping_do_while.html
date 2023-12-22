@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Do While Loop</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">do while</span>  Loop</h1>
+<p class="yass-intro">The <code class="yass-codespan">do...while</code> loop - Loops 
+through a block of code once, and then repeats the loop as long as the specified 
+condition is true.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>Boucle PHP <span class="color_h1">do while</span></h1>
+<p class="yass-intro">La boucle <code class="yass-codespan">do...while</code> - Boucles
+à travers un bloc de code une fois, puis répète la boucle tant que le spécifié
+la condition est vraie.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The PHP do...while Loop</h2>
+<p>The <code class="yass-codespan">do...while</code> loop will always execute the block of code once, it 
+will then check the condition, and repeat the loop while the specified condition is true.</p>
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>La boucle PHP do...while</h2>
+<p>La boucle <code class="yass-codespan">do...while</code> exécutera toujours le bloc de code une fois, il
+vérifiera alors la condition et répétera la boucle tant que la condition spécifiée est vraie.</p>
+<h3>Syntaxe</h3>
+</div>
+</div>
+<div class="yass-code yass-border notranslate"><div>
+do
+{<br>
+  <i> code to be executed;</i>
+<br>}<br>
+while (<i>condition is true</i>
+);
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Examples</h3>
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the do while 
+loop will write some output, and then increment the variable $x with 1. Then the condition is checked (is 
+$x less than, or equal to 5?), and the loop will continue to run as long as $x is less than, or equal to 5:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h3>Exemples</h3>
+<p>L'exemple ci-dessous définit d'abord une variable $x sur 1 ($x = 1). Ensuite, le faire pendant
+loop écrira une sortie, puis incrémentera la variable $x avec 1. Ensuite, la condition est vérifiée (est
+$x inférieur ou égal à 5 ?), et la boucle continuera à s'exécuter tant que $x est inférieur ou égal à 5 :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php 
+ $x = 1;
+ do {
+ echo &quot;The number is: $x &lt;br&gt;&quot;;
+ $x++;
+} while ($x &lt;= 5);
+?&gt;
+
+</pre> 
+ </div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<div class="yass-panel yass-note">
+<p><strong>Note:</strong> In a <code class="yass-codespan">do...while</code> loop the condition is tested AFTER executing 
+the statements within the loop. This means that the <code class="yass-codespan">do...while</code> loop will execute 
+its statements at least once, even if the condition is false. See example below.</p>
+</div>
+
+<p>This example sets the $x variable to 6, then it runs the loop, <strong>
+and then the condition is checked</strong>:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<div class="yass-panel yass-note">
+<p><strong>Remarque :</strong> dans une boucle <code class="yass-codespan">do...while</code> la condition est testée APRÈS l'exécution
+les instructions dans la boucle. Cela signifie que la boucle <code class="yass-codespan">do...while</code> s'exécutera
+ses déclarations au moins une fois, même si la condition est fausse. Voir l'exemple ci-dessous.</p>
+</div>
+
+<p>Cet exemple définit la variable $x sur 6, puis il exécute la boucle, <strong>
+puis la condition est vérifiée</strong> :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+ &lt;?php 
+ $x = 6;
+do {
+ echo &quot;The number is: $x &lt;br&gt;&quot;;
+$x++;
+} while ($x &lt;= 5);
+
+
+ ?&gt;</pre> 
+ </div>
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_looping_while.html">❮ Prior</a><a class="yass-right yass-btn" href="php_looping_for.html">Next ❯</a></div>	
+
+
+</div>
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

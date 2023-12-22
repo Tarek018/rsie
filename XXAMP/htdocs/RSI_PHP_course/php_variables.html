@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Variables</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Variables</span></h1>
+<p class="yass-intro">Variables are &quot;containers&quot; for storing information.</p>
+
+<h2>Creating (Declaring) PHP Variables</h2>
+<p>In PHP, a variable starts with the <code class="yass-codespan">$</code> sign, followed by the name of the variable:</p>
+
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Variables</span></h1>
+<p class="yass-intro">Les variables sont des &quot;conteneurs&quot; pour stocker des informations.</p>
+
+<h2>Créer (déclarer) des variables PHP</h2>
+<p>En PHP, une variable commence par le signe <code class="yass-codespan">$</code>, suivi du nom de la variable :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+&lt;?php
+<br>
+$txt = &quot;Hello world!&quot;;
+$x = 5;
+$y = 10.5;
+
+?&gt;
+</pre>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>After the execution of the statements above, the variable 
+<code class="yass-codespan">$txt</code> will hold the value 
+<code class="yass-codespan">Hello world!</code>, the variable 
+<code class="yass-codespan">$x</code> will hold the value 
+<code class="yass-codespan">5</code>, 
+and the variable <code class="yass-codespan">$y</code> will hold the value 
+<code class="yass-codespan">10.5</code>.</p>
+<p><b>Note:</b> When you assign a text value to a variable, put quotes around the value.</p>
+<p><strong>Note:</strong> Unlike other programming languages, PHP has no command 
+for declaring a variable. It is created the moment you first assign a value to 
+it.</p>
+<div class="yass-panel yass-note">
+<p>Think of variables as containers for storing data.</p>
+</div>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Après l'exécution des instructions ci-dessus, la variable
+<code class="yass-codespan">$txt</code> contiendra la valeur
+<code class="yass-codespan">Hello world !</code>, la variable
+<code class="yass-codespan">$x</code> contiendra la valeur
+<code class="yass-codespan">5</code>,
+et la variable <code class="yass-codespan">$y</code> contiendra la valeur
+<code class="yass-codespan">10.5</code>.</p>
+<p><b>Remarque :</b> Lorsque vous affectez une valeur de texte à une variable, mettez la valeur entre guillemets.</p>
+<p><strong>Remarque :</strong> Contrairement à d'autres langages de programmation, PHP n'a pas de commande
+pour déclarer une variable. Il est créé au moment où vous affectez pour la première fois une valeur à
+ça.</p>
+<div class="yass-panel yass-note">
+<p>Considérez les variables comme des conteneurs pour stocker des données.</p>
+</div>
+
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Variables</h2>
+<p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+<p>Rules for PHP variables:</p>
+<ul>
+  <li>A variable starts with the <code class="yass-codespan">$</code> sign, followed by the name of the variable</li>
+  <li>A variable name must start with a letter or the underscore character</li>
+  <li>A variable name cannot start with a number</li>
+  <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+  <li>Variable names are case-sensitive (<code class="yass-codespan">$age</code> and 
+  <code class="yass-codespan">$AGE</code> are two different variables)</li>
+</ul>
+
+<div class="yass-panel yass-note">
+<p>Remember that PHP variable names are case-sensitive!</p>
+</div>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Variables PHP</h2>
+<p>Une variable peut avoir un nom court (comme x et y) ou un nom plus descriptif (age, carname, total_volume).</p>
+<p>Règles pour les variables PHP :</p>
+<ul>
+   <li>Une variable commence par le signe <code class="yass-codespan">$</code>, suivi du nom de la variable</li>
+   <li>Un nom de variable doit commencer par une lettre ou le caractère de soulignement</li>
+   <li>Un nom de variable ne peut pas commencer par un chiffre</li>
+   <li>Un nom de variable ne peut contenir que des caractères alphanumériques et des traits de soulignement (A-z, 0-9 et _ )</li>
+   <li>Les noms de variables sont sensibles à la casse (<code class="yass-codespan">$age</code> et
+   <code class="yass-codespan">$AGE</code> sont deux variables différentes)</li>
+</ul>
+
+<div class="yass-panel yass-note">
+<p>N'oubliez pas que les noms de variables PHP sont sensibles à la casse !</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Output Variables</h2>
+<p>The PHP <code class="yass-codespan">echo</code> statement is often used to output data to the screen.</p>
+<p>The following example will show how to output text and a variable:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Variables de sortie</h2>
+<p>L'instruction PHP <code class="yass-codespan">echo</code> est souvent utilisée pour afficher des données à l'écran.</p>
+<p>L'exemple suivant montre comment générer du texte et une variable :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_5" data-ace-editor-id="5" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_5" >
+&lt;?php
+<br>
+$txt = &quot;tebessa-univ.dz&quot;;
+echo &quot;I love $txt!&quot;;
+
+?&gt;
+</pre>
+	
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The following example will produce the same output as the example above:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>L'exemple suivant produira le même résultat que l'exemple ci-dessus :</p>
+
+</div>
+
+
+</div>
+
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_2" data-ace-editor-id="2" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2" >
+&lt;?php
+<br>
+$txt = &quot;tebessa-univ.dz&quot;;
+echo &quot;I love &quot; . $txt . &quot;!&quot;;
+
+?&gt;
+</pre></div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The following example will output the sum of two variables:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>L'exemple suivant affichera la somme de deux variables :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_1" data-ace-editor-id="1" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_1" >
+&lt;?php
+ $x = 5;
+ $y = 4;
+ echo $x + $y;
+
+?&gt;
+</pre></div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Note:</strong> You will learn more about the <code class="yass-codespan">echo</code> statement and how 
+to output data to the screen in the next chapter.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Remarque :</strong> vous en apprendrez plus sur l'instruction <code class="yass-codespan">echo</code> et comment
+pour afficher les données sur l'écran du chapitre suivant.</p>
+</div>
+
+
+</div>
+<div class="row">
+
+<div class="yass-columnEn">
+
+<h2>PHP is a Loosely Typed Language</h2>
+<p>In the example above, notice that we did not have to tell PHP which data type the variable is.</p>
+<p>PHP automatically associates a data type to the variable, depending on its value. 
+Since the data types are not set in a strict sense, you can do things like 
+adding a string to an integer without causing an error.</p>
+<p>In PHP 7, type declarations were added. This gives an option to specify 
+the data type expected when declaring a function, and by enabling the strict requirement, it will throw a &quot;Fatal 
+Error&quot; on a type mismatch.</p>
+<p>You will learn more about <code class="yass-codespan">strict</code> and 
+<code class="yass-codespan">non-strict</code> requirements, and  
+data type declarations in the <a href="php_functions.html">PHP Functions</a> chapter.</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>PHP est un langage faiblement typé</h2>
+<p>Dans l'exemple ci-dessus, notez que nous n'avons pas eu à indiquer à PHP le type de données de la variable.</p>
+<p>PHP associe automatiquement un type de données à la variable, en fonction de sa valeur.
+Étant donné que les types de données ne sont pas définis au sens strict, vous pouvez faire des choses comme
+ajouter une chaîne à un entier sans provoquer d'erreur.</p>
+<p>En PHP 7, des déclarations de type ont été ajoutées. Cela donne une option pour spécifier
+le type de données attendu lors de la déclaration d'une fonction, et en activant l'exigence stricte, il lancera un &quot;Fatal
+Erreur" sur une incompatibilité de type.</p>
+<p>Vous en apprendrez plus sur <code class="yass-codespan">strict</code> et
+Exigences <code class="yass-codespan">non strictes</code>, et
+déclarations de type de données dans le chapitre <a href="php_functions.html">Fonctions PHP</a>.</p>
+</div>
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_datatypes.html">❮ Prior</a><a class="yass-right yass-btn" href="php_variables_scope.html">Next ❯</a></div>	
+
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

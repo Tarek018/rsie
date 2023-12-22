@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Prepared </div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">MySQL Prepared Statements</span></h1>
+<p class="yass-intro">Prepared statements are very useful against SQL injections.</p>
+
+<h2>Prepared Statements and Bound Parameters</h2>
+<p>A prepared statement is a feature used to execute the same (or similar) SQL 
+statements repeatedly with high efficiency.</p>
+<p>Prepared statements basically work like this:</p>
+<ol>
+  <li>Prepare: An SQL statement template is created and sent to the database. Certain values are left unspecified, called parameters (labeled &quot;?&quot;). Example: INSERT INTO MyClients VALUES(?, ?, ?)</li>
+  <li>The database parses, compiles, and performs query optimization on the SQL statement template, and stores the result without executing it</li>
+  <li>Execute: At a later time, the application binds the values to the parameters, and the database executes the statement. The application may execute the statement as many times as it wants with different values</li>
+</ol>
+<p>Compared to executing SQL statements directly, prepared statements have three main advantages:</p>
+<ul>
+  <li>Prepared statements reduce parsing time as the preparation on the query is done only once (although the statement is executed multiple times)</li>
+  <li>Bound parameters minimize bandwidth to the server as you need send only the parameters each time, and not the whole query</li>
+  <li>Prepared statements are very useful against SQL injections, because parameter values, which are transmitted later using a different protocol, need not be correctly escaped. If the original statement template is not derived from external input, SQL injection cannot occur.</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Instructions MySQL préparées</span></h1>
+<p class="yass-intro">Les instructions préparées sont très utiles contre les injections SQL.</p>
+
+<h2>Instructions préparées et paramètres liés</h2>
+<p>Une instruction préparée est une fonctionnalité utilisée pour exécuter le même SQL (ou similaire)
+déclarations à plusieurs reprises avec une grande efficacité.</p>
+<p>Les relevés préparés fonctionnent essentiellement comme ceci :</p>
+<ol>
+   <li>Préparer : un modèle d'instruction SQL est créé et envoyé à la base de données. Certaines valeurs sont laissées non spécifiées, appelées paramètres (étiquetées &quot;?&quot;). Exemple : INSERT INTO MyClients VALUES(?, ?, ?)</li>
+   <li>La base de données analyse, compile et effectue l'optimisation des requêtes sur le modèle d'instruction SQL, et stocke le résultat sans l'exécuter</li>
+   <li>Exécuter : ultérieurement, l'application lie les valeurs aux paramètres et la base de données exécute l'instruction. L'application peut exécuter l'instruction autant de fois qu'elle le souhaite avec des valeurs différentes</li>
+</ol>
+<p>Par rapport à l'exécution directe d'instructions SQL, les instructions préparées présentent trois avantages principaux :</p>
+<ul>
+   <li>Les instructions préparées réduisent le temps d'analyse car la préparation de la requête n'est effectuée qu'une seule fois (bien que l'instruction soit exécutée plusieurs fois)</li>
+   <li>Les paramètres liés minimisent la bande passante vers le serveur, car vous n'avez besoin d'envoyer que les paramètres à chaque fois, et non l'intégralité de la requête</li>
+   <li>Les instructions préparées sont très utiles contre les injections SQL, car les valeurs des paramètres, qui sont transmises ultérieurement à l'aide d'un protocole différent, n'ont pas besoin d'être correctement échappées. Si le modèle de déclaration d'origine n'est pas dérivé d'une entrée externe, l'injection SQL ne peut pas se produire.</li>
+</ul>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Prepared Statements in MySQLi</h2>
+<p>The following example uses prepared statements and bound parameters in MySQLi:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Déclarations préparées dans MySQLi</h2>
+<p>L'exemple suivant utilise des instructions préparées et des paramètres liés dans MySQLi :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi with Prepared Statements)</h3>
+<div  class="code" id="code_113" data-ace-editor-id="113" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_113" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn-&gt;connect_error) {
+die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+}
+// prepare and bind
+$stmt = $conn-&gt;prepare(&quot;INSERT INTO MyClients (firstname, lastname, email) VALUES (?, ?, ?)&quot;);
+$stmt-&gt;bind_param(&quot;sss&quot;, $firstname, $lastname, $email);
+// set parameters and execute
+$firstname = &quot;John&quot;;
+$lastname = &quot;Doe&quot;;
+$email = &quot;john@example.com&quot;;
+$stmt-&gt;execute();
+$firstname = &quot;Mary&quot;;
+$lastname = &quot;Moe&quot;;
+$email = &quot;mary@example.com&quot;;
+$stmt-&gt;execute();
+$firstname = &quot;Julie&quot;;
+$lastname = &quot;Dooley&quot;;
+$email = &quot;julie@example.com&quot;;
+$stmt-&gt;execute();
+echo &quot;New records created successfully&quot;;
+$stmt-&gt;close();
+$conn-&gt;close();
+
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>Code lines to explain from the example above:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Lignes de code à expliquer à partir de l'exemple ci-dessus :</p>
+</div>
+
+</div>
+<div class="yass-example">
+<div class="yass-code notranslate">
+ &quot;INSERT INTO MyClients (firstname, lastname, email) VALUES (?, ?, ?)&quot;</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>In our SQL, we insert a question mark (?) where we want to substitute in an integer, string, double or blob 
+value.</p>
+<p>Then, have a look at the bind_param() function:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Dans notre SQL, nous insérons un point d'interrogation (?) où nous voulons substituer un entier, une chaîne, un double ou un blob
+valeur.</p>
+<p>Ensuite, jetez un œil à la fonction bind_param() :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<div class="yass-code notranslate">
+ $stmt-&gt;bind_param(&quot;sss&quot;, $firstname, $lastname, $email);
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<p>This function binds the parameters to the SQL query and tells the 
+database what the parameters are. The &quot;sss&quot; argument lists the 
+types of data that the parameters are. The s character tells mysql that the parameter is a string.</p>
+<p>The argument may be one of four types:</p>
+<ul>
+  <li>i - integer</li>
+  <li>d - double</li>
+  <li>s - 
+string</li>
+  <li>b - BLOB
+</li>
+</ul>
+<p>We must have one of these for each parameter.</p>
+<p>By telling mysql what type of data to expect, we minimize the risk of SQL injections.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Note:</strong> If we want to insert any data from external sources 
+(like user input), it is very important that the data is sanitized and validated.</p>
+</div>
+
+</div>
+
+<div class="yass-columnFr">
+<p>Cette fonction lie les paramètres à la requête SQL et indique au
+base de données quels sont les paramètres. Le "sss" l'argument énumère les
+types de données que sont les paramètres. Le caractère s indique à mysql que le paramètre est une chaîne.</p>
+<p>L'argument peut être de l'un des quatre types suivants :</p>
+<ul>
+   <li>i - integer</li>
+   <li>d - double</li>
+   <li>s - string</li>
+   <li>b - BLOB
+</li>
+</ul>
+<p>Nous devons en avoir un pour chaque paramètre.</p>
+<p>En indiquant à mysql quel type de données attendre, nous minimisons le risque d'injections SQL.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Remarque :</strong> si nous souhaitons insérer des données provenant de sources externes
+(comme l'entrée de l'utilisateur), il est très important que les données soient nettoyées et validées.</p>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Prepared Statements in PDO</h2>
+<p>The following example uses prepared statements and bound parameters in PDO:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Déclarations préparées dans PDO</h2>
+<p>L'exemple suivant utilise des instructions préparées et des paramètres liés dans PDO :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO with Prepared Statements)</h3>
+<div  class="code" id="code_2223" data-ace-editor-id="2223" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2223" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+try {
+   $conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+   // set the PDO error mode to exception
+ $conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   // prepare sql and bind parameters
+ $stmt = $conn-&gt;prepare(&quot;INSERT INTO MyClients (firstname, lastname, email)
+ 
+ VALUES (:firstname, :lastname, :email)&quot;);
+ $stmt-&gt;bindParam(':firstname', $firstname);
+ $stmt-&gt;bindParam(':lastname', $lastname);
+ $stmt-&gt;bindParam(':email', $email);
+
+ 
+// insert a row
+$firstname = &quot;John&quot;;
+$lastname = &quot;Doe&quot;;
+$email = &quot;john@example.com&quot;;
+
+   $stmt-&gt;execute();
+
+// insert another row
+$firstname = &quot;Mary&quot;;
+$lastname = &quot;Moe&quot;;
+$email = &quot;mary@example.com&quot;;
+
+   $stmt-&gt;execute();
+
+ // insert another row
+ $firstname = &quot;Julie&quot;;
+
+ $lastname = &quot;Dooley&quot;;
+ $email = &quot;julie@example.com&quot;;
+
+
+ $stmt-&gt;execute();
+
+ echo &quot;New records created successfully&quot;;
+
+} catch(PDOException $e) 
+  {
+  echo  &quot;Error: &quot; . $e-&gt;getMessage();
+}
+
+ $conn = null;
+
+?&gt;
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_insert.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_select.html">Next ❯</a></div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Cookies</div>
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">Cookies</span></h1>
+<h2>What is a Cookie? </h2>
+<p>A cookie is often used to identify a user. A cookie is a small file that the 
+server embeds on the user's computer. Each time the same computer requests a 
+page with a browser, it will send the cookie too. With PHP, you can both create 
+and retrieve cookie values.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Cookies</span></h1>
+<h2>Qu'est-ce qu'un cookie ? </h2>
+<p>Un cookie est souvent utilisé pour identifier un utilisateur. Un cookie est un petit fichier que le
+serveur intègre sur l'ordinateur de l'utilisateur. Chaque fois que le même ordinateur demande un
+page avec un navigateur, il enverra également le cookie. Avec PHP, vous pouvez à la fois créer
+et récupérer les valeurs des cookies.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Create Cookies With PHP</h2>
+<p>A cookie is created with the <code class="yass-codespan">setcookie()</code> function.</p>
+
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Créer des cookies avec PHP</h2>
+<p>Un cookie est créé avec la fonction <code class="yass-codespan">setcookie()</code>.</p>
+
+<h3>Syntaxe</h3>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+setcookie(<em>name, value, expire, path, domain, secure, httponly</em>);</div></div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>Only the <em>name</em> parameter is required. All other parameters are 
+optional.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Seul le paramètre <em>nom</em> est obligatoire. Tous les autres paramètres sont
+facultatif.</p>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Create/Retrieve a Cookie</h2>
+<p>The following example creates a cookie named &quot;user&quot; with the value &quot;John 
+Doe&quot;. The cookie will expire after 30 days (86400 * 30). The &quot;/&quot; means that the 
+cookie is available in entire website (otherwise, select the directory you 
+prefer).</p>
+<p>We then retrieve the value of the cookie "user" (using the global variable 
+$_COOKIE). We also use the <code class="yass-codespan">isset()</code> function to find out if the cookie is set:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP Créer/Récupérer un Cookie</h2>
+<p>L'exemple suivant crée un cookie nommé &quot;user&quot; avec la valeur &quot;John
+Biche". Le cookie expirera après 30 jours (86400 * 30). Le &quot;/&quot; signifie que le
+cookie est disponible sur l'ensemble du site Web (sinon, sélectionnez le répertoire que vous
+préférez).</p>
+<p>On récupère ensuite la valeur du cookie "user" (grâce à la variable globale
+$_COOKIE). Nous utilisons également la fonction <code class="yass-codespan">isset()</code> pour savoir si le cookie est installé :</p>
+
+</div>
+</div>
+
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_43" data-ace-editor-id="43" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_43" >
+&lt;?php
+$cookie_name = &quot;user&quot;;
+$cookie_value = &quot;John Doe&quot;;
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), &quot;/&quot;); // 86400 = 1 day<br>
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;?php
+if(!isset($_COOKIE[$cookie_name])) {<br>
+  echo  &quot;Cookie named '&quot; . $cookie_name . &quot;' is not set!&quot;;
+} else {
+  echo  &quot;Cookie '&quot; . $cookie_name . &quot;' is set!&lt;br&gt;&quot;;
+echo &quot;Value is: &quot; . $_COOKIE[$cookie_name];
+}
+
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<div class="yass-panel yass-note"><p>
+<p><strong><b>Note:</b></strong> The <code class="yass-codespan">setcookie()</code> function must appear BEFORE the &lt;html&gt; tag.</p>
+</div>
+
+</div>
+<div class="yass-columnFr">
+<div class="yass-panel yass-note"><p>
+<p><strong><b>Remarque :</b></strong> La fonction <code class="yass-codespan">setcookie()</code> doit apparaître AVANT le &lt;html&gt; balise.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><b>Note:</b> The value of the cookie is automatically URLencoded when 
+sending the cookie, and automatically decoded when received (to prevent 
+URLencoding, use <code class="yass-codespan">setrawcookie()</code> instead).</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><b>Remarque :</b> La valeur du cookie est automatiquement codée en URL lorsque
+l'envoi du cookie, et décodé automatiquement lors de sa réception (pour éviter
+Encodage d'URL, utilisez plutôt <code class="yass-codespan">setrawcookie()</code>).</p>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Modify a Cookie Value</h2>
+<p>To modify a cookie, just set (again) the cookie using the <code class="yass-codespan">setcookie()</code> function:</p>
+</div>
+
+
+<div class="yass-columnFr">
+<h2>Modifier une valeur de cookie</h2>
+<p>Pour modifier un cookie, il suffit de définir (à nouveau) le cookie à l'aide de la fonction <code class="yass-codespan">setcookie()</code> :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_33" data-ace-editor-id="33" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_33" >
+ &lt;?php
+$cookie_name = &quot;user&quot;;
+$cookie_value = &quot;Alex Porter&quot;;
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), &quot;/&quot;);
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;?php
+if(!isset($_COOKIE[$cookie_name])) {
+ echo  &quot;Cookie named '&quot; . $cookie_name . &quot;' is not set!&quot;;
+} else {
+  echo  &quot;Cookie '&quot; . $cookie_name . &quot;' is set!&lt;br&gt;&quot;;
+  echo  &quot;Value is: &quot; . $_COOKIE[$cookie_name];
+}
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Delete a Cookie</h2>
+<p>To delete a cookie, use the <code class="yass-codespan">setcookie()</code> function with an expiration date in 
+the past:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Supprimer un cookie</h2>
+<p>Pour supprimer un cookie, utilisez la fonction <code class="yass-codespan">setcookie()</code> avec une date d'expiration dans
+le passé :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_23" >
+&lt;?php
+// set the expiration date to one hour ago
+setcookie(&quot;user&quot;, &quot;&quot;, time() - 3600);
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+echo &quot;Cookie 'user' is deleted.&quot;;
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Check if Cookies are Enabled</h2>
+<p>The following example creates a small script that checks whether cookies are 
+enabled. First, try to create a test cookie with the <code class="yass-codespan">setcookie()</code> function, then 
+count the $_COOKIE array variable:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Vérifiez si les cookies sont activés</h2>
+<p>L'exemple suivant crée un petit script qui vérifie si les cookies sont
+activé. Essayez d'abord de créer un cookie de test avec la fonction <code class="yass-codespan">setcookie()</code>, puis
+compter la variable de tableau $_COOKIE :</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+setcookie(&quot;test_cookie&quot;, &quot;test&quot;, time() + 3600, '/');
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;?php
+if(count($_COOKIE) &gt; 0) {
+echo &quot;Cookies are enabled.&quot;;
+} else {
+  echo  &quot;Cookies are disabled.&quot;;
+  }
+
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_sessions.html">❮ Prior</a><a class="yass-right yass-btn" href="php_exceptions.html">Next ❯</a></div>
+
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" /></head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Superglobals Variables</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">Global Variables</span> - Superglobals</h1>
+<p class="yass-intro">Superglobals were introduced in PHP 4.1.0, and are built-in 
+variables that are always available in all scopes.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Variables globales</span> - Superglobales</h1>
+<p class="yass-intro">Les superglobales ont été introduites dans PHP 4.1.0 et sont intégrées
+variables qui sont toujours disponibles dans toutes les portées.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Global Variables - Superglobals</h2>
+<p>Some predefined variables in PHP are &quot;superglobals&quot;, which means that they 
+are always accessible, regardless of scope - and you can access them from any 
+function, class or file without having to do anything special.</p>
+<p>The PHP superglobal variables are:</p>
+<ul>
+  <li>$GLOBALS</li>
+  <li>$_SERVER</li>
+  <li>$_REQUEST</li>
+  <li>$_POST</li>
+  <li>$_GET</li>
+  <li>$_FILES</li>
+  <li>$_ENV</li>
+  <li>$_COOKIE</li>
+  <li>$_SESSION</li>
+</ul>
+<p>The next chapters will explain some of the superglobals, and the rest will be 
+explained in later chapters.</p>
+
+<br>
+<br>
+
+
+
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Variables PHP globales - Superglobales</h2>
+<p>Certaines variables prédéfinies en PHP sont des "superglobales", ce qui signifie qu'elles
+sont toujours accessibles, quelle que soit leur portée - et vous pouvez y accéder depuis n'importe quel
+fonction, classe ou fichier sans avoir à faire quoi que ce soit de spécial.</p>
+<p>Les variables PHP superglobales sont :</p>
+<ul>
+   <li>$GLOBALS</li>
+   <li>$_SERVER</li>
+   <li>$_REQUEST</li>
+   <li>$_POST</li>
+   <li>$_GET</li>
+   <li>$_FILES</li>
+   <li>$_ENV</li>
+   <li>$_COOKIE</li>
+   <li>$_SESSION</li>
+</ul>
+<p>Les prochains chapitres expliqueront certains des superglobaux, et le reste sera
+expliqué dans les chapitres suivants.</p>
+
+<br>
+<br>
+
+
+
+
+</div>
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP Superglobal - $GLOBALS</h1>
+<p class="yass-intro">Super global variables are built-in variables that are always available in all scopes.</p>
+</div>
+
+<div class="yass-columnFr">
+      <h1>PHP Superglobal - $GLOBALS</h1>
+<p class="yass-intro">Les super variables globales sont des variables intégrées qui sont toujours disponibles dans toutes les étendues.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP $GLOBALS</h2>
+<p>$GLOBALS is a PHP super global variable which is used to access global variables from anywhere in the PHP script (also from within 
+functions or methods). </p>
+<p>PHP stores all global variables in an array called $GLOBALS[<i>index</i>]. 
+The <em>index</em> holds the name of the variable.</p>
+<p>The example below shows how to use the super global variable $GLOBALS:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP $GLOBALS</h2>
+<p>$GLOBALS est une super variable globale PHP qui est utilisée pour accéder aux variables globales de n'importe où dans le script PHP (également depuis
+fonctions ou méthodes). </p>
+<p>PHP stocke toutes les variables globales dans un tableau appelé $GLOBALS[<i>index</i>].
+L'<em>index</em> contient le nom de la variable.</p>
+<p>L'exemple ci-dessous montre comment utiliser la super variable globale $GLOBALS :</p>
+
+</div>
+
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" 
+data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_13" >
+ &lt;?php <br>$x = 75; <br>$y = 25;
+<br>function addition() { 
+$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; <br>}
+<br>addition(); <br>echo $z; <br>
+ ?&gt;</pre> </div>
+<!--tryphp_global_global-->
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>In the example above, since z is a variable present within the $GLOBALS 
+array, it is also accessible from outside the function! </p>
+
+<br>
+<br>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Dans l'exemple ci-dessus, puisque z est une variable présente dans $GLOBALS
+array, il est également accessible depuis l'extérieur de la fonction ! </p>
+
+<br>
+<br>
+</div>
+
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+  
+  
+      <h1>PHP Superglobal - $_SERVER</h1>
+
+<p class="yass-intro">Super global variables are built-in 
+variables that are always available in all scopes.</p>
+</div>
+<div class="yass-columnFr">
+  
+  
+       <h1>PHP Superglobal - $_SERVER</h1>
+
+<p class="yass-intro">Les super variables globales sont intégrées
+variables qui sont toujours disponibles dans toutes les portées.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP $_SERVER</h2>
+<p>$_SERVER is a PHP super global variable which holds information about headers, 
+paths, and script locations. </p>
+<p>The example below shows how to use some of the elements in $_SERVER:</p>
+
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>PHP $_SERVER</h2>
+<p>$_SERVER est une super variable globale PHP qui contient des informations sur les en-têtes,
+les chemins et les emplacements des scripts. </p>
+<p>L'exemple ci-dessous montre comment utiliser certains des éléments de $_SERVER :</p>
+
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" 
+data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_23" >
+ &lt;?php <br>echo $_SERVER['PHP_SELF'];
+
+echo &quot;&lt;br&gt;&quot;;
+
+
+ echo $_SERVER['SERVER_NAME'];
+
+echo &quot;&lt;br&gt;&quot;;
+
+echo $_SERVER['HTTP_HOST'];
+
+
+ echo &quot;&lt;br&gt;&quot;;
+
+echo $_SERVER['HTTP_REFERER'];
+
+echo &quot;&lt;br&gt;&quot;;
+
+echo $_SERVER['HTTP_USER_AGENT'];
+
+echo &quot;&lt;br&gt;&quot;;
+
+echo $_SERVER['SCRIPT_NAME'];
+
+
+ ?&gt;</pre> </div>
+
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The following table lists the most important elements that can go inside $_SERVER:</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:35%">Element/Code</th>
+<th style="width:65%">Description</th>
+</tr>
+<tr>
+<td>$_SERVER['PHP_SELF']</td>
+<td>Returns the filename of the currently executing script</td>
+</tr>
+<tr>
+<td>$_SERVER['GATEWAY_INTERFACE']</td>
+<td>Returns the version of the Common Gateway Interface (CGI) the server is 
+using</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADDR']</td>
+<td>Returns the IP address of the host server</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_NAME']</td>
+<td>Returns the name of the host server (such as www.tebessa-univ.dz)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SOFTWARE']</td>
+<td>Returns the server identification string (such as Apache/2.2.24)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PROTOCOL']</td>
+<td>Returns the name and revision of the information protocol (such as HTTP/1.1)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_METHOD']</td>
+<td>Returns the request method used to access the page (such as POST)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_TIME']</td>
+<td>Returns the timestamp of the start of the request (such as 1377687496)</td>
+</tr>
+<tr>
+<td>$_SERVER['QUERY_STRING']</td>
+<td>Returns the query string if the page is accessed via a query string</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT']</td>
+<td>Returns the Accept header from the current request </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT_CHARSET']</td>
+<td>Returns the Accept_Charset header from the current request (such as 
+utf-8,ISO-8859-1)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_HOST']</td>
+<td>Returns the Host header from the current request </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_REFERER']</td>
+<td>Returns the complete URL of the current page (not reliable because not all 
+user-agents support it)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTPS']</td>
+<td>Is the script queried through a secure HTTP protocol</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_ADDR']</td>
+<td>Returns the IP address from where the user is viewing the current page</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_HOST']</td>
+<td>Returns the Host name from where the user is viewing the current page</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_PORT']</td>
+<td>Returns the port being used on the user's machine to communicate with the 
+web server</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_FILENAME']</td>
+<td>Returns the absolute pathname of the currently executing script</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADMIN']</td>
+<td>Returns the value given to the SERVER_ADMIN directive in the web server 
+configuration file (if your script runs on a virtual host, it will be the value 
+defined for that virtual host) (such as someone@tebessa-univ.dz)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PORT']</td>
+<td>Returns the port on the server machine being used by the web server for 
+communication (such as 80)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SIGNATURE']</td>
+<td>Returns the server version and virtual host name which are added to 
+server-generated pages</td>
+</tr>
+<tr>
+<td>$_SERVER['PATH_TRANSLATED']</td>
+<td>Returns the file system based path to the current script</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_NAME']</td>
+<td>Returns the path of the current script</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_URI']</td>
+<td>Returns the URI of the current page</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+  
+  </div>
+  
+  <div class="yass-columnFr">
+
+<p>Le tableau suivant répertorie les éléments les plus importants qui peuvent entrer dans $_SERVER :</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:35%">Élément/Code</th>
+<th style="width:65%">Description</th>
+</tr>
+<tr>
+<td>$_SERVER['PHP_SELF']</td>
+<td>Renvoie le nom de fichier du script en cours d'exécution</td>
+</tr>
+<tr>
+<td>$_SERVER['GATEWAY_INTERFACE']</td>
+<td>Renvoie la version de l'interface de passerelle commune (CGI) du serveur
+en utilisant</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADDR']</td>
+<td>Renvoie l'adresse IP du serveur hôte</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_NAME']</td>
+<td>Renvoie le nom du serveur hôte (tel que www.tebessa-univ.dz)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SOFTWARE']</td>
+<td>Renvoie la chaîne d'identification du serveur (comme Apache/2.2.24)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PROTOCOL']</td>
+<td>Renvoie le nom et la révision du protocole d'information (comme HTTP/1.1)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_METHOD']</td>
+<td>Renvoie la méthode de requête utilisée pour accéder à la page (telle que POST)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_TIME']</td>
+<td>Renvoie l'horodatage du début de la requête (comme 1377687496)</td>
+</tr>
+<tr>
+<td>$_SERVER['QUERY_STRING']</td>
+<td>Renvoie la chaîne de requête si la page est accessible via une chaîne de requête</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT']</td>
+<td>Renvoie l'en-tête Accept de la requête en cours </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT_CHARSET']</td>
+<td>Renvoie l'en-tête Accept_Charset de la requête actuelle (comme
+utf-8,ISO-8859-1)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_HOST']</td>
+<td>Renvoie l'en-tête Host de la requête en cours </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_REFERER']</td>
+<td>Renvoie l'URL complète de la page courante (non fiable car pas toutes
+les agents utilisateurs le supportent)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTPS']</td>
+<td>Le script est-il interrogé via un protocole HTTP sécurisé</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_ADDR']</td>
+<td>Renvoie l'adresse IP à partir de laquelle l'utilisateur consulte la page actuelle</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_HOST']</td>
+<td>Renvoie le nom de l'hôte à partir duquel l'utilisateur visualise la page actuelle</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_PORT']</td>
+<td>Renvoie le port utilisé sur la machine de l'utilisateur pour communiquer avec le
+serveur Web</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_FILENAME']</td>
+<td>Renvoie le chemin absolu du script en cours d'exécution</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADMIN']</td>
+<td>Renvoie la valeur donnée à la directive SERVER_ADMIN dans le serveur web
+fichier de configuration (si votre script s'exécute sur un hôte virtuel, ce sera la valeur
+défini pour cet hôte virtuel) (comme quelqu'un@tebessa-univ.dz)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PORT']</td>
+<td>Renvoie le port sur la machine serveur utilisée par le serveur Web pour
+communication (comme 80)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SIGNATURE']</td>
+<td>Renvoie la version du serveur et le nom de l'hôte virtuel qui sont ajoutés à
+pages générées par le serveur</td>
+</tr>
+<tr>
+<td>$_SERVER['PATH_TRANSLATED']</td>
+<td>Renvoie le chemin basé sur le système de fichiers vers le script actuel</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_NAME']</td>
+<td>Renvoie le chemin du script courant</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_URI']</td>
+<td>Renvoie l'URI de la page courante</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+  
+   </div>
+   
+   
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP Superglobal - $_REQUEST</h1>
+
+<p class="yass-intro">Super global variables are built-in 
+variables that are always available in all scopes.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP Superglobal - $_REQUEST</h1>
+
+<p class="yass-intro">Les super variables globales sont intégrées
+variables qui sont toujours disponibles dans toutes les portées.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP $_REQUEST</h2>
+<p>PHP $_REQUEST is a PHP super global variable which is used to collect data after submitting an HTML form.</p>
+<p>The example below shows a form with an input field and a submit button. When 
+a user submits the data by clicking on &quot;Submit&quot;, the form data is sent to the 
+file specified in the action attribute of the &lt;form&gt; tag. In this example, we 
+point to this file itself for processing form data. If you wish to use another 
+PHP file to process form data, replace that with the filename of your 
+choice. Then, we can use the super global variable $_REQUEST to collect the 
+value of the input field:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP $_REQUEST</h2>
+<p>PHP $_REQUEST est une super variable globale PHP qui est utilisée pour collecter des données après avoir soumis un formulaire HTML.</p>
+<p>L'exemple ci-dessous montre un formulaire avec un champ de saisie et un bouton d'envoi. Lorsque
+un utilisateur soumet les données en cliquant sur &quot;Soumettre&quot;, les données du formulaire sont envoyées au
+fichier spécifié dans l'attribut action du &lt;formulaire&gt; étiquette. Dans cet exemple, nous
+pointe vers ce fichier lui-même pour le traitement des données du formulaire. Si vous souhaitez utiliser un autre
+Fichier PHP pour traiter les données du formulaire, remplacez-le par le nom de fichier de votre
+choix. Ensuite, nous pouvons utiliser la super variable globale $_REQUEST pour collecter les
+valeur du champ de saisie :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_33" data-ace-editor-id="33" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_33" >
+&lt;html&gt;
+
+
+&lt;body&gt;
+
+
+<br>
+ &lt;form method=&quot;post&quot; action=&quot;&lt;?php echo $_SERVER['PHP_SELF'];?&gt;&quot;&gt;
+ Name: &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;
+ &lt;input type=&quot;submit&quot;&gt;
+
+
+ &lt;/form&gt;
+
+<br>&lt;?php
+<br>if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+ // collect value of input field
+$name = $_REQUEST['fname'];
+
+
+   if (empty($name)) {
+ echo &quot;Name is empty&quot;;
+} else {<br>
+   echo  $name;
+}
+}
+
+?&gt;
+
+
+<br>
+&lt;/body&gt;
+
+
+&lt;/html&gt;</pre>
+</div>
+
+</div>
+
+<br>
+<br>
+
+
+  </div>
+  
+  
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+  
+      <h1>PHP Superglobal - $_GET</h1>
+
+<p class="yass-intro">Super global variables are built-in 
+variables that are always available in all scopes.</p>
+
+
+<h2>PHP $_GET</h2>
+<p>PHP $_GET is a PHP super global variable which is used to collect form data after submitting an HTML form 
+with method=&quot;get&quot;.</p>
+<p>$_GET can also collect data sent in the URL.</p>
+<p>Assume we have an HTML page that contains a hyperlink with parameters:</p>
+</div>
+
+<div class="yass-columnFr">
+      <h1>PHP Superglobal - $_GET</h1>
+
+<p class="yass-intro">Les super variables globales sont intégrées
+variables qui sont toujours disponibles dans toutes les portées.</p>
+
+
+<h2>PHP $_GET</h2>
+<p>PHP $_GET est une super variable globale PHP qui est utilisée pour collecter des données de formulaire après avoir soumis un formulaire HTML
+avec method=&quot;get&quot;.</p>
+<p>$_GET peut également collecter les données envoyées dans l'URL.</p>
+<p>Supposons que nous ayons une page HTML contenant un lien hypertexte avec des paramètres :</p>
+</div>
+
+</div>
+<div class="yass-code yass-border notranslate"><div>
+&lt;html&gt;
+
+
+&lt;body&gt;
+
+<br>
+&lt;a href=&quot;test_get.php?subject=PHP&amp;web=tebessa-univ.dz&quot;&gt;Test $GET&lt;/a&gt;
+
+<br>
+&lt;/body&gt;
+
+
+&lt;/html&gt;
+</div></div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>When a user clicks on the link &quot;Test $GET&quot;, the parameters &quot;subject&quot; and 
+&quot;web&quot; are sent to &quot;test_get.php&quot;, and you can then access their values 
+in &quot;test_get.php&quot; with $_GET.</p>
+
+<p>The example below shows the code in &quot;test_get.php&quot;:</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<p>Lorsqu'un utilisateur clique sur le lien &quot;Test $GET&quot;, les paramètres &quot;subject&quot; et
+&quot;web&quot; sont envoyés à &quot;test_get.php&quot;, et vous pouvez alors accéder à leurs valeurs
+dans &quot;test_get.php&quot; avec $_GET.</p>
+
+<p>L'exemple ci-dessous montre le code dans &quot;test_get.php&quot; :</p>
+</div>
+
+
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_22" data-ace-editor-id="22" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_22" >
+&lt;html&gt;
+
+
+&lt;body&gt;
+
+
+<br>
+ &lt;?php <br>echo &quot;Study &quot; . $_GET['subject'] . &quot; at &quot; . $_GET['web'];
+
+
+?&gt;
+
+
+<br>
+&lt;/body&gt;
+
+
+&lt;/html&gt;</pre></div>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+
+<p><strong>Tip:</strong> You will learn more about $_GET in the <a href="php_forms.html">PHP Forms</a> chapter.</p>
+
+
+  
+  </div>
+  
+  <div class="yass-columnFr">
+
+
+<p><strong>Astuce :</strong> vous en apprendrez plus sur $_GET dans le chapitre <a href="php_forms.html">Formulaires PHP</a>.</p>
+
+
+  
+   </div>
+   
+</div>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+  
+      <h1>PHP Superglobal - $_POST</h1>
+
+<p class="yass-intro">Super global variables are built-in 
+variables that are always available in all scopes.</p>
+</div>
+
+
+<div class="yass-columnFr">
+  
+       <h1>PHP Superglobal - $_POST</h1>
+
+<p class="yass-intro">Les super variables globales sont intégrées
+variables qui sont toujours disponibles dans toutes les portées.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP $_POST</h2>
+<p>PHP $_POST is a PHP super global variable which is used to collect form data after submitting an HTML form 
+with method=&quot;post&quot;. 
+$_POST is also widely used to pass variables.</p>
+<p>The example below shows a form with an input field and a submit button. When 
+a user submits the data by clicking on &quot;Submit&quot;, the form data is sent to the 
+file specified in the action attribute of the &lt;form&gt; tag. In this example, we 
+point to the file itself for processing form data. If you wish to use another 
+PHP file to process form data, replace that with the filename of your 
+choice. Then, we can use the super global variable $_POST to collect the 
+value of the input field:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP $_POST</h2>
+<p>PHP $_POST est une super variable globale PHP qui est utilisée pour collecter des données de formulaire après avoir soumis un formulaire HTML
+avec method=&quot;post&quot;.
+$_POST est également largement utilisé pour passer des variables.</p>
+<p>L'exemple ci-dessous montre un formulaire avec un champ de saisie et un bouton d'envoi. Lorsque
+un utilisateur soumet les données en cliquant sur &quot;Soumettre&quot;, les données du formulaire sont envoyées au
+fichier spécifié dans l'attribut action du &lt;formulaire&gt; étiquette. Dans cet exemple, nous
+pointe vers le fichier lui-même pour le traitement des données du formulaire. Si vous souhaitez utiliser un autre
+Fichier PHP pour traiter les données du formulaire, remplacez-le par le nom de fichier de votre
+choix. Ensuite, nous pouvons utiliser la super variable globale $_POST pour collecter les
+valeur du champ de saisie :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_3" >
+&lt;html&gt;
+
+
+&lt;body&gt;
+
+
+<br>
+ &lt;form method=&quot;post&quot; action=&quot;&lt;?php echo $_SERVER['PHP_SELF'];?&gt;&quot;&gt;
+ Name: &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;
+ &lt;input type=&quot;submit&quot;&gt;
+
+
+ &lt;/form&gt;
+
+<br>&lt;?php
+<br>if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+// collect value of input field<br>
+   $name = $_POST['fname'];
+ if (empty($name)) {
+ echo &quot;Name is empty&quot;;
+} else {
+ echo $name;
+
+
+   }
+}
+
+?&gt;
+
+
+<br>
+&lt;/body&gt;
+
+
+&lt;/html&gt;
+</pre>
+</div>
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_variables.html">❮ Prior</a><a class="yass-right yass-btn" href="php_superglobals.html">Next ❯</a></div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

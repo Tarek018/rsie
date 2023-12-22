@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Date</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Date and Time</span></h1>
+<p class="yass-intro">The PHP <code class="yass-codespan">date()</code> function is used to format a date and/or a time.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Date et heure</span></h1>
+<p class="yass-intro">La fonction PHP <code class="yass-codespan">date()</code> permet de formater une date et/ou une heure.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The PHP Date() Function</h2>
+<p>The PHP <code class="yass-codespan">date()</code> function formats a timestamp to a more readable date and time.</p>
+<h3>Syntax</h3>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>La fonction PHP Date()</h2>
+<p>La fonction PHP <code class="yass-codespan">date()</code> formate un horodatage en une date et une heure plus lisibles.</p>
+<h3>Syntaxe</h3>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+date(<i>format</i>,<i>timestamp</i>)
+
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:20%">Parameter</th>
+    <th style="width:80%">Description</th>
+  </tr>  
+  <tr>
+    <td>format</td>
+    <td>Required. Specifies the format of the timestamp</td>
+  </tr>
+  <tr>
+    <td>timestamp</td>
+    <td>Optional. Specifies a timestamp. Default is the current date and time</td>
+  </tr>
+</table>
+
+<div class="yass-panel yass-note"><p>
+<p>A timestamp is a sequence of 
+characters, denoting the date and/or time at which a certain event occurred.</p>
+</div>
+
+</div>
+
+<div class="yass-columnFr">
+
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:20%">Paramètre</th>
+     <th style="width:80%">Description</th>
+   </tr>
+   <tr>
+     <td>format</td>
+     <td>Obligatoire. Spécifie le format de l'horodatage</td>
+   </tr>
+   <tr>
+     <td>horodatage</td>
+     <td>Facultatif. Spécifie un horodatage. La valeur par défaut est la date et l'heure actuelles</td>
+   </tr>
+</table>
+
+<div class="yass-panel yass-note"><p>
+<p>Un horodatage est une séquence de
+caractères indiquant la date et/ou l'heure à laquelle un certain événement s'est produit.</p>
+</div>
+
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Get a Date</h2>
+<p>The required <i>format</i> parameter of the date() function specifies how to format the date 
+(or time).</p>
+<p>Here are some characters that are commonly used for dates:</p>
+<ul>
+  <li>d - Represents the day of the month (01 to 31) </li>
+  <li>m - Represents a month (01 to 12)</li>
+  <li>Y - Represents a year (in four digits)</li>
+  <li>l (lowercase 'L') - Represents the day of the week</li>
+</ul>
+<p>Other characters, like&quot;/&quot;, &quot;.&quot;, or &quot;-&quot; can also be inserted between the 
+characters to add additional formatting.</p>
+<p>The example below formats today's date in three different ways:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Obtenir un rendez-vous</h2>
+<p>Le paramètre obligatoire <i>format</i> de la fonction date() spécifie comment formater la date
+(ou heure).</p>
+<p>Voici quelques caractères couramment utilisés pour les dates :</p>
+<ul>
+   <li>d - Représente le jour du mois (01 à 31) </li>
+   <li>m - Représente un mois (01 à 12)</li>
+   <li>Y - Représente une année (en quatre chiffres)</li>
+   <li>l (minuscule 'L') - Représente le jour de la semaine</li>
+</ul>
+<p>Autres caractères, comme &quot;/&quot;, &quot;.&quot;, ou &quot;-&quot; peut également être inséré entre le
+caractères pour ajouter une mise en forme supplémentaire.</p>
+<p>L'exemple ci-dessous formate la date du jour de trois manières différentes :</p>
+
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_1" data-ace-editor-id="1" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_1" >
+ &lt;?php
+ echo "Today is " . date("Y/m/d") . &quot;&lt;br&gt;&quot;;
+ echo "Today is " . date("Y.m.d") . &quot;&lt;br&gt;&quot;;
+ echo "Today is " . date("Y-m-d") . &quot;&lt;br&gt;&quot;;
+ echo "Today is " . date("l");
+ ?&gt;
+ </pre>
+ </div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP Tip - Automatic Copyright Year</h2>
+<p>Use the <code class="yass-codespan">date()</code> function to automatically update the copyright year on your 
+website:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Astuce PHP - Année de copyright automatique</h2>
+<p>Utilisez la fonction <code class="yass-codespan">date()</code> pour mettre à jour automatiquement l'année de copyright sur votre
+site Web :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_2" data-ace-editor-id="2" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2" >
+ &amp;copy; 2010-
+ &lt;?php 
+ echo date(&quot;Y&quot;);
+ ?&gt;
+ </pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Get a Time</h2>
+<p>Here are some characters that are commonly used for times:</p>
+<ul>
+  <li>H - 24-hour format of an hour (00 to 23)</li>
+  <li>h - 12-hour format of an hour with leading zeros (01 to 12) </li>
+  <li>i - Minutes with leading zeros (00 to 59)</li>
+  <li>s - Seconds with leading zeros (00 to 59)</li>
+  <li>a - Lowercase Ante meridiem and Post meridiem (am or pm)</li>
+</ul>
+<p>The example below outputs the current time in the specified format:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Obtenir un temps</h2>
+<p>Voici quelques caractères couramment utilisés pour les heures :</p>
+<ul>
+   <li>H - Format 24 heures d'une heure (00 à 23)</li>
+   <li>h - format 12 heures d'une heure avec des zéros non significatifs (01 à 12) </li>
+   <li>i - Minutes avec des zéros non significatifs (00 à 59)</li>
+   <li>s - Secondes avec des zéros non significatifs (00 à 59)</li>
+   <li>a - Minuscule Ante meridiem et Post meridiem (am ou pm)</li>
+</ul>
+<p>L'exemple ci-dessous affiche l'heure actuelle dans le format spécifié :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+ &lt;?php
+ echo &quot;The time is &quot; . date(&quot;h:i:sa&quot;);
+ ?&gt;
+ </pre>
+	
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<div class="yass-panel yass-note"><p>
+<p>Note that the PHP date() function will return the current date/time of the 
+server!</p>
+</div>
+
+</div>
+
+
+<div class="yass-columnFr">
+
+<div class="yass-panel yass-note"><p>
+<p>Notez que la fonction PHP date() renverra la date/heure actuelle du
+serveur !</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Get Your Time Zone</h2>
+<p>If the time you got back from the code is not correct, it's probably because your server is in another country or set up 
+for a different timezone.</p>
+<p>So, if you need the time to be correct according to a specific 
+location, you can set the timezone you want to use. </p>
+<p>The example below sets the timezone to &quot;America/New_York&quot;, then outputs the current time in the specified format:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Obtenez votre fuseau horaire</h2>
+<p>Si l'heure à laquelle vous êtes revenu du code n'est pas correcte, c'est probablement parce que votre serveur est dans un autre pays ou configuré
+pour un fuseau horaire différent.</p>
+<p>Donc, si vous avez besoin de temps pour être correct en fonction d'un
+emplacement, vous pouvez définir le fuseau horaire que vous souhaitez utiliser. </p>
+<p>L'exemple ci-dessous définit le fuseau horaire sur &quot;Amérique/New_York&quot;, puis affiche l'heure actuelle dans le format spécifié :</p>
+</div>
+
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_4" data-ace-editor-id="4" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_4" >
+ &lt;?php
+ date_default_timezone_set(&quot;Africa/Algiers&quot;);
+ echo &quot;The time is &quot; . date(&quot;h:i:sa&quot;);
+ ?&gt;
+ </pre>
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>Create a Date With mktime()</h2>
+<p>The optional <i>timestamp</i> parameter in the date() function specifies a timestamp. If 
+omitted, the current date and time will be used (as in the 
+examples above).</p>
+<p>The PHP <code class="yass-codespan">mktime()</code> function returns the Unix timestamp for a date. The Unix timestamp contains the number of seconds between the Unix Epoch 
+(January 1 1970 00:00:00 GMT) and the time specified.</p>
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Créer une date avec mktime()</h2>
+<p>Le paramètre facultatif <i>horodatage</i> dans la fonction date() spécifie un horodatage. Si
+omis, la date et l'heure actuelles seront utilisées (comme dans
+exemples ci-dessus).</p>
+<p>La fonction PHP <code class="yass-codespan">mktime()</code> renvoie l'horodatage Unix pour une date. L'horodatage Unix contient le nombre de secondes entre l'époque Unix
+(1er janvier 1970 00:00:00 GMT) et l'heure indiquée.</p>
+<h3>Syntaxe</h3>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+mktime(<em>hour, minute, second, month, day, year</em>)
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>The example below creates a date and time with the 
+<code class="yass-codespan">date()</code> function from a number of parameters in the 
+<code class="yass-codespan">mktime()</code> function:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>L'exemple ci-dessous crée une date et une heure avec
+fonction <code class="yass-codespan">date()</code> à partir d'un certain nombre de paramètres dans le
+Fonction <code class="yass-codespan">mktime()</code> :</p>
+
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_5" data-ace-editor-id="5" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_5" >
+
+ &lt;?php
+ $d=mktime(11, 14, 54, 8, 12, 2022);
+ echo &quot;Created date is &quot; . date(&quot;Y-m-d h:i:sa&quot;, $d);
+ ?&gt;
+ </pre>
+</div>
+</div>
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>Create a Date From a String With strtotime()</h2>
+<p>The PHP <code class="yass-codespan">strtotime()</code> function is used to convert a human readable 
+date string into a 
+Unix timestamp (the number of seconds since January 1 1970 00:00:00 GMT).</p>
+<h3>Syntax</h3>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Créer une date à partir d'une chaîne avec strtotime()</h2>
+<p>La fonction PHP <code class="yass-codespan">strtotime()</code> est utilisée pour convertir un fichier lisible par l'homme
+chaîne de date dans un
+Horodatage Unix (le nombre de secondes depuis le 1er janvier 1970 00:00:00 GMT).</p>
+<h3>Syntaxe</h3>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ strtotime(<em>time, now</em>)
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>The example below creates a date and time from the <code class="yass-codespan">strtotime()</code> function:</p>
+</div>
+<div class="yass-columnFr">
+
+<p>L'exemple ci-dessous crée une date et une heure à partir de la fonction <code class="yass-codespan">strtotime()</code> :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_6" data-ace-editor-id="6" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_6" >
+ &lt;?php
+ $d=strtotime("10:30pm April 15 2022");
+ echo "Created date is " . date("Y-m-d h:i:sa", $d);
+  ?&gt;
+ </pre>
+</div>
+</div>
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>PHP is quite clever about converting a string to a date, so you can put in 
+various values:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>PHP est assez intelligent pour convertir une chaîne en une date, vous pouvez donc y mettre
+différentes valeurs :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php
+ $d=strtotime(&quot;tomorrow&quot;);
+ echo date(&quot;Y-m-d h:i:sa&quot;, $d) . &quot;&lt;br&gt;&quot;;
+ $d=strtotime(&quot;next Saturday&quot;);
+ echo date(&quot;Y-m-d h:i:sa&quot;, $d) . &quot;&lt;br&gt;&quot;;
+ $d=strtotime(&quot;+3 Months&quot;);
+ echo date(&quot;Y-m-d h:i:sa&quot;, $d) . &quot;&lt;br&gt;&quot;;
+?&gt;
+ </pre>
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>However, <code class="yass-codespan">strtotime()</code> is not perfect, so remember to check the strings you put in there.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Cependant, <code class="yass-codespan">strtotime()</code> n'est pas parfait, alors n'oubliez pas de vérifier les chaînes que vous y mettez.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>More Date Examples</h2>
+<p>The example below outputs the dates for the next six Saturdays:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Plus d'exemples de dates</h2>
+<p>L'exemple ci-dessous affiche les dates des six prochains samedis :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_11" data-ace-editor-id="11" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_11" >
+ &lt;?php
+$startdate = strtotime("Saturday");
+$enddate = strtotime("+6 weeks", $startdate);
+
+while ($startdate &lt; $enddate) {
+  echo date("M d", $startdate) . "<br>";
+  $startdate = strtotime("+1 week", $startdate);
+}
+ 
+ ?&gt;
+	
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>The example below outputs the number of days until 4th of July:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>L'exemple ci-dessous affiche le nombre de jours jusqu'au 4 juillet :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_10" data-ace-editor-id="10" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_10" >
+ &lt;?php
+ $d1=strtotime("July 04");
+ $d2=ceil(($d1-time())/60/60/24);
+ echo "There are " . $d2 ." days until 4th of July.";
+ ?&gt;
+ </pre>
+ </div>
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_regex.html">❮ Prior</a><a class="yass-right yass-btn" href="php_includes.html">Next ❯</a></div>
+	
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

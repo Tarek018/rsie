@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Arrays</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Arrays</span></h1>
+		<p class="yass-intro">An array stores multiple values in one single variable:</p>
+  </div>
+
+  <div class="yass-columnFr">
+    <h1>PHP <span class="color_h1">Tableaux</span></h1>
+<p class="yass-intro">Un tableau stocke plusieurs valeurs dans une seule variable :</p>
+</div>
+
+
+</div>		
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+$cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+echo &quot;I like &quot; . $cars[0] . &quot;, &quot; . $cars[1] . &quot; and &quot; . $cars[2] . &quot;.&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>What is an Array?</h2>
+<p>An array is a special variable, which can hold more than one value at a time.</p>
+<p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+  <h2>Qu'est-ce qu'un tableau ?</h2>
+  <p>Un tableau est une variable spéciale, qui peut contenir plusieurs valeurs à la fois.</p>
+  <p>Si vous avez une liste d'éléments (une liste de noms de voitures, par exemple), le stockage des voitures dans des variables uniques pourrait ressembler à ceci :</p>
+  </div>
+
+</div>
+
+<div class="yass-code yass-border notranslate">
+$cars1 = &quot;Volvo&quot;;
+$cars2 = &quot;BMW&quot;;
+$cars3 = &quot;Toyota&quot;;
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+<p>The solution is to create an array!</p>
+<p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Cependant, que se passe-t-il si vous voulez parcourir les voitures et en trouver une en particulier ? Et si vous n'aviez pas 3 voitures, mais 300 ?</p>
+<p>La solution est de créer un tableau !</p>
+<p>Un tableau peut contenir plusieurs valeurs sous un seul nom, et vous pouvez accéder aux valeurs en vous référant à un numéro d'index.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<h2>Create an Array in PHP</h2>
+<p>In PHP, the <code class="yass-codespan">array()</code> function is used to create an array:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Créer un tableau en PHP</h2>
+<p>En PHP, la fonction <code class="yass-codespan">array()</code> est utilisée pour créer un tableau :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate">
+
+ array();
+</div> 
+<div class="row">
+<div class="yass-columnEn">
+
+<p>In PHP, there are three types of arrays:</p>
+<ul>
+  <li><b>Indexed arrays</b> - Arrays with a numeric index</li>
+  <li><b>Associative arrays</b> - Arrays with named keys</li>
+  <li><b>Multidimensional arrays</b> - Arrays containing one or more arrays</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<p>En PHP, il existe trois types de tableaux :</p>
+<ul>
+   <li><b>Tableaux indexés</b> - Tableaux avec un index numérique</li>
+   <li><b>Tableaux associatifs</b> – Tableaux avec des clés nommées</li>
+   <li><b>Tableaux multidimensionnels</b> : tableaux contenant un ou plusieurs tableaux</li>
+</ul>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Get The Length of an Array - The count() Function</h2>
+<p>The <code class="yass-codespan">count()</code> function is used to return the length (the number of elements) of 
+an array:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Obtenir la longueur d'un tableau - La fonction count()</h2>
+<p>La fonction <code class="yass-codespan">count()</code> est utilisée pour renvoyer la longueur (le nombre d'éléments) de
+un tableau :</p>
+
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_113" data-ace-editor-id="113" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_113" >
+&lt;?php
+ $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+ echo count($cars);
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Indexed Arrays</span></h1>
+<p>There are two ways to create indexed arrays:</p>
+<p>The index can be assigned automatically (index 
+always starts at 0), like this:</p>
+
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Tableaux indexés</span></h1>
+<p>Il existe deux façons de créer des tableaux indexés :</p>
+<p>L'index peut être attribué automatiquement (index
+commence toujours à 0), comme ceci :</p>
+
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate">
+$cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+<p>or the index can be assigned manually:</p>
+</div>
+<div class="yass-columnFr">
+<p>ou l'index peut être attribué manuellement :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+$cars[0] = &quot;Volvo&quot;;
+$cars[1] = &quot;BMW&quot;;
+$cars[2] = &quot;Toyota&quot;;
+</div>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+<p>The following example creates an indexed array named $cars, assigns three 
+elements to it, and then prints a text containing the array values:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>L'exemple suivant crée un tableau indexé nommé $cars, attribue trois
+éléments, puis imprime un texte contenant les valeurs du tableau :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_31" data-ace-editor-id="31" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_31" >
+&lt;?php
+$cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+echo &quot;I like &quot; . $cars[0] . &quot;, &quot; . $cars[1] . &quot; and &quot; . $cars[2] . &quot;.&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Loop Through an Indexed Array</h2>
+<p>To loop through and print all the values of an indexed array, you could use a <code class="yass-codespan">for</code> loop, like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Boucle à travers un tableau indexé</h2>
+<p>Pour parcourir et imprimer toutes les valeurs d'un tableau indexé, vous pouvez utiliser une boucle <code class="yass-codespan">for</code>, comme ceci :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_553" data-ace-editor-id="553" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_553" >
+&lt;?php
+ $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+ $arrlength = count($cars);
+ for($x = 0; $x &lt; $arrlength; $x++) {
+ echo $cars[$x];
+ echo &quot;&lt;br&gt;&quot;;
+}
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Associative Arrays</span></h1>
+ <h2>PHP Associative Arrays</h2>
+<p>Associative arrays are arrays that use named keys that you assign to them.</p>
+<p>There are two ways to create an associative array: </p>
+     </div>
+	 
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Tableaux associatifs</span></h1>
+  <h2>Tableaux associatifs PHP</h2>
+<p>Les tableaux associatifs sont des tableaux qui utilisent des clés nommées que vous leur attribuez.</p>
+<p>Il existe deux façons de créer un tableau associatif : </p>
+      </div>
+	  
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+
+$age = array(&quot;Samir&quot;=&gt;&quot;35&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);</div></div>
+<p>or:</p>
+<div class="yass-code yass-border notranslate"><div>
+$age['Samir'] = &quot;35&quot;;
+$age['Salim'] = &quot;37&quot;;
+$age['Yassine'] = &quot;43&quot;; 
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The named keys can then be used in a script:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Les clés nommées peuvent ensuite être utilisées dans un script :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+&lt;?php
+$age = array(&quot;Samir&quot;=&gt;&quot;35&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);
+echo &quot;Samir is &quot; . $age['Samir'] . &quot; years old.&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Loop Through an Associative Array</h2>
+<p>To loop through and print all the values of an associative array, you could use a <code class="yass-codespan">foreach</code> loop, like this:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Boucle à travers un tableau associatif</h2>
+<p>Pour parcourir et imprimer toutes les valeurs d'un tableau associatif, vous pouvez utiliser une boucle <code class="yass-codespan">foreach</code>, comme ceci :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_433" data-ace-editor-id="433" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_433" >
+ &lt;?php
+$age = array(&quot;Samir&quot;=&gt;&quot;35&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);
+foreach($age as $x =&gt; $x_value) {
+echo &quot;Key=&quot; . $x . &quot;, Value=&quot; . $x_value;
+echo &quot;&lt;br&gt;&quot;;
+}
+
+?&gt;
+</div>
+<!--tryphp_array_assoc_loop-->
+</div>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Multidimensional Arrays</span></h1>
+<p class="yass-intro">In the previous pages, we have described arrays that are a 
+single list of key/value pairs.</p>
+<p class="yass-intro">However, sometimes you want to store values with more than one 
+key. For this, we have multidimensional arrays.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Tableaux multidimensionnels</span></h1>
+<p class="yass-intro">Dans les pages précédentes, nous avons décrit des tableaux qui sont un
+liste unique de paires clé/valeur.</p>
+<p class="yass-intro">Cependant, vous souhaitez parfois stocker des valeurs avec plusieurs
+clé. Pour cela, nous disposons de tableaux multidimensionnels.</p>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - Multidimensional Arrays</h2>
+<p>A multidimensional array is an array containing one or more arrays.</p>
+<p>PHP supports multidimensional arrays that are two, three, four, five, or 
+more levels deep. However, arrays more than three levels deep are hard to manage for most people.</p>
+
+<div class="yass-panel yass-note"><p>
+<strong>The dimension of an array indicates the number of indices you need to select an element.</strong>
+</p><ul>
+<li>For a two-dimensional array you need two indices to select an element</li>
+<li>For a three-dimensional array you need three indices to select an element</li>
+</ul></div>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP - Tableaux multidimensionnels</h2>
+<p>Un tableau multidimensionnel est un tableau contenant un ou plusieurs tableaux.</p>
+<p>PHP prend en charge les tableaux multidimensionnels de deux, trois, quatre, cinq ou
+plus de niveaux de profondeur. Cependant, les tableaux de plus de trois niveaux de profondeur sont difficiles à gérer pour la plupart des gens.</p>
+
+<div class="yass-panel yass-note"><p>
+<strong>La dimension d'un tableau indique le nombre d'indices dont vous avez besoin pour sélectionner un élément.</strong>
+</p><ul>
+<li>Pour un tableau à deux dimensions, vous avez besoin de deux indices pour sélectionner un élément</li>
+<li>Pour un tableau tridimensionnel, vous avez besoin de trois indices pour sélectionner un élément</li>
+</ul></div>
+
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - Two-dimensional Arrays</h2>
+<p>A two-dimensional array is an array of arrays (a three-dimensional array is an array of arrays of arrays).</p>
+<p>First, take a look at the following table:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th>Name</th>
+    <th>Stock</th>
+    <th>Sold</th>
+  </tr>
+  <tr>
+    <td>Volvo</td>
+    <td>22</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>BMW</td>
+    <td>15</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>Saab</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Land Rover</td>
+    <td>17</td>
+    <td>15</td>
+  </tr>
+</table>
+
+<p>We can store the data from the table above in a two-dimensional array, like this:</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>PHP - Tableaux bidimensionnels</h2>
+<p>Un tableau à deux dimensions est un tableau de tableaux (un tableau à trois dimensions est un tableau de tableaux de tableaux).</p>
+<p>Tout d'abord, jetez un œil au tableau suivant :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th>Nom</th>
+     <th>Stock</th>
+     <th>Vendu</th>
+   </tr>
+   <tr>
+     <td>Volvo</td>
+     <td>22</td>
+     <td>18</td>
+   </tr>
+   <tr>
+     <td>BMW</td>
+     <td>15</td>
+     <td>13</td>
+   </tr>
+   <tr>
+     <td>Saab</td>
+     <td>5</td>
+     <td>2</td>
+   </tr>
+   <tr>
+     <td>Land Rover</td>
+     <td>17</td>
+     <td>15</td>
+   </tr>
+</table>
+
+<p>Nous pouvons stocker les données du tableau ci-dessus dans un tableau à deux dimensions, comme ceci :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ $cars = array (
+ array(&quot;Volvo&quot;,22,18),
+ array(&quot;BMW&quot;,15,13),
+ array(&quot;Saab&quot;,5,2),
+ array(&quot;Land Rover&quot;,17,15)<br>);
+ </div>
+ </div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>Now the two-dimensional $cars array contains four arrays, and it has two indices: row and column.</p>
+<p>To get access to the elements of the $cars array we must point to the two 
+indices (row and column):</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Maintenant, le tableau $cars à deux dimensions contient quatre tableaux et deux indices : ligne et colonne.</p>
+<p>Pour accéder aux éléments du tableau $cars, nous devons pointer vers les deux
+indices (ligne et colonne) :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_310" data-ace-editor-id="310" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_310" >
+ &lt;?php
+ $cars = array (
+ array(&quot;Volvo&quot;,22,18),
+ array(&quot;BMW&quot;,15,13),
+ array(&quot;Saab&quot;,5,2),
+ array(&quot;Land Rover&quot;,17,15)
+ );
+ 
+echo $cars[0][0].&quot;: In stock: &quot;.$cars[0][1].&quot;, sold: &quot;.$cars[0][2].&quot;.&lt;br&gt;&quot;;
+echo $cars[1][0].&quot;: In stock: &quot;.$cars[1][1].&quot;, sold: &quot;.$cars[1][2].&quot;.&lt;br&gt;&quot;;
+echo $cars[2][0].&quot;: In stock: &quot;.$cars[2][1].&quot;, sold: &quot;.$cars[2][2].&quot;.&lt;br&gt;&quot;;
+echo $cars[3][0].&quot;: In stock: &quot;.$cars[3][1].&quot;, sold: &quot;.$cars[3][2].&quot;.&lt;br&gt;&quot;;
+
+?&gt;
+</pre></div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>We can also put a <code class="yass-codespan">for</code> loop inside another <code class="yass-codespan">for</code> loop to get the elements of the 
+$cars array (we still have to point to the two indices):</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<p>Nous pouvons également mettre une boucle <code class="yass-codespan">for</code> dans une autre boucle <code class="yass-codespan">for</code> pour obtenir les éléments du
+Tableau $cars (nous devons encore pointer vers les deux indices) :</p>
+</div>
+
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_93" data-ace-editor-id="93" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_93" >
+ &lt;?php
+ 
+  $cars = array (
+ array(&quot;Volvo&quot;,22,18),
+ array(&quot;BMW&quot;,15,13),
+ array(&quot;Saab&quot;,5,2),
+ array(&quot;Land Rover&quot;,17,15)
+ );
+ 
+for ($row = 0; $row &lt; 4; $row++) {
+ echo &quot;&lt;p&gt;&lt;b&gt;Row number $row&lt;/b&gt;&lt;/p&gt;&quot;;
+ echo &quot;&lt;ul&gt;&quot;;
+ for ($col = 0; $col &lt; 3; $col++) {
+ echo &quot;&lt;li&gt;&quot;.$cars[$row][$col].&quot;&lt;/li&gt;&quot;;
+ }
+ echo &quot;&lt;/ul&gt;&quot;;
+
+}
+
+?&gt;
+</pre>
+</div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">Sorting Arrays</span></h1>
+<p class="yass-intro">The elements in an array can be sorted in alphabetical or numerical order, descending or ascending.</p>
+</div>
+<div class="yass-columnFr">
+
+<h1>PHP <span class="color_h1">Trier les tableaux</span></h1>
+<p class="yass-intro">Les éléments d'un tableau peuvent être triés par ordre alphabétique ou numérique, décroissant ou croissant.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - Sort Functions For Arrays</h2>
+<p>In this chapter, we will go through the following PHP array sort functions:</p>
+<ul>
+  <li><code class="yass-codespan">sort()</code> - sort arrays in ascending order</li>
+  <li><code class="yass-codespan">rsort()</code> - sort arrays in descending order</li>
+  <li><code class="yass-codespan">asort()</code> - sort associative arrays in ascending order, according to the value</li>
+  <li><code class="yass-codespan">ksort()</code> - sort associative arrays in ascending order, according to the key</li>
+  <li><code class="yass-codespan">arsort()</code> - sort associative arrays in descending order, according to the value</li>
+  <li><code class="yass-codespan">krsort()</code> - sort associative arrays in descending order, according to the key</li>
+</ul>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>PHP - Fonctions de tri pour les tableaux</h2>
+<p>Dans ce chapitre, nous passerons en revue les fonctions de tri de tableau PHP suivantes :</p>
+<ul>
+   <li><code class="yass-codespan">sort()</code> - trie les tableaux par ordre croissant</li>
+   <li><code class="yass-codespan">rsort()</code> - trie les tableaux par ordre décroissant</li>
+   <li><code class="yass-codespan">asort()</code> - trie les tableaux associatifs par ordre croissant, selon la valeur</li>
+   <li><code class="yass-codespan">ksort()</code> - trie les tableaux associatifs par ordre croissant, selon la clé</li>
+   <li><code class="yass-codespan">arsort()</code> - trie les tableaux associatifs par ordre décroissant, selon la valeur</li>
+   <li><code class="yass-codespan">krsort()</code> - trie les tableaux associatifs par ordre décroissant, selon la clé</li>
+</ul>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Sort Array in Ascending Order - sort()</h2>
+<p>The following example sorts the elements of the $cars array in ascending alphabetical order:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Trier le tableau dans l'ordre croissant - sort()</h2>
+<p>L'exemple suivant trie les éléments du tableau $cars par ordre alphabétique croissant :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_73" data-ace-editor-id="73" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_73" >
+&lt;?php
+<br>
+ $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+ 
+ sort($cars);
+ 
+ $arrlength = count($cars);
+ for($x = 0; $x &lt; $arrlength; $x++) {
+ echo $cars[$x];
+ echo &quot;&lt;br&gt;&quot;;
+ }
+ 
+ 
+?&gt;
+</pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The following example sorts the elements of the $numbers array in ascending 
+numerical order:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>L'exemple suivant trie les éléments du tableau $numbers par ordre croissant
+ordre numérique :</p>
+</div>
+
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_193" data-ace-editor-id="193" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_193" >
+&lt;?php
+ $numbers = array(4, 6, 2, 22, 11);
+ sort($numbers);
+ 
+   $arrlength = count($numbers);
+ for($x = 0; $x &lt; $arrlength; $x++) {
+ echo $numbers[$x];
+ echo &quot;&lt;br&gt;&quot;;
+ }
+ 
+?&gt;
+</pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<h2>Sort Array in Descending Order - rsort()</h2>
+<p>The following example sorts the elements of the $cars array in descending alphabetical order:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Trier le tableau dans l'ordre décroissant - rsort()</h2>
+<p>L'exemple suivant trie les éléments du tableau $cars par ordre alphabétique décroissant :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_23" >
+&lt;?php
+$cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);
+rsort($cars);
+ 
+ $arrlength = count($cars);
+ for($x = 0; $x &lt; $arrlength; $x++) {
+ echo $cars[$x];
+ echo &quot;&lt;br&gt;&quot;;
+ }
+ 
+ 
+ 
+ ?&gt;
+ </pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The following example sorts the elements of the $numbers array in descending 
+numerical order:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>L'exemple suivant trie les éléments du tableau $numbers par ordre décroissant
+ordre numérique :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_33" data-ace-editor-id="33" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_33" >
+&lt;?php
+ $numbers = array(4, 6, 2, 22, 11);
+ rsort($numbers);
+ 
+ $arrlength = count($numbers);
+ for($x = 0; $x &lt; $arrlength; $x++) {
+ echo $numbers[$x];
+ echo &quot;&lt;br&gt;&quot;;
+ }
+ 
+ 
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Sort Array (Ascending Order), According to Value - asort()</h2>
+<p>The following example sorts an associative array in ascending order, 
+according to the value:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Trier le tableau (ordre croissant), selon la valeur - asort()</h2>
+<p>L'exemple suivant trie un tableau associatif par ordre croissant,
+selon la valeur :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_34" data-ace-editor-id="34" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_34" >
+&lt;?php
+ $age = array(&quot;Samir&quot;=&gt;&quot;50&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);
+ asort($age);
+ foreach ($age as $key => $val) {
+    echo "$key = $val\n";
+ }
+
+?&gt;
+
+</pre>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Sort Array (Ascending Order), According to Key - ksort()</h2>
+<p>The following example sorts an associative array in ascending order, 
+according to the key:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Trier le tableau (ordre croissant), selon la clé - ksort()</h2>
+<p>L'exemple suivant trie un tableau associatif par ordre croissant,
+selon la clé :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_63" data-ace-editor-id="63" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_63" >
+&lt;?php
+ $age = array(&quot;Samir&quot;=&gt;&quot;50&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);
+ ksort($age);
+ foreach ($age as $key => $val) {
+    echo "$key = $val\n";
+ }
+?&gt; 
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Sort Array (Descending Order), According to Value - arsort()</h2>
+<p>The following example sorts an associative array in descending order, 
+according to the value:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Trier le tableau (ordre décroissant), selon la valeur - arsort()</h2>
+<p>L'exemple suivant trie un tableau associatif par ordre décroissant,
+selon la valeur :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_7223" data-ace-editor-id="7223" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_7223" >
+&lt;?php
+<br>
+ $age = array(&quot;Samir&quot;=&gt;&quot;35&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yasine&quot;=&gt;&quot;43&quot;);
+ arsort($age);
+ foreach ($age as $key => $val) {
+    echo "$key = $val\n";
+ }
+
+?&gt;
+</pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Sort Array (Descending Order), According to Key - krsort()</h2>
+<p>The following example sorts an associative array in descending order, 
+according to the key:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Trier le tableau (ordre décroissant), selon la clé - krsort()</h2>
+<p>L'exemple suivant trie un tableau associatif par ordre décroissant,
+selon la clé :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_443" data-ace-editor-id="443" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_443" >
+&lt;?php
+<br>
+ $age = array(&quot;Samir&quot;=&gt;&quot;35&quot;, &quot;Salim&quot;=&gt;&quot;37&quot;, &quot;Yassine&quot;=&gt;&quot;43&quot;);
+ krsort($age);
+ foreach ($age as $key => $val) {
+ echo "$key = $val\n";
+ }
+ 
+?&gt; </pre>
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_string.html">❮ Prior</a><a class="yass-right yass-btn" href="php_operators.html">Next ❯</a></div>
+
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

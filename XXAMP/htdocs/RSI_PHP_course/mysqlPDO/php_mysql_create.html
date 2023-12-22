@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Create</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">Create a MySQL Database</span></h1>
+
+<p class="yass-intro">A database consists of one or more tables. </p>
+<p class="yass-intro">You will need special CREATE privileges to create or to delete a MySQL 
+database.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Créer une base de données MySQL</span></h1>
+
+<p class="yass-intro">Une base de données se compose d'une ou plusieurs tables. </p>
+<p class="yass-intro">Vous aurez besoin de privilèges CREATE spéciaux pour créer ou supprimer un MySQL
+base de données.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Create a MySQL Database Using MySQLi and PDO</h2>
+<p>The CREATE DATABASE statement is used to create a database in MySQL.</p>
+<p>The following examples create a database named &quot;myDB&quot;:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Créer une base de données MySQL avec MySQLi et PDO</h2>
+<p>L'instruction CREATE DATABASE est utilisée pour créer une base de données dans MySQL.</p>
+<p>Les exemples suivants créent une base de données nommée &quot;myDB&quot; :</p>
+</div>
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+ if ($conn-&gt;connect_error) {
+ die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+}
+
+// Create database
+ $sql = &quot;CREATE DATABASE myDB&quot;;
+
+if ($conn-&gt;query($sql) === TRUE) {
+echo &quot;Database created successfully&quot;;
+
+} else {
+echo &quot;Error creating database: &quot; . $conn-&gt;error;
+
+}
+$conn-&gt;close();
+
+?&gt;
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+
+<div class="yass-panel yass-note">
+<p><strong>Note:</strong> When you create a new database, you must only specify 
+the first three arguments to the mysqli object (servername, username and 
+password).<br><br><strong>Tip:</strong> If you have to use a specific port,
+add an empty string for the database-name argument, like this: new mysqli(&quot;localhost&quot;, 
+&quot;username&quot;, &quot;password&quot;, &quot;&quot;, port)</p>
+</div>
+</div>
+
+<div class="yass-columnFr">
+
+
+<div class="yass-panel yass-note">
+<p><strong>Remarque :</strong> Lorsque vous créez une nouvelle base de données, vous devez uniquement spécifier
+les trois premiers arguments de l'objet mysqli (servername, username et
+mot de passe).<br><br><strong>Astuce :</strong> Si vous devez utiliser un port spécifique,
+ajoutez une chaîne vide pour l'argument nom de la base de données, comme ceci : new mysqli(&quot;localhost&quot;,
+&quot;nom d'utilisateur&quot;, &quot;mot de passe&quot;, &quot;&quot;, port)</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+// Check connection
+ if (!$conn) {
+   die(&quot;Connection failed: &quot; . mysqli_connect_error());
+
+}
+// Create database
+ $sql = &quot;CREATE DATABASE myDB&quot;;
+ if (mysqli_query($conn, $sql)) {
+ echo &quot;Database created successfully&quot;;
+} else {
+ echo &quot;Error creating database: &quot; . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Note:</strong> The following PDO example create a database named &quot;myDB&quot;:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Remarque :</strong> L'exemple de PDO suivant crée une base de données nommée &quot;myDB&quot; :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_63" data-ace-editor-id="63" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_63" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+
+try {
+$conn = new PDO(&quot;mysql:host=$servername&quot;, $username, $password);
+// set the PDO error mode to exception
+$conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$sql = &quot;CREATE DATABASE myDBPDO&quot;;
+ // use exec() because no results are returned
+$conn-&gt;exec($sql);
+ echo &quot;Database created successfully&lt;br&gt;&quot;;
+} catch(PDOException $e) 
+  {
+echo $sql . &quot;&lt;br&gt;&quot; . $e-&gt;getMessage();
+  }
+$conn = null;
+
+
+?&gt;
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Tip:</strong> A great benefit of PDO is that it has exception class to handle any problems that may 
+occur in our database queries. If an exception is thrown within the try{ } block, 
+the script stops executing and flows directly to the first catch(){ } block. In the catch block above we echo the SQL statement and 
+the generated error message. </p>
+
+
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Astuce :</strong> Un grand avantage de PDO est qu'il a une classe d'exception pour gérer tous les problèmes qui peuvent
+se produire dans nos requêtes de base de données. Si une exception est levée dans le bloc try{ },
+le script arrête de s'exécuter et passe directement au premier bloc catch(){ }. Dans le bloc catch ci-dessus, nous faisons écho à l'instruction SQL et
+le message d'erreur généré. </p>
+
+
+</div>
+
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">MySQL Create Table</span></h1>
+
+<p class="intro">A database table has its own unique name and consists of 
+columns and rows.</p>
+<hr>
+
+<h2>Create a MySQL Table Using MySQLi and PDO</h2>
+<p>The CREATE TABLE statement is used to create a table in MySQL.</p>
+<p>We will create a table named "MyClients", with 
+five columns: "id", "firstname", "lastname", "email" and "reg_date":</p>
+</div>
+</div>
+
+<div class="yass-example">
+<div class="yass-code notranslate">
+CREATE TABLE MyClients (<br>
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,<br>
+firstname VARCHAR(30) NOT NULL,<br>
+lastname VARCHAR(30) NOT NULL,<br>
+email VARCHAR(50),<br>
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP<br>
+)
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p><b>Notes on the table above:</b></p>
+
+<p>After the data type, you can specify other optional attributes for each 
+column:</p>
+<ul>
+  <li>NOT NULL - Each row must contain a value for that column, null values are not allowed</li>
+  <li>DEFAULT value - Set a default value that is added when no other value is passed</li>
+  <li>UNSIGNED - Used for number types, limits the stored data to positive numbers and zero</li>
+  <li>AUTO INCREMENT - MySQL automatically increases the value of the field by 1 each time a new record is added</li>
+  <li>PRIMARY KEY - Used to uniquely identify the rows in a table. The column with PRIMARY KEY setting is often an ID number, and is often used with AUTO_INCREMENT</li>
+</ul>
+<p>Each table should have a primary key column (in this case: the "id" column). 
+Its value must be unique for each record in the table.</p>
+
+<p>The following examples shows how to create the table in PHP:</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_631" data-ace-editor-id="631" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_631" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die(&quot;Connection failed: &quot; . $conn->connect_error);
+}
+
+
+
+$query = &quot;SELECT ID FROM  MyClients&quot;;
+$result = mysqli_query($conn, $query);
+
+if(empty($result)) {
+// sql to create table
+$sql = &quot;CREATE TABLE MyClients (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)&quot;;
+
+if ($conn->query($sql) === TRUE) {
+  echo &quot;Table MyClients created successfully&quot;;
+} else {
+  echo &quot;Error creating table: &quot; . $conn->error;
+}
+}else echo &quot;Error creating table:  Table 'MyClients' already exists &quot; ;
+
+
+$conn->close();
+?&gt;
+</div>
+<br>
+</div>
+<hr>
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_623" data-ace-editor-id="623" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_623" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+
+// sql to create table
+$sql = &quot;CREATE TABLE MyClients (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)&quot;;
+
+if (mysqli_query($conn, $sql)) {
+  echo &quot;Table MyClients created successfully&quot;;
+} else {
+  echo &quot;Error creating table: &quot; . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?&gt;
+ </div>
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_633" data-ace-editor-id="633" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_633" >
+
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+try {
+  $conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  // sql to create table
+  $sql = &quot;CREATE TABLE MyClients (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  firstname VARCHAR(30) NOT NULL,
+  lastname VARCHAR(30) NOT NULL,
+  email VARCHAR(50),
+  reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )&quot;;
+
+  // use exec() because no results are returned
+  $conn->exec($sql);
+  echo &quot;Table MyClients created successfully&quot;;
+} catch(PDOException $e) {
+  echo $sql . &quot;<br>&quot; . $e->getMessage();
+}
+
+$conn = null;
+?&gt;
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_connect.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_insert.html">Next ❯</a></div>
+
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

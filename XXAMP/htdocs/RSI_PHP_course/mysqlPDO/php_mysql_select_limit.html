@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Limit Data</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">MySQL Limit Data Selections</span></h1>
+
+<h2>Limit Data Selections From a MySQL Database</h2>
+<p>MySQL provides a LIMIT clause that is used to specify the number of records 
+to return.</p>
+<p>The LIMIT clause makes it easy to code multi page results or pagination with 
+SQL, and is very useful on large tables. Returning a large number of records can 
+impact on performance.</p>
+<p>Assume we wish to select all records from 1 - 30 (inclusive) from a table 
+called "Orders". The SQL query would then look like this:</p>
+
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">MySQL limite les sélections de données</span></h1>
+
+<h2>Limiter les sélections de données à partir d'une base de données MySQL</h2>
+<p>MySQL fournit une clause LIMIT qui est utilisée pour spécifier le nombre d'enregistrements
+pour revenir.</p>
+<p>La clause LIMIT facilite le codage des résultats de plusieurs pages ou de la pagination avec
+SQL, et est très utile sur les grandes tables. Le renvoi d'un grand nombre d'enregistrements peut
+impact sur les performances.</p>
+<p> Supposons que nous souhaitions sélectionner tous les enregistrements de 1 à 30 (inclus) dans une table
+appelés "Commandes". La requête SQL ressemblerait alors à ceci :</p>
+
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ $sql = &quot;SELECT * FROM Orders LIMIT 30&quot;;
+</div></div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>When the SQL query above is run, it will return the first 30 records.</p>
+<p>What if we want to select records 16 - 25 (inclusive)?</p>
+<p>Mysql also provides a way to handle this: by using OFFSET.</p>
+<p>The SQL query below says "return only 10 records, start on record 16 (OFFSET 
+15)":</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Lorsque la requête SQL ci-dessus est exécutée, elle renvoie les 30 premiers enregistrements.</p>
+<p>Et si nous voulons sélectionner les enregistrements 16 à 25 (inclus) ?</p>
+<p>Mysql fournit également un moyen de gérer cela : en utilisant OFFSET.</p>
+<p>La requête SQL ci-dessous indique "ne renvoie que 10 enregistrements, commence à l'enregistrement 16 (OFFSET
+15)":</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate">
+ <div>
+  $sql = &quot;SELECT * FROM Orders LIMIT 10 OFFSET 15&quot;;</div>
+</div>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+<p>You could also use a shorter syntax to achieve the same result:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Vous pouvez également utiliser une syntaxe plus courte pour obtenir le même résultat :</p>
+</div>
+
+</div>
+
+
+<div class="yass-code yass-border notranslate">
+ <div>
+  $sql = &quot;SELECT * FROM Orders LIMIT 15, 10&quot;;</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>Notice that the numbers are reversed when you use a comma.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Remarquez que les nombres sont inversés lorsque vous utilisez une virgule.</p>
+</div>
+
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_update.html">❮ Prior</a></div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Files</div>
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">File Handling</span></h1>
+<p class="yass-intro">File handling is an important part of any web application. You 
+often need to open and process a file for different tasks.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Gestion des fichiers</span></h1>
+<p class="yass-intro">La gestion des fichiers est une partie importante de toute application Web. Tu
+ont souvent besoin d'ouvrir et de traiter un fichier pour différentes tâches.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Manipulating Files</h2>
+<p>PHP has several functions for creating, reading, uploading, and editing files.</p>
+<div class="yass-panel yass-note"><p>
+<p><strong>Be careful when manipulating files!</strong></p>When you are manipulating files you must be very careful. 
+<p>You can do a 
+lot of damage if you do something wrong. Common errors are: editing the wrong 
+file, filling a hard-drive with garbage data, and deleting the content of a file 
+by accident.</p>
+</div>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Manipulation de fichiers PHP</h2>
+<p>PHP a plusieurs fonctions pour créer, lire, télécharger et éditer des fichiers.</p>
+<div class="yass-panel yass-note"><p>
+<p><strong>Soyez prudent lorsque vous manipulez des fichiers !</strong></p>Lorsque vous manipulez des fichiers, vous devez être très prudent.
+<p>Vous pouvez faire un
+beaucoup de dégâts si vous faites quelque chose de mal. Les erreurs courantes sont : modifier le mauvais
+fichier, remplir un disque dur avec des données inutiles et supprimer le contenu d'un fichier
+par hasard.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP readfile() Function</h2>
+<p>The <code class="yass-codespan">readfile()</code> function reads a file and writes it to the output buffer.</p>
+<p>Assume we have a text file called &quot;webdictionary.txt&quot;, stored on the 
+server, that looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonction PHP readfile()</h2>
+<p>La fonction <code class="yass-codespan">readfile()</code> lit un fichier et l'écrit dans le tampon de sortie.</p>
+<p>Supposons que nous disposions d'un fichier texte appelé &quot;webdictionary.txt&quot;, stocké sur le
+serveur, qui ressemble à ceci :</p>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ AJAX = Asynchronous JavaScript and XML<br>CSS = Cascading Style Sheets<br>
+ HTML = Hyper Text Markup Language<br>PHP = PHP Hypertext Preprocessor<br>SQL = Structured Query Language<br>SVG = Scalable Vector Graphics<br>XML = EXtensible Markup Language</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+<p>The PHP code to read the file and write it to the output buffer is as follows 
+(the <code class="yass-codespan">readfile()</code> function returns the number of bytes read on success):</p>
+</div>
+
+
+<div class="yass-columnFr">
+<p>Le code PHP pour lire le fichier et l'écrire dans le tampon de sortie est le suivant
+(la fonction <code class="yass-codespan">readfile()</code> renvoie le nombre d'octets lus en cas de succès) :</p>
+</div>
+
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_03" data-ace-editor-id="03" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_03" >
+ &lt;?php
+ echo readfile(&quot;newFile.txt&quot;);
+ ?&gt;
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+<p>The <code class="yass-codespan">readfile()</code> function is useful if all you want to do is open up a file and read its contents.</p>
+<p>The next chapters will teach you more about file handling.</p>
+</div>
+
+<div class="yass-columnFr">
+<p>La fonction <code class="yass-codespan">readfile()</code> est utile si tout ce que vous voulez faire est d'ouvrir un fichier et de lire son contenu.</p>
+<p>Les prochains chapitres vous en apprendront plus sur la gestion des fichiers.</p>
+</div>
+
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">File Create/Write</span></h1>
+
+<p class="yass-intro">In this chapter we will teach you how to create and write to a file 
+on the server.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Création/écriture de fichier</span></h1>
+
+<p class="yass-intro">Dans ce chapitre, nous allons vous apprendre à créer et à écrire dans un fichier
+sur le serveur.</p>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Create File - fopen()</h2>
+<p>The <code class="yass-codespan">fopen()</code> function is also used to create a file. Maybe a little confusing, but in PHP, a file is created using the same 
+function used to open files.</p>
+<p>If you use <code class="yass-codespan">fopen()</code> on a file that does not 
+exist, it will create it, given that the file is opened for writing (w) or 
+appending (a).</p>
+<p>The example below creates a new file called &quot;testfile.txt&quot;. The file will be 
+created in the same directory where the PHP code resides:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Créer un fichier PHP - fopen()</h2>
+<p>La fonction <code class="yass-codespan">fopen()</code> est également utilisée pour créer un fichier. Peut-être un peu déroutant, mais en PHP, un fichier est créé en utilisant le même
+fonction utilisée pour ouvrir des fichiers.</p>
+<p>Si vous utilisez <code class="yass-codespan">fopen()</code> sur un fichier qui ne
+existe, il le créera, étant donné que le fichier est ouvert en écriture (w) ou
+en ajoutant (a).</p>
+<p>L'exemple ci-dessous crée un nouveau fichier appelé &quot;testfile.txt&quot;. Le dossier sera
+créé dans le même répertoire où réside le code PHP :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div class="yass-code phpHigh notranslate">
+ $myfile = fopen(&quot;testfile.txt&quot;, &quot;w&quot;)
+</div>
+</div>
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>PHP File Permissions</h2>
+<p>If you are having errors when trying to get this code to run, check that you have granted your PHP file access to write 
+information to the hard drive.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Autorisations des fichiers PHP</h2>
+<p>Si vous rencontrez des erreurs lorsque vous essayez d'exécuter ce code, vérifiez que vous avez autorisé votre fichier PHP à écrire
+informations sur le disque dur.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Write to File - fwrite()</h2>
+<p>The <code class="yass-codespan">fwrite()</code> function is used to write to a file.</p>
+<p>The first parameter of <code class="yass-codespan">fwrite()</code> contains the name of the file to write to and 
+the second parameter is the string to be written.</p>
+<p>The example below writes a couple of names into a new file called &quot;newfile.txt&quot;:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Écrire PHP dans un fichier - fwrite()</h2>
+<p>La fonction <code class="yass-codespan">fwrite()</code> est utilisée pour écrire dans un fichier.</p>
+<p>Le premier paramètre de <code class="yass-codespan">fwrite()</code> contient le nom du fichier dans lequel écrire et
+le deuxième paramètre est la chaîne à écrire.</p>
+<p>L'exemple ci-dessous écrit quelques noms dans un nouveau fichier appelé &quot;nouveaufichier.txt&quot; :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_3103" data-ace-editor-id="3103" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3103" >
+&lt;?php
+$myfile = fopen(&quot;newfile.txt&quot;, &quot;w&quot;) or die(&quot;Unable to open file!&quot;);
+$txt = &quot;Souli Yassine\n&quot;;
+fwrite($myfile, $txt);
+$txt = &quot;Souli Yassine\n&quot;;
+fwrite($myfile, $txt);
+fclose($myfile);
+?&gt;
+</pre>
+</div>
+</div>
+
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>Notice that we wrote to the file &quot;newfile.txt&quot; twice. Each time we wrote to 
+the file we sent the string $txt that first contained &quot;John Doe&quot; and second 
+contained &quot;Jane Doe&quot;. After we finished writing, we closed the file using the <code class="yass-codespan">fclose()</code> function.</p>
+<p>If we open the &quot;newfile.txt&quot; file it would look like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Remarquez que nous avons écrit dans le fichier &quot;newfile.txt&quot; deux fois. Chaque fois que nous avons écrit à
+le fichier auquel nous avons envoyé la chaîne $txt qui contenait en premier &quot;John Doe&quot; et deuxieme
+contenait "Jane Doe". Après avoir fini d'écrire, nous avons fermé le fichier en utilisant la fonction <code class="yass-codespan">fclose()</code>.</p>
+<p>Si nous ouvrons le &quot;nouveaufichier.txt&quot; fichier, il ressemblerait à ceci :</p>
+</div>
+</div>
+
+<div class="yass-code htmlHigh yass-border notranslate"><div>
+ Souli Yassine <br> Souli Yassine</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP Overwriting</h2>
+<p>Now that &quot;newfile.txt&quot; contains some data we can show what happens when we 
+open an existing file for writing. All the existing data will be ERASED and we 
+start with an empty file.</p>
+<p>In the example below we open our existing file &quot;newfile.txt&quot;, and write some 
+new data into it:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Ecrasement PHP</h2>
+<p>Maintenant que &quot;nouveaufichier.txt&quot; contient des données, nous pouvons montrer ce qui se passe lorsque nous
+ouvrir un fichier existant pour l'écriture. Toutes les données existantes seront EFFACÉES et nous
+commencer avec un fichier vide.</p>
+<p>Dans l'exemple ci-dessous, nous ouvrons notre fichier existant &quot;newfile.txt&quot;, et écrivons quelques
+de nouvelles données :</p>
+</div>
+</div>
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_3277" data-ace-editor-id="3277" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3277" >
+ &lt;?php
+$myfile = fopen(&quot;newfile.txt&quot;, &quot;w&quot;) or die(&quot;Unable to open file!&quot;);
+$txt = &quot;Morsott city\n&quot;;
+fwrite($myfile, $txt);
+$txt = &quot;Boulhaf city\n&quot;;
+fwrite($myfile, $txt);
+fclose($myfile);
+?&gt;
+</pre>
+</div>
+<br>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>If we now open the &quot;newfile.txt&quot; file, both John and Jane have 
+vanished, and only the data we just wrote is present:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Si nous ouvrons maintenant le &quot;nouveaufichier.txt&quot; fichier, John et Jane ont
+disparu, et seules les données que nous venons d'écrire sont présentes :</p>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ Morsott city<br>Boulhaf city</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Append Text</h2>
+<p>You can append data to a file by using the &quot;a&quot; mode. The &quot;a&quot; mode appends 
+text to the end of the file, while the &quot;w&quot; mode overrides (and erases) the old 
+content of the file.</p>
+<p>In the example below we open our existing file &quot;newfile.txt&quot;, and 
+append some text to it:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP Ajouter du texte</h2>
+<p>Vous pouvez ajouter des données à un fichier en utilisant le &quot;a&quot; mode. Le &quot;a&quot; le mode ajoute
+texte à la fin du fichier, tandis que le &quot;w&quot; mode remplace (et efface) l'ancien
+contenu du fichier.</p>
+<p>Dans l'exemple ci-dessous, nous ouvrons notre fichier existant &quot;newfile.txt&quot;, et
+ajoutez-y du texte :</p>
+</div>
+
+</div>
+
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_34" data-ace-editor-id="34" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_34" >
+&lt;?php
+$myfile = fopen(&quot;newfile.txt&quot;, &quot;a&quot;) or die(&quot;Unable to open file!&quot;);
+$txt = &quot;Hammamet city\n&quot;;
+
+fwrite($myfile, $txt);
+$txt = &quot;Tebessa city\n&quot;;
+fwrite($myfile, $txt);
+
+fclose($myfile);
+
+?&gt;</pre>
+</div>
+<br>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>If we now open the &quot;newfile.txt&quot; file, we will see that Hammamet city 
+and Tebessa city is appended to the end of the file:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Si nous ouvrons maintenant le &quot;nouveaufichier.txt&quot; fichier, nous verrons que Hammamet city
+et Tebessa city est ajouté à la fin du fichier :</p>
+
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ Morsott city<br>Boulhaf city<br>Hammamet city<br>Tebessa city</div>
+</div>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">File Open/Read/Close</span></h1>
+<p class="yass-intro">In this chapter we will teach you how to open, read, and close a file 
+on the server.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Fichier Ouvrir/Lire/Fermer</span></h1>
+<p class="yass-intro">Dans ce chapitre, nous allons vous apprendre à ouvrir, lire et fermer un fichier
+sur le serveur.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Open File - fopen()</h2>
+<p>A better method to open files is with the <code class="yass-codespan">fopen()</code> function. This function gives you more 
+options than the <code class="yass-codespan">readfile()</code> function.</p>
+<p>We will use the text file, &quot;webdictionary.txt&quot;, during the lessons:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Ouvrir un fichier PHP - fopen()</h2>
+<p>Une meilleure méthode pour ouvrir des fichiers consiste à utiliser la fonction <code class="yass-codespan">fopen()</code>. Cette fonction vous donne plus
+options que la fonction <code class="yass-codespan">readfile()</code>.</p>
+<p>Nous utiliserons le fichier texte, &quot;webdictionary.txt&quot;, pendant les cours :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ AJAX = Asynchronous JavaScript and XML<br>CSS = Cascading Style Sheets<br>
+ HTML = Hyper Text Markup Language<br>PHP = PHP Hypertext Preprocessor<br>SQL = Structured Query Language<br>SVG = Scalable Vector Graphics<br>XML = EXtensible Markup Language</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+
+<p>The first parameter of <code class="yass-codespan">fopen()</code> contains the name of the file to be opened and the 
+second parameter specifies in which mode the file should be opened. The following example 
+also generates a message if the fopen() function is unable to open the specified file:</p>
+</div>
+
+<div class="yass-columnFr">
+
+
+<p>Le premier paramètre de <code class="yass-codespan">fopen()</code> contient le nom du fichier à ouvrir et le
+le deuxième paramètre spécifie dans quel mode le fichier doit être ouvert. L'exemple suivant
+génère également un message si la fonction fopen() ne parvient pas à ouvrir le fichier spécifié :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php
+$myfile = fopen(&quot;webdictionary.txt&quot;, &quot;r&quot;) or die(&quot;Unable to open file!&quot;);
+echo fread($myfile,filesize(&quot;webdictionary.txt&quot;));
+fclose($myfile);
+?&gt;
+</pre>
+</div>
+
+
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Tip:</strong> The <code class="yass-codespan">fread()</code> and the <code class="yass-codespan">fclose()</code> functions will be 
+explained below.</p>
+<p>The file may be opened in one of the following modes:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:10%">Modes</th>
+    <th style="width:90%">Description</th>
+  </tr>
+  <tr>
+    <td>r</td>
+    <td><strong>Open a file for read only</strong>. File pointer starts at the beginning of the file</td>
+  </tr>
+    <tr>
+    <td>w</td>
+    <td><strong>Open a file for write only</strong>. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file</td>
+    </tr>
+  <tr>
+    <td>a</td>
+    <td><strong>Open a file for write only</strong>. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist</td>
+    </tr>
+  <tr>
+    <td>x</td>
+    <td><strong>Creates a new file for write only</strong>. Returns FALSE and an error if file already exists</td>
+    </tr>
+  <tr>
+    <td>r+</td>
+    <td><strong>Open a file for read/write</strong>. File pointer starts at the beginning of the file</td>
+  </tr>
+  <tr>
+    <td>w+</td>
+    <td><strong>Open a file for read/write</strong>. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file</td>
+  </tr>
+  <tr>
+    <td>a+</td>
+    <td><strong>Open a file for read/write</strong>. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist</td>
+  </tr>
+  <tr>
+    <td>x+</td>
+    <td><strong>Creates a new file for read/write</strong>. Returns FALSE and an error if file already exists</td>
+  </tr>
+</table>
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Astuce :</strong> Les fonctions <code class="yass-codespan">fread()</code> et <code class="yass-codespan">fclose()</code> sera
+expliqué ci-dessous.</p>
+<p>Le fichier peut être ouvert dans l'un des modes suivants :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:10%">Modes</th>
+     <th style="width:90%">Description</th>
+   </tr>
+   <tr>
+     <td>r</td>
+     <td><strong>Ouvrir un fichier en lecture seule</strong>. Le pointeur de fichier commence au début du fichier</td>
+   </tr>
+     <tr>
+     <td>w</td>
+     <td><strong>Ouvrir un fichier en écriture uniquement</strong>. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier</td>
+     </tr>
+   <tr>
+     <td>un</td>
+     <td><strong>Ouvrir un fichier en écriture uniquement</strong>. Les données existantes dans le fichier sont conservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas</td>
+     </tr>
+   <tr>
+     <td>x</td>
+     <td><strong>Crée un nouveau fichier en écriture uniquement</strong>. Renvoie FALSE et une erreur si le fichier existe déjà</td>
+     </tr>
+   <tr>
+     <td>r+</td>
+     <td><strong>Ouvrir un fichier en lecture/écriture</strong>. Le pointeur de fichier commence au début du fichier</td>
+   </tr>
+   <tr>
+     <td>w+</td>
+     <td><strong>Ouvrir un fichier en lecture/écriture</strong>. Efface le contenu du fichier ou crée un nouveau fichier s'il n'existe pas. Le pointeur de fichier commence au début du fichier</td>
+   </tr>
+   <tr>
+     <td>a+</td>
+     <td><strong>Ouvrir un fichier en lecture/écriture</strong>. Les données existantes dans le fichier sont conservées. Le pointeur de fichier commence à la fin du fichier. Crée un nouveau fichier si le fichier n'existe pas</td>
+   </tr>
+   <tr>
+     <td>x+</td>
+     <td><strong>Crée un nouveau fichier pour lecture/écriture</strong>. Renvoie FALSE et une erreur si le fichier existe déjà</td>
+   </tr>
+</table>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP Read File - fread()</h2>
+<p>The <code class="yass-codespan">fread()</code> function reads from an open file.</p>
+<p>The first parameter of <code class="yass-codespan">fread()</code> contains the name of the file to read from and 
+the second parameter specifies the maximum number of bytes to read.</p>
+<p>The following PHP code reads the &quot;webdictionary.txt&quot; file to the end:</p>
+
+</div>
+
+<div class="yass-columnFr">
+<h2>Lire le fichier PHP - fread()</h2>
+<p>La fonction <code class="yass-codespan">fread()</code> lit à partir d'un fichier ouvert.</p>
+<p>Le premier paramètre de <code class="yass-codespan">fread()</code> contient le nom du fichier à lire et
+le deuxième paramètre spécifie le nombre maximum d'octets à lire.</p>
+<p>Le code PHP suivant lit le &quot;webdictionary.txt&quot; fichier jusqu'à la fin :</p>
+
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ fread($myfile,filesize(&quot;webdictionary.txt&quot;));
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Close File - fclose()</h2>
+<p>The <code class="yass-codespan">fclose()</code> function is used to close an open file.</p>
+
+<div class="yass-panel yass-note">
+<p>It's a good programming practice to close all files after you have finished with them. 
+You don't want an open file running around on your 
+server taking up resources!</p>
+</div>
+
+<p>The <code class="yass-codespan">fclose()</code> requires the name of the file (or a variable that holds the 
+filename) we want to close:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fermer le fichier PHP - fclose()</h2>
+<p>La fonction <code class="yass-codespan">fclose()</code> est utilisée pour fermer un fichier ouvert.</p>
+
+<div class="yass-panel yass-note">
+<p>C'est une bonne pratique de programmation de fermer tous les fichiers une fois que vous en avez fini avec eux.
+Vous ne voulez pas qu'un fichier ouvert circule sur votre
+serveur gourmand en ressources !</p>
+</div>
+
+<p>Le <code class="yass-codespan">fclose()</code> nécessite le nom du fichier (ou une variable contenant le
+filename) que nous voulons fermer :</p>
+
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate htmlHigh">
+ <div>
+&lt;?php
+<br>
+ $myfile = fopen(&quot;webdictionary.txt&quot;, &quot;r&quot;);
+
+// some code to be executed....<br>
+ fclose($myfile);
+
+
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Read Single Line - fgets()</h2>
+<p>The <code class="yass-codespan">fgets()</code> function is used to read a single line from a file.</p>
+<p>The example below outputs the first line of the &quot;webdictionary.txt&quot; file:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP Lire une seule ligne - fgets()</h2>
+<p>La fonction <code class="yass-codespan">fgets()</code> est utilisée pour lire une seule ligne d'un fichier.</p>
+<p>L'exemple ci-dessous affiche la première ligne du &quot;webdictionary.txt&quot; fichier :</p>
+</div>
+</div>
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_30" data-ace-editor-id="30" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_30" >
+ &lt;?php
+ $myfile = fopen(&quot;webdictionary.txt&quot;, &quot;r&quot;) or die(&quot;Unable to open file!&quot;);
+ echo fgets($myfile);
+ fclose($myfile);
+
+?&gt;
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><b>Note:</b> After a call to the <code class="yass-codespan">fgets()</code> function, the file pointer has moved to the next line.</p>
+
+<h2>PHP Check End-Of-File - feof()</h2>
+<p>The <code class="yass-codespan">feof()</code> function checks if the &quot;end-of-file&quot; (EOF) has been reached.</p>
+<p>The <code class="yass-codespan">feof()</code> function is useful for looping through data of unknown length.</p>
+<p>The example below reads the &quot;webdictionary.txt&quot; file line by line, until end-of-file is reached:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p><b>Remarque :</b> Après un appel à la fonction <code class="yass-codespan">fgets()</code>, le pointeur de fichier est passé à la ligne suivante.</p>
+
+<h2>PHP Vérifier la fin du fichier - feof()</h2>
+<p>La fonction <code class="yass-codespan">feof()</code> vérifie si la &quot;fin de fichier&quot; (EOF) a été atteint.</p>
+<p>La fonction <code class="yass-codespan">feof()</code> est utile pour parcourir des données de longueur inconnue.</p>
+<p>L'exemple ci-dessous lit le &quot;webdictionary.txt&quot; fichier ligne par ligne, jusqu'à la fin du fichier :</p>
+
+</div>
+
+</div>
+
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_33" data-ace-editor-id="33" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_33" >
+&lt;?php
+$myfile = fopen(&quot;webdictionary.txt&quot;, &quot;r&quot;) or die(&quot;Unable to open file!&quot;);
+// Output one line until end-of-file
+
+while(!feof($myfile)) {
+echo fgets($myfile) . &quot;&lt;br&gt;&quot;;
+}
+fclose($myfile);
+
+?&gt;</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Read Single Character - fgetc()</h2>
+<p>The <code class="yass-codespan">fgetc()</code> function is used to read a single character from a file.</p>
+<p>The example below reads the &quot;webdictionary.txt&quot; file character by 
+character, until end-of-file is reached:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP Lire un seul caractère - fgetc()</h2>
+<p>La fonction <code class="yass-codespan">fgetc()</code> est utilisée pour lire un seul caractère d'un fichier.</p>
+<p>L'exemple ci-dessous lit le &quot;webdictionary.txt&quot; caractère de fichier par
+caractère, jusqu'à ce que la fin du fichier soit atteinte :</p>
+</div>
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_43" data-ace-editor-id="43" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_43" >
+ &lt;?php
+$myfile = fopen(&quot;webdictionary.txt&quot;, &quot;r&quot;) or die(&quot;Unable to open file!&quot;);
+// Output one character until end-of-file
+while(!feof($myfile)) {
+echo fgetc($myfile);
+}
+fclose($myfile);
+
+?&gt;</pre>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><b>Note:</b> After a call to the <code class="yass-codespan">fgetc()</code> function, the file pointer moves to the next character.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><b>Remarque :</b> Après un appel à la fonction <code class="yass-codespan">fgetc()</code>, le pointeur de fichier passe au caractère suivant.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Complete PHP Filesystem Reference</h2>
+<p>For a complete reference of filesystem functions, go to our complete
+<a href="php_ref_filesystem.html">PHP Filesystem Reference</a>.
+
+</p>
+  </div>
+	
+<div class="yass-columnFr">
+
+<h2>Référence complète du système de fichiers PHP</h2>
+<p>Pour une référence complète des fonctions du système de fichiers, consultez notre
+<a href="php_ref_filesystem.html">Référence du système de fichiers PHP</a>.
+
+</p>
+   </div>
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<div class='w3-col l10 m12' id='main'>
+      <h1>PHP <span class="color_h1">File Upload</span></h1>
+      </div>
+</div>
+
+
+<div class="yass-columnFr">
+
+<div class='w3-col l10 m12' id='main'>
+       <h1>PHP <span class="color_h1">Téléchargement de fichiers</span></h1>
+       </div>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<p class="yass-intro">With PHP, it is easy to upload files to the server.</p>
+<p class="yass-intro">However, with ease comes danger, so always be careful when 
+allowing file uploads!</p>
+</div>
+<div class="yass-columnFr">
+<p class="yass-intro">Avec PHP, il est facile de télécharger des fichiers sur le serveur.</p>
+<p class="yass-intro">Cependant, la facilité vient avec le danger, alors soyez toujours prudent lorsque
+autoriser les téléchargements de fichiers !</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Configure The &quot;php.ini&quot; File</h2>
+<p>First, ensure that PHP is configured to allow file uploads.</p>
+<p>In your &quot;php.ini&quot; file, search for the <code class="yass-codespan">file_uploads</code> directive, and set it to On:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Configurer le fichier &quot;php.ini&quot; Fichier</h2>
+<p>Tout d'abord, assurez-vous que PHP est configuré pour autoriser les téléchargements de fichiers.</p>
+<p>Dans votre &quot;php.ini&quot; file, recherchez la directive <code class="yass-codespan">file_uploads</code> et réglez-la sur On :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<div  class="code" id="code_883" data-ace-editor-id="883" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_883" >
+file_uploads = On
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Create The HTML Form</h2>
+<p>Next, create an HTML form that allow users to choose the image file they want to upload:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Créer le formulaire HTML</h2>
+<p>Ensuite, créez un formulaire HTML permettant aux utilisateurs de choisir le fichier image qu'ils souhaitent télécharger :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<div  class="code" id="code_31" data-ace-editor-id="31" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_31" >
+ &lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+
+<br>&lt;form action=&quot;upload.php&quot; method=&quot;post&quot;
+enctype=&quot;multipart/form-data&quot;&gt;
+Select image to upload:
+&lt;input type=&quot;file&quot; name=&quot;fileToUpload&quot; id=&quot;fileToUpload&quot;&gt;
+
+
+   &lt;input type=&quot;submit&quot; value=&quot;Upload Image&quot; name=&quot;submit&quot;&gt;
+
+
+&lt;/form&gt;
+
+<br>&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>Some rules to follow for the HTML form above:</p>
+<ul>
+  <li>Make sure that the form uses method=&quot;post&quot;</li>
+  <li>The form also needs the following attribute: enctype=&quot;multipart/form-data&quot;. It specifies which content-type to use when submitting the form</li>
+</ul>
+<p>Without the requirements above, the file upload will not work.</p>
+<p>Other things to notice:</p>
+<ul>
+  <li>The type=&quot;file&quot; attribute of the &lt;input&gt; tag shows the input field as a file-select control, with a &quot;Browse&quot; button next to the input control </li>
+</ul>
+<p>The form above sends data to a file called &quot;upload.php&quot;, which we will create next.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Quelques règles à suivre pour le formulaire HTML ci-dessus :</p>
+<ul>
+   <li>Assurez-vous que le formulaire utilise method=&quot;post&quot;</li>
+   <li>Le formulaire a également besoin de l'attribut suivant : enctype=&quot;multipart/form-data&quot;. Il spécifie le type de contenu à utiliser lors de la soumission du formulaire</li>
+</ul>
+<p>Sans les exigences ci-dessus, le téléchargement de fichier ne fonctionnera pas.</p>
+<p>Autres choses à noter :</p>
+<ul>
+   <li>Le type=&quot;fichier&quot; de l'attribut &lt;input&gt; affiche le champ de saisie sous la forme d'un contrôle de sélection de fichier, avec un &quot;Parcourir&quot; bouton à côté du contrôle d'entrée </li>
+</ul>
+<p>Le formulaire ci-dessus envoie des données à un fichier appelé &quot;upload.php&quot;, que nous créerons ensuite.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Create The Upload File PHP Script</h2>
+<p>The &quot;upload.php&quot; file contains the code for uploading a file:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Créer le script PHP du fichier de téléchargement</h2>
+<p>Le &quot;upload.php&quot; file contient le code pour télécharger un fichier :</p>
+</div>
+
+</div>
+
+
+<div class="yass-example">
+<div  class="code" id="code_32" data-ace-editor-id="32" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_32" >
+&lt;?php
+$target_dir = &quot;uploads/&quot;;
+$target_file = $target_dir . basename($_FILES[&quot;fileToUpload&quot;][&quot;name&quot;]);
+$uploadOk = 1;
+$imageFileType = 
+  strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+// Check if image file is a actual image or fake image
+if(isset($_POST[&quot;submit&quot;])) {
+   $check = getimagesize($_FILES[&quot;fileToUpload&quot;][&quot;tmp_name&quot;]);
+ if($check !== false) {
+ echo &quot;File is an image - &quot; . $check[&quot;mime&quot;] . &quot;.&quot;;
+ $uploadOk = 1;
+   } else {
+ echo &quot;File is not an image.&quot;;
+    $uploadOk = 0;
+}
+}
+
+?&gt;</pre>
+</div>
+</div>
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>PHP script explained:</p>
+<ul>
+  <li>$target_dir = &quot;uploads/&quot; - specifies the directory where the file is going to be placed</li>
+  <li>$target_file specifies the path of the file to be uploaded</li>
+  <li>$uploadOk=1 is not used yet (will be used later)</li>
+  <li>$imageFileType holds the file extension of the file (in lower case)</li>
+  <li>Next, check if the image file is an actual image or a fake image</li>
+</ul>
+
+
+<div class="yass-panel yass-note"><p>
+<p><strong>Note:</strong> You will need to create a new directory called 
+&quot;uploads&quot; in the 
+directory where &quot;upload.php&quot; file resides. The uploaded files 
+will be saved there.</p>
+</div>
+
+</div>
+
+
+<div class="yass-columnFr">
+
+<p>Script PHP expliqué :</p>
+<ul>
+   <li>$target_dir = &quot;uploads/&quot; - spécifie le répertoire où le fichier va être placé</li>
+   <li>$target_file spécifie le chemin du fichier à télécharger</li>
+   <li>$uploadOk=1 n'est pas encore utilisé (sera utilisé plus tard)</li>
+   <li>$imageFileType contient l'extension de fichier du fichier (en minuscules)</li>
+   <li> Ensuite, vérifiez si le fichier image est une image réelle ou une fausse image </li>
+</ul>
+
+
+<div class="yass-panel yass-note"><p>
+<p> <strong> Remarque: </strong> Vous devrez créer un nouveau répertoire appelé
+& quot; uploads & quot; dans le
+répertoire où & quot; upload.php & quot; le fichier réside. Les fichiers téléchargés
+sera sauvé là-bas. </p>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Check if File Already Exists</h2>
+<p>Now we can add some restrictions.</p>
+<p>First, we will check if the file already exists in the &quot;uploads&quot; folder. If 
+it does, an error message is displayed, and $uploadOk is set to 0:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Vérifier si le fichier existe déjà</h2>
+<p>Nous pouvons maintenant ajouter quelques restrictions.</p>
+<p>Tout d'abord, nous allons vérifier si le fichier existe déjà dans les &quot;téléchargements&quot; dossier. Si
+c'est le cas, un message d'erreur s'affiche et $uploadOk est défini sur 0 :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<div  class="code" id="code_354" data-ace-editor-id="354" data-ace-editor-allow-execution="false" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_354" >
+&lt;?php
+
+// Check if file already exists
+if (file_exists($target_file)) {
+ echo &quot;Sorry, file already exists.&quot;;
+   $uploadOk = 0;
+ }
+?&gt;
+ </div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Limit File Size</h2>
+<p>The file input field in our HTML form above is named &quot;fileToUpload&quot;.</p>
+<p>Now, we want to check the size of the file. If the file is larger than 500KB, an error message is displayed, and $uploadOk is set to 0:</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+
+<h2>Limiter la taille du fichier</h2>
+<p>Le champ de saisie de fichier dans notre formulaire HTML ci-dessus est nommé &quot;fileToUpload&quot;.</p>
+<p>Maintenant, nous voulons vérifier la taille du fichier. Si le fichier fait plus de 500 Ko, un message d'erreur s'affiche et $uploadOk est défini sur 0 :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<div class="yass-code phpHigh notranslate">
+// Check file size<br>if ($_FILES[&quot;fileToUpload&quot;][&quot;size&quot;] &gt; 500000) {<br>
+  echo  &quot;Sorry, your file is too large.&quot;;
+ $uploadOk = 0;
+
+
+ } </div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Limit File Type</h2>
+<p>The code below only allows users to upload JPG, JPEG, PNG, and GIF files. All other 
+file types gives an error message before setting $uploadOk to 0:</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Limiter le type de fichier</h2>
+<p>Le code ci-dessous permet uniquement aux utilisateurs de télécharger des fichiers JPG, JPEG, PNG et GIF. Tous les autres
+les types de fichiers donnent un message d'erreur avant de définir $uploadOk sur 0 :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<div class="yass-code phpHigh notranslate">
+// Allow certain file formats<br>if($imageFileType != &quot;jpg&quot; &amp;&amp; $imageFileType  != &quot;png&quot; &amp;&amp; $imageFileType != &quot;jpeg&quot;
+&amp;&amp; $imageFileType != &quot;gif&quot; ) {
+echo &quot;Sorry, only JPG, JPEG, PNG &amp; GIF files are allowed.&quot;;
+$uploadOk = 0;
+}
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Complete Upload File PHP Script</h2>
+<p>The complete &quot;upload.php&quot; file now looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Terminer le téléchargement du script PHP du fichier</h2>
+<p>Le fichier &quot;upload.php&quot; le fichier ressemble maintenant à ceci :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<div  class="code" id="code_37" data-ace-editor-id="37" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_37" >
+&lt;?php
+$target_dir = &quot;uploads/&quot;;
+$target_file = $target_dir . basename($_FILES[&quot;fileToUpload&quot;][&quot;name&quot;]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// Check if image file is a actual image or fake image
+if(isset($_POST[&quot;submit&quot;])) {
+$check = getimagesize($_FILES[&quot;fileToUpload&quot;][&quot;tmp_name&quot;]);
+if($check !== false) {
+echo &quot;File is an image - &quot; . $check[&quot;mime&quot;] . &quot;.&quot;;
+$uploadOk = 1;
+} else {
+echo &quot;File is not an image.&quot;;
+$uploadOk = 0;
+}
+}
+// Check if file already exists
+if (file_exists($target_file)) {
+echo  &quot;Sorry, file already exists.&quot;;
+$uploadOk = 0;
+}
+// Check file size
+if ($_FILES[&quot;fileToUpload&quot;][&quot;size&quot;] &gt; 500000) {
+echo &quot;Sorry, your file is too large.&quot;;
+$uploadOk = 0;
+}
+// Allow certain file formats
+if($imageFileType != &quot;jpg&quot; &amp;&amp; $imageFileType != &quot;png&quot; &amp;&amp; $imageFileType != &quot;jpeg&quot;
+&amp;&amp; $imageFileType != &quot;gif&quot; ) {
+echo &quot;Sorry, only JPG, JPEG, PNG &amp; GIF files are allowed.&quot;;
+$uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+echo &quot;Sorry, your file was not uploaded.&quot;;
+// if everything is ok, try to upload file
+} else {
+   if (move_uploaded_file($_FILES[&quot;fileToUpload&quot;][&quot;tmp_name&quot;], $target_file)) {<br>
+   echo  &quot;The file &quot;. htmlspecialchars( basename( $_FILES[&quot;fileToUpload&quot;][&quot;name&quot;])). 
+   &quot; has been uploaded.&quot;;
+   } else {
+        echo &quot;Sorry, there was an error uploading your file.&quot;;
+   }
+}
+
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_includes.html">❮ Prior</a><a class="yass-right yass-btn" href="php_sessions.html">Next ❯</a></div>
+
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

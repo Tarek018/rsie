@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Operators</div>
+
+
+<div  class="yass-div">
+
+<div class="row"> 
+ <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Operators</span></h1>
+<p>Operators are used to perform operations on variables and values.</p>
+<p>PHP divides the operators in the following groups:</p>
+<ul>
+  <li>Arithmetic operators</li>
+  <li>Assignment operators</li>
+  <li>Comparison operators</li>
+  <li>Increment/Decrement operators</li>
+  <li>Logical operators</li>
+  <li>String operators</li>
+  <li>Array operators</li>
+  <li>Conditional assignment operators</li>
+</ul>
+
+
+</div>
+
+<div class="yass-columnFr">
+<h1>PHP <span class="color_h1">Opérateurs</span></h1>
+<p>Les opérateurs sont utilisés pour effectuer des opérations sur des variables et des valeurs.</p>
+<p>PHP répartit les opérateurs dans les groupes suivants :</p>
+<ul>
+   <li>Opérateurs arithmétiques</li>
+   <li>Opérateurs d'attribution</li>
+   <li>Opérateurs de comparaison</li>
+   <li>Opérateurs d'incrémentation/décrémentation</li>
+   <li>Opérateurs logiques</li>
+   <li>Opérateurs de chaîne</li>
+   <li>Opérateurs de tableau</li>
+   <li>Opérateurs d'affectation conditionnelle</li>
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+<div class="row"> 
+
+ <div class="yass-columnEn">
+<h2>PHP Arithmetic Operators</h2>
+<p>The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, 
+such as addition, subtraction, multiplication etc.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:25%">Name</th>
+<th style="width:25%">Example</th>
+<th style="width:35%">Result</th>
+</tr>
+
+
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>$x + $y</td>
+<td>Sum of $x and $y</td>
+
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>$x - $y</td>
+<td>Difference of $x and $y</td>
+
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>$x * $y</td>
+<td>Product of $x and $y</td>
+
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>$x / $y</td>
+<td>Quotient of $x and $y</td>
+
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>$x % $y</td>
+<td>Remainder of $x divided by $y</td>
+
+</tr>
+<tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>$x ** $y</td>
+<td>Result of raising $x to the $y'th power</td>
+
+</tr>
+</table>
+
+</div>
+
+<div class="yass-columnFr">
+<h2>Opérateurs arithmétiques PHP</h2>
+<p>Les opérateurs arithmétiques PHP sont utilisés avec des valeurs numériques pour effectuer des opérations arithmétiques courantes,
+comme l'addition, la soustraction, la multiplication, etc.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Opérateur</th>
+<th style="width:25%">Nom</th>
+<th style="width:25%">Exemple</th>
+<th style="width:35%">Résultat</th>
+</tr>
+
+
+<tr>
+<td>+</td>
+<td>Ajout</td>
+<td>$x + $y</td>
+<td>Somme de $x et $y</td>
+
+</tr>
+<tr>
+<td>-</td>
+<td>Soustraction</td>
+<td>$x - $y</td>
+<td>Différence de $x et $y</td>
+
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>$x * $y</td>
+<td>Produit de $x et $y</td>
+
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>$x / $y</td>
+<td>Quotient de $x et $y</td>
+
+</tr>
+<tr>
+<td>%</td>
+<td>Module</td>
+<td>$x % $y</td>
+<td>Reste de $x divisé par $y</td>
+
+</tr>
+<tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>$x ** $y</td>
+<td>Résultat de l'élévation de $x à la puissance $yième</td>
+
+</tr>
+</table>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP Assignment Operators</h2>
+<p>The PHP assignment operators are used with numeric values to write a value to a variable.</p>
+<p>The basic assignment operator in PHP is &quot;=&quot;. It means that the left operand 
+gets set to the value of the assignment expression on the right.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:20%">Assignment</th>
+<th style="width:25%">Same as... </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>x = y</td>
+<td>x = y</td>
+<td>The left operand gets set to the value of the expression on the right</td>
+</tr>
+<tr>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>Modulus</td>
+</tr>
+</table>
+
+</div>
+
+ <div class="yass-columnFr">
+<h2>Opérateurs d'attribution PHP</h2>
+<p>Les opérateurs d'affectation PHP sont utilisés avec des valeurs numériques pour écrire une valeur dans une variable.</p>
+<p>L'opérateur d'affectation de base en PHP est &quot;=&quot;. Cela signifie que l'opérande de gauche
+est défini sur la valeur de l'expression d'affectation à droite.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:20%">Affectation</th>
+<th style="width:25%">Identique à... </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>x = y</td>
+<td>x = y</td>
+<td>L'opérande de gauche prend la valeur de l'expression de droite</td>
+</tr>
+<tr>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>Ajout</td>
+</tr>
+<tr>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>Soustraction</td>
+</tr>
+<tr>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>Module</td>
+</tr>
+</table>
+
+</div>
+ 
+ 
+</div>
+
+
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP Comparison Operators</h2>
+<p>The PHP comparison operators are used to compare two values (number or string):</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:22%">Name</th>
+<th style="width:15%">Example</th>
+<th style="width:38%">Result</th>
+</tr>
+<tr>
+<td>==</td>
+<td>Equal</td>
+<td>$x == $y</td>
+<td>Returns true if $x is equal to $y</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identical</td>
+<td>$x === $y</td>
+<td>Returns true if $x is equal to $y, and they are of the same type</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Not equal</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Not identical</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not equal to $y, or they are not of the same type</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>$x &gt; $y</td>
+<td>Returns true if $x is greater than $y</td>
+</tr>
+
+
+
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>$x &lt; $y</td>
+<td>Returns true if $x is less than $y</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+<td>$x &gt;= $y</td>
+<td>Returns true if $x is greater than or equal to $y</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>$x &lt;= $y</td>
+<td>Returns true if $x is less than or equal to $y</td>
+</tr>
+<tr>
+<td>&lt;=&gt;</td>
+<td>Spaceship</td>
+<td>$x &lt;=&gt; $y</td>
+<td>Returns an integer less than, equal to, or greater than zero, depending on 
+if $x is less than, equal to, or greater than $y. Introduced in PHP 7.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="yass-columnFr">
+<h2>Opérateurs de comparaison PHP</h2>
+<p>Les opérateurs de comparaison PHP sont utilisés pour comparer deux valeurs (nombre ou chaîne) :</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Opérateur</th>
+<th style="width:22%">Nom</th>
+<th style="width:15%">Exemple</th>
+<th style="width:38%">Résultat</th>
+</tr>
+<tr>
+<td>==</td>
+<td>Égal</td>
+<td>$x == $y</td>
+<td>Renvoie vrai si $x est égal à $y</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identique</td>
+<td>$x === $y</td>
+<td>Renvoie true si $x est égal à $y et qu'ils sont du même type</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Pas égal</td>
+<td>$x != $y</td>
+<td>Renvoie vrai si $x n'est pas égal à $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Pas égal</td>
+<td>$x &lt;&gt; $y</td>
+<td>Renvoie vrai si $x n'est pas égal à $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Pas identique</td>
+<td>$x !== $y</td>
+<td>Renvoie vrai si $x n'est pas égal à $y, ou s'ils ne sont pas du même type</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Supérieur à</td>
+<td>$x &gt; $y</td>
+<td>Renvoie vrai si $x est supérieur à $y</td>
+</tr>
+
+<tr>
+<td>&lt;</td>
+<td>Moins de</td>
+<td>$x &lt; $y</td>
+<td>Renvoie vrai si $x est inférieur à $y</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Supérieur ou égal à</td>
+<td>$x &gt;= $y</td>
+<td>Renvoie vrai si $x est supérieur ou égal à $y</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Inférieur ou égal à</td>
+<td>$x &lt;= $y</td>
+<td>Renvoie vrai si $x est inférieur ou égal à $y</td>
+</tr>
+<tr>
+<td>&lt;=&gt;</td>
+<td>Vaisseau spatial</td>
+<td>$x &lt;=&gt; $y</td>
+<td>Renvoie un entier inférieur, égal ou supérieur à zéro, selon
+si $x est inférieur, égal ou supérieur à $y. Introduit dans PHP 7.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP Increment / Decrement Operators</h2>
+<p>The PHP increment operators are used to increment a variable's value.</p>
+<p>The PHP decrement operators are used to decrement a variable's value.</p>
+<table class="yass-table-all notranslate" id="table1">
+<tr>
+<th style="width:20%">Operator</th>
+<th style="width:25%">Name </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>++$x</td>
+<td>Pre-increment</td>
+<td>Increments $x by one, then returns $x</td>
+</tr>
+<tr>
+<td>$x++</td>
+<td>Post-increment</td>
+<td>Returns $x, then increments $x by one</td>
+</tr>
+<tr>
+<td>--$x</td>
+<td>Pre-decrement</td>
+<td>Decrements $x by one, then returns $x</td>
+</tr>
+<tr>
+<td>$x--</td>
+<td>Post-decrement</td>
+<td>Returns $x, then decrements $x by one</td>
+</tr>
+</table>
+
+</div>
+
+<div class="yass-columnFr">
+<h2>Opérateurs d'incrémentation/décrémentation PHP</h2>
+<p>Les opérateurs d'incrémentation PHP sont utilisés pour incrémenter la valeur d'une variable.</p>
+<p>Les opérateurs de décrémentation PHP sont utilisés pour décrémenter la valeur d'une variable.</p>
+<table class="yass-table-all notranslate" id="table1">
+<tr>
+<th style="width:20%">Opérateur</th>
+<th style="width:25%">Nom</th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>++$x</td>
+<td>Pré-incrémentation</td>
+<td>Incrémente $x de un, puis renvoie $x</td>
+</tr>
+<tr>
+<td>$x++</td>
+<td>Post-incrémentation</td>
+<td>Renvoie $x, puis incrémente $x de un</td>
+</tr>
+<tr>
+<td>--$x</td>
+<td>Pré-décrémentation</td>
+<td>Décrémente $x de un, puis renvoie $x</td>
+</tr>
+<tr>
+<td>$x--</td>
+<td>Post-décrémentation</td>
+<td>Renvoie $x, puis décrémente $x de un</td>
+</tr>
+</table>
+
+</div>
+
+
+</div>
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP Logical Operators</h2>
+<p>The PHP logical operators are used to combine conditional statements.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Operator</th>
+<th style="width:25%">Name</th>
+<th style="width:25%">Example</th>
+<th style="width:35%">Result</th>
+</tr>
+<tr>
+<td>and</td>
+<td>And</td>
+<td>$x and $y</td>
+<td>True if both $x and $y are true</td>
+</tr>
+<tr>
+<td>or</td>
+<td>Or</td>
+<td>$x or $y</td>
+<td>True if either $x or $y is true</td>
+</tr>
+<tr>
+<td>xor</td>
+<td>Xor</td>
+<td>$x xor $y</td>
+<td>True if either $x or $y is true, but not both</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>And</td>
+<td>$x &amp;&amp; $y</td>
+<td>True if both $x and $y are true</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Or</td>
+<td>$x || $y</td>
+<td>True if either $x or $y is true</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Not</td>
+<td>!$x</td>
+<td>True if $x is not true</td>
+</tr>
+</table>
+
+</div>
+
+ <div class="yass-columnFr">
+<h2>Opérateurs logiques PHP</h2>
+<p>Les opérateurs logiques PHP sont utilisés pour combiner des instructions conditionnelles.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:15%">Opérateur</th>
+<th style="width:25%">Nom</th>
+<th style="width:25%">Exemple</th>
+<th style="width:35%">Résultat</th>
+</tr>
+<tr>
+<td>et</td>
+<td>Et</td>
+<td>$x et $y</td>
+<td>Vrai si $x et $y sont vrais</td>
+</tr>
+<tr>
+<td>ou</td>
+<td>Ou</td>
+<td>$x ou $y</td>
+<td>Vrai si $x ou $y est vrai</td>
+</tr>
+<tr>
+<td>xor</td>
+<td>Xor</td>
+<td>$x ou $y</td>
+<td>Vrai si $x ou $y est vrai, mais pas les deux</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>Et</td>
+<td>$x &amp;&amp; $y</td>
+<td>Vrai si $x et $y sont vrais</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Ou</td>
+<td>$x || $y</td>
+<td>Vrai si $x ou $y est vrai</td>
+</tr>
+<tr>
+<td> !</td>
+<td>Non</td>
+<td>!$x</td>
+<td>Vrai si $x n'est pas vrai</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP String Operators</h2>
+<p>PHP has two operators that are specially designed for strings.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:25%">Name</th>
+<th style="width:25%">Example</th>
+<th style="width:25%">Result</th>
+</tr>
+<tr>
+<td>.</td>
+<td>Concatenation</td>
+<td>$txt1 . $txt2</td>
+<td>Concatenation of $txt1 and $txt2</td>
+</tr>
+<tr>
+<td>.=</td>
+<td>Concatenation assignment</td>
+<td>$txt1 .= $txt2</td>
+<td>Appends $txt2 to $txt1</td>
+</tr>
+</table>
+
+</div>
+
+ <div class="yass-columnFr">
+<h2>Opérateurs de chaîne PHP</h2>
+<p>PHP a deux opérateurs spécialement conçus pour les chaînes.</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:25%">Opérateur</th>
+<th style="width:25%">Nom</th>
+<th style="width:25%">Exemple</th>
+<th style="width:25%">Résultat</th>
+</tr>
+<tr>
+<td>.</td>
+<td>Concaténation</td>
+<td>$txt1 . $txt2</td>
+<td>Concaténation de $txt1 et $txt2</td>
+</tr>
+<tr>
+<td>.=</td>
+<td>Affectation de concaténation</td>
+<td>$txt1 .= $txt2</td>
+<td>Ajoute $txt2 à $txt1</td>
+</tr>
+</table>
+
+</div>
+ 
+</div>
+<div class="row"> 
+ <div class="yass-columnEn">
+<h2>PHP Array Operators</h2>
+<p>The PHP array operators are used to compare arrays.</p>
+<table class="yass-table-all notranslate" id="table2">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:18%">Name</th>
+<th style="width:17%">Example</th>
+<th style="width:40%">Result</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Union</td>
+<td>$x + $y</td>
+<td>Union of $x and $y</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Equality</td>
+<td>$x == $y</td>
+<td>Returns true if $x and $y have the same key/value pairs</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identity</td>
+<td>$x === $y</td>
+<td>Returns true if $x and $y have the same key/value pairs in the same order and of the same types</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Inequality</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Inequality</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Non-identity</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not identical to $y</td>
+</tr>
+</table>
+
+
+</div>
+
+<div class="yass-columnFr">
+<h2>Opérateurs de tableau PHP</h2>
+<p>Les opérateurs de tableau PHP sont utilisés pour comparer des tableaux.</p>
+<table class="yass-table-all notranslate" id="table2">
+<tr>
+<th style="width:25%">Opérateur</th>
+<th style="width:18%">Nom</th>
+<th style="width:17%">Exemple</th>
+<th style="width:40%">Résultat</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Union</td>
+<td>$x + $y</td>
+<td>Union de $x et $y</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Égalité</td>
+<td>$x == $y</td>
+<td>Renvoie vrai si $x et $y ont les mêmes paires clé/valeur</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Identité</td>
+<td>$x === $y</td>
+<td>Renvoie vrai si $x et $y ont les mêmes paires clé/valeur dans le même ordre et du même type</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Inégalité</td>
+<td>$x != $y</td>
+<td>Renvoie vrai si $x n'est pas égal à $y</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Inégalité</td>
+<td>$x &lt;&gt; $y</td>
+<td>Renvoie vrai si $x n'est pas égal à $y</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Non-identité</td>
+<td>$x !== $y</td>
+<td>Renvoie vrai si $x n'est pas identique à $y</td>
+</tr>
+</table>
+
+
+</div>
+
+
+
+</div>
+<div class="row"> 
+ <div class="yass-columnEn">
+ 
+<h2>PHP Conditional Assignment Operators</h2>
+<p>The PHP conditional assignment operators are used to set a value depending on conditions:</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:20%">Operator</th>
+<th style="width:22%">Name</th>
+<th style="width:20%">Example</th>
+<th style="width:38%">Result</th>
+</tr>
+<tr>
+<td>?:</td>
+<td>Ternary</td>
+<td>$x = <em>expr1</em> ? <em>expr2</em> : <em>expr3</em></td>
+<td>Returns the value of $x.<br>The value of $x is <em>expr2</em> if <em>expr1</em> 
+= TRUE.<br>The value of $x is <em>expr3</em> if <em>expr1</em> = FALSE</td>
+</tr>
+<tr>
+<td>??</td>
+<td>Null coalescing</td>
+<td>$x = <em>expr1</em> ?? <em>expr2</em></td>
+<td>Returns the value of $x.<br>The value of $x is <em>expr1</em> if <em>expr1</em> 
+exists, and is not NULL.<br>If <em>expr1</em> does not exist, or is NULL, the value of $x is
+<em>expr2</em>.<br>Introduced in PHP 7</td>
+</tr>
+</table>
+</div>
+ 
+ <div class="yass-columnFr">
+<h2>Opérateurs d'affectation conditionnelle PHP</h2>
+<p>Les opérateurs d'affectation conditionnelle PHP sont utilisés pour définir une valeur en fonction de conditions :</p>
+<table class="yass-table-all notranslate">
+<tr>
+<th style="width:20%">Opérateur</th>
+<th style="width:22%">Nom</th>
+<th style="width:20%">Exemple</th>
+<th style="width:38%">Résultat</th>
+</tr>
+<tr>
+<td> ? :</td>
+<td>Ternaire</td>
+<td>$x = <em>expr1</em> ? <em>expr2</em> : <em>expr3</em></td>
+<td>Renvoie la valeur de $x.<br>La valeur de $x est <em>expr2</em> si <em>expr1</em>
+= VRAI.<br>La valeur de $x est <em>expr3</em> si <em>expr1</em> = FAUX</td>
+</tr>
+<tr>
+<td>??</td>
+<td>Coalescence nulle</td>
+<td>$x = <em>expr1</em> ?? <em>expr2</em></td>
+<td>Renvoie la valeur de $x.<br>La valeur de $x est <em>expr1</em> si <em>expr1</em>
+existe et n'est pas NULL.<br>Si <em>expr1</em> n'existe pas ou est NULL, la valeur de $x est
+<em>expr2</em>.<br>Introduit dans PHP 7</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_arrays.html">❮ Prior</a><a class="yass-right yass-btn" href="php_if_else.html">Next ❯</a></div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

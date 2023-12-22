@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Delete</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+ <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">MySQL Delete Data</span></h1>
+
+<h2>Delete Data From a MySQL Table Using MySQLi and PDO</h2>
+<p>The DELETE statement is used to delete records from a table:</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">MySQL Supprimer les données</span></h1>
+
+<h2>Supprimer des données d'une table MySQL à l'aide de MySQLi et PDO</h2>
+<p>L'instruction DELETE est utilisée pour supprimer des enregistrements d'une table :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+DELETE FROM table_name<br>
+WHERE some_column = some_value
+</div></div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<div class="yass-panel yass-note">
+<p><strong>Notice the WHERE clause in the DELETE syntax:</strong> The WHERE clause 
+specifies which record or records that should be deleted. If you omit the WHERE 
+clause, all records will be deleted!</p>
+</div>
+<p>Let's look at the &quot;MyClients&quot; table:</p>
+
+<div class="yass-responsive">
+<table class="yass-table-all notranslate">
+  <tr>
+    <th>id</th>
+    <th>firstname</th>
+    <th>lastname</th>
+    <th>email</th>
+    <th>reg_date</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+    <td>2014-10-22 14:26:15</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@example.com</td>
+    <td>2014-10-23 10:22:30</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Julie</td>
+    <td>Dooley</td>
+    <td>julie@example.com</td>
+    <td>2014-10-26 10:48:23</td>
+  </tr>
+</table>
+</div>
+
+<p>The following examples delete the record with id=3 in the &quot;MyClients&quot; table:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<div class="yass-panel yass-note">
+<p><strong>Remarquez la clause WHERE dans la syntaxe DELETE :</strong> La clause WHERE
+spécifie le ou les enregistrements à supprimer. Si vous omettez le WHERE
+clause, tous les enregistrements seront supprimés !</p>
+</div>
+
+
+<p>Regardons les &quot;Mes Invités&quot; tableau :</p>
+
+<div class="yass-responsive">
+<table class="yass-table-all notranslate">
+   <tr>
+     <th>identifiant</th>
+     <th>prénom</th>
+     <th>nom de famille</th>
+     <th>e-mail</th>
+     <th>reg_date</th>
+   </tr>
+   <tr>
+     <td>1</td>
+     <td>Jean</td>
+     <td>Biche</td>
+     <td>jean@exemple.com</td>
+     <td>2014-10-22 14:26:15</td>
+   </tr>
+   <tr>
+     <td>2</td>
+     <td>Marie</td>
+     <td>Moe</td>
+     <td>marie@exemple.com</td>
+     <td>2014-10-23 10:22:30</td>
+   </tr>
+   <tr>
+     <td>3</td>
+     <td>Julie</td>
+     <td>Dooley</td>
+     <td>julie@exemple.com</td>
+     <td>2014-10-26 10:48:23</td>
+   </tr>
+</table>
+</div>
+
+<p>Les exemples suivants suppriment l'enregistrement avec id=3 dans &quot;MyClients&quot; tableau :</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+ if ($conn-&gt;connect_error) {
+ die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+}
+// sql to delete a record
+ $sql = &quot;DELETE FROM MyClients WHERE id=3&quot;;
+
+if ($conn-&gt;query($sql) === TRUE) {
+ echo &quot;Record deleted successfully&quot;;
+} else {
+  echo  &quot;Error deleting record: &quot; . $conn-&gt;error;
+
+}
+$conn-&gt;close();
+
+
+?&gt;
+</div>
+<br>
+</div>
+
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_311" data-ace-editor-id="311" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_311" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+ if (!$conn) {
+ die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+// sql to delete a record
+ $sql = &quot;DELETE FROM MyClients WHERE id=3&quot;;
+
+if (mysqli_query($conn, $sql)) {
+ echo &quot;Record deleted successfully&quot;;
+} else {
+  echo  &quot;Error deleting record: &quot; . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+?&gt;
+</div>
+<br>
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_322" data-ace-editor-id="322" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_322" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+try {
+$conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+// set the PDO error mode to exception
+$conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+// sql to delete a record
+$sql = &quot;DELETE FROM MyClients WHERE id=3&quot;;
+
+// use exec() because no results are returned
+$conn-&gt;exec($sql);
+echo  &quot;Record deleted successfully&quot;;
+
+} catch(PDOException $e) {
+echo $sql . &quot;&lt;br&gt;&quot; . $e-&gt;getMessage();
+}
+
+$conn = null;
+
+?&gt;
+</div>
+<br>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>After the record is deleted, the table will look like this:</p>
+
+</div>
+
+ <div class="yass-columnFr">
+
+<p>Une fois l'enregistrement supprimé, le tableau ressemblera à ceci :</p>
+</div>
+</div>
+
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_113" data-ace-editor-id="113" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_113" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+// Create connection 
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection 
+ if (!$conn) { 
+ die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+$sql = &quot;SELECT id, firstname, lastname FROM MyClients&quot;;
+$result = mysqli_query($conn, $sql);
+ if (mysqli_num_rows($result) &gt; 0) { 
+   // output data of each row
+while($row = mysqli_fetch_assoc($result)) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+   }
+} else {
+echo &quot;0 results&quot;;
+}
+ mysqli_close($conn);
+
+?&gt;
+</div>
+</div>
+
+ </div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_select.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_update.html">Next ❯</a></div>
+
+
+ </div>
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Form Validation</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+    <h1>PHP <span class="color_h1">Form Validation</span></h1>
+      </div>
+<div class="yass-columnFr">
+     <h1>PHP <span class="color_h1">Validation du formulaire</span></h1>
+       </div>
+</div>
+<div class="row">
+	<div class="yass-columnEn">
+<p class="yass-intro">This and the next chapters show how to use PHP to validate form data.</p>
+<h2>PHP Form Validation</h2>
+<div class="yass-panel yass-note"><p>
+<p><strong>Think SECURITY when processing PHP forms!</strong></p>
+<p>These pages will show how to process PHP forms with security in mind. Proper validation of form data is important 
+to protect your form from hackers and spammers!</p>
+	</div>
+	</div>
+
+<div class="yass-columnFr">
+<p class="yass-intro">Ce chapitre et les suivants montrent comment utiliser PHP pour valider les données de formulaire.</p>
+<h2>Validation du formulaire PHP</h2>
+<div class="yass-panel yass-note"><p>
+<p><strong>Pensez SÉCURITÉ lors du traitement des formulaires PHP !</strong></p>
+<p>Ces pages vous montreront comment traiter les formulaires PHP dans un souci de sécurité. Une validation correcte des données du formulaire est importante
+pour protéger votre formulaire des pirates et des spammeurs !</p>
+</div>
+</div>
+
+
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The HTML form we will be working at in these chapters, contains various input fields: 
+required and optional text fields, radio buttons, and a submit button:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Le formulaire HTML sur lequel nous allons travailler dans ces chapitres contient divers champs de saisie :
+des champs de texte obligatoires et facultatifs, des boutons radio et un bouton d'envoi :</p>
+
+</div>
+
+</div>
+
+  <div class="yass-example" >
+<h3>Example</h3>
+<div  class="code" id="code_223" data-ace-editor-id="223" data-ace-editor-allow-execution="false" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_223" >
+
+&lt;!--   	Click on the &quot;Try it&quot; button to see how it works.	 --&gt;
+ &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;body&gt;
+	&lt;?php
+
+// define variables and set to empty values
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+   ?&gt;
+
+
+&lt;h2&gt; PHP Form Validation Example&lt;/h2&gt;
+&lt;form method="post" action="&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?&gt;"&gt;  
+  Name: &lt;input type="text" name="name"&gt;
+  &lt;br>&lt;br&gt;
+  E-mail: &lt;input type="text" name="email"&gt;
+  &lt;br&gt;&lt;br&gt;
+  Website: &lt;input type="text" name="website"&gt;
+  &lt;br&gt;&lt;br&gt;
+  Comment: &lt;textarea name="comment" rows="5" cols="40"&gt;&lt;/textarea&gt;
+  &lt;br>&lt;br&gt;
+  Gender:
+  &lt;input type="radio" name="gender" value="female"&gt;Female
+  &lt;input type="radio" name="gender" value="male"&gt;Male
+  &lt;input type="radio" name="gender" value="other"&gt;Other
+  &lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" name="submit" value="Submit"&gt;  
+&lt;/form&gt;
+
+	&lt;?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?&gt;
+
+  &lt;/body&gt;
+ &lt;/html&gt;
+&lt;!--   	      End of script	         --&gt;
+
+</pre>
+</div>
+</div>
+
+<div class="yass-formulaire">
+  
+
+<h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field</span></p>
+<form method="post" action="form_validation_complete.php">  
+  Name: <input type="text" name="name" value="">
+  <span class="error">* </span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="">
+  <span class="error">* </span>
+  <br><br>
+  Website: <input type="text" name="website" value="">
+  <span class="error"></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <span class="error">* </span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<h2>Your Input:</h2><br><br><br><br>
+
+</div>
+
+
+
+<div class="yass-example" style="background-color: #6FCCF1;">
+<h3>Example</h3>
+<div  class="code" id="code_311" data-ace-editor-id="311" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_311" >
+&lt;html&gt;
+&lt;body&gt;
+&lt;form action=&quot;welcome_get.php&quot; method=&quot;get&quot;&gt;
+ Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+ E-mail: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<p>The validation rules for the form above are as follows:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:25%">Field</th>
+    <th style="width:75%">Validation Rules</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Required. + Must only contain letters and whitespace</td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td>Required. + Must contain a valid email address (with @ and .)</td>
+  </tr>
+  <tr>
+    <td>Website</td>
+    <td>Optional. If present, it must contain a valid URL</td>
+  </tr>
+  <tr>
+    <td>Comment</td>
+    <td>Optional. Multi-line input field (textarea)</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>Required. Must select one</td>
+  </tr>
+  </table>
+<p>First we will look at the plain HTML code for the form:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Les règles de validation du formulaire ci-dessus sont les suivantes :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:25%">Champ</th>
+     <th style="width:75%">Règles de validation</th>
+   </tr>
+   <tr>
+     <td>Nom</td>
+     <td>Obligatoire. + Ne doit contenir que des lettres et des espaces</td>
+   </tr>
+   <tr>
+     <td>E-mail</td>
+     <td>Obligatoire. + Doit contenir une adresse e-mail valide (avec @ et .)</td>
+   </tr>
+   <tr>
+     <td>Site Web</td>
+     <td>Facultatif. S'il est présent, il doit contenir une URL valide</td>
+   </tr>
+   <tr>
+     <td>Commentaire</td>
+     <td>Facultatif. Champ de saisie multi-lignes (textarea)</td>
+   </tr>
+   <tr>
+     <td>Sexe</td>
+     <td>Obligatoire. Vous devez en sélectionner un</td>
+   </tr>
+   </table>
+<p>Nous allons d'abord examiner le code HTML brut du formulaire :</p>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Text Fields</h2>
+<p>The name, email, and website fields are text input elements, and the comment 
+field is a textarea. The HTML code looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Champs de texte</h2>
+<p>Les champs nom, e-mail et site Web sont des éléments de saisie de texte, et le commentaire
+le champ est une zone de texte. Le code HTML ressemble à ceci :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+ Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+
+
+ E-mail: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;
+ <br>Website: &lt;input type=&quot;text&quot; name=&quot;website&quot;&gt;
+
+Comment: &lt;textarea name=&quot;comment&quot; rows=&quot;5&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+
+
+ </div>
+ </div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<h2>Radio Buttons</h2>
+<p>The gender fields are radio buttons and the HTML code looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Boutons radio</h2>
+<p>Les champs de sexe sont des boutons radio et le code HTML ressemble à ceci :</p>
+</div>
+
+</div>
+  
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+ Gender:<br>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; 
+value=&quot;female&quot;&gt;Female<br>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;Male<br>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt;Other</div></div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<h2>The Form Element</h2>
+<p>The HTML code of the form looks like this:</p>
+
+</div>
+<div class="yass-columnFr">
+<h2>L'élément de formulaire</h2>
+<p>Le code HTML du formulaire ressemble à ceci :</p>
+
+</div>
+
+</div>
+
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
+</div>
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>When the form is submitted, the form data is sent with method=&quot;post&quot;.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>What is the $_SERVER[&quot;PHP_SELF&quot;] variable?</strong><br><br>The 
+$_SERVER[&quot;PHP_SELF&quot;] is a super global variable that returns the filename of the 
+currently executing script.</p>
+</div>
+
+<p>So, the $_SERVER[&quot;PHP_SELF&quot;] sends the submitted form data to the page itself, instead of jumping to a different page. 
+This way, the user will get error messages on the same page as the form.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>What is the htmlspecialchars() function?</strong><br><br>
+The htmlspecialchars() function converts special characters to HTML entities. 
+This means that it will replace HTML characters like &lt; and &gt; with &amp;lt; and &amp;gt;. 
+This prevents attackers from exploiting the code by injecting HTML or Javascript code
+(Cross-site Scripting attacks) in forms.</p>
+</div>
+
+</div>
+<div class="yass-columnFr">
+
+<p>Lorsque le formulaire est soumis, les données du formulaire sont envoyées avec method=&quot;post&quot;.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Qu'est-ce que la variable $_SERVER[&quot;PHP_SELF&quot;] ?</strong><br><br>La
+$_SERVER[&quot;PHP_SELF&quot;] est une super variable globale qui renvoie le nom de fichier du
+script en cours d'exécution.</p>
+</div>
+
+<p>Ainsi, le $_SERVER[&quot;PHP_SELF&quot;] envoie les données du formulaire soumis à la page elle-même, au lieu de passer à une autre page.
+De cette façon, l'utilisateur recevra des messages d'erreur sur la même page que le formulaire.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Qu'est-ce que la fonction htmlspecialchars() ?</strong><br><br>
+La fonction htmlspecialchars() convertit les caractères spéciaux en entités HTML.
+Cela signifie qu'il remplacera les caractères HTML tels que &lt; et &gt; avec &amp;lt; et &amp;gt;.
+Cela empêche les attaquants d'exploiter le code en injectant du code HTML ou Javascript
+(attaques de type "Cross-site Scripting") dans les formulaires.</p>
+</div>
+
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Big Note on PHP Form Security</h2>
+<p>The $_SERVER[&quot;PHP_SELF&quot;] variable can be used by hackers!</p>
+<p>If PHP_SELF is used in your page then a user can enter a slash (/) and then
+some Cross Site Scripting (XSS) commands to execute.</p>
+<div class="yass-panel yass-note">
+<p><strong>Cross-site scripting (XSS) is a type of computer security vulnerability 
+typically found in Web applications. XSS enables attackers to inject client-side 
+script into Web pages viewed by other users.
+</strong></p>
+</div>
+
+<p>Assume we have the following form in a page named &quot;test_form.php&quot;:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Note importante sur la sécurité des formulaires PHP</h2>
+<p>La variable $_SERVER[&quot;PHP_SELF&quot;] peut être utilisée par les pirates !</p>
+<p>Si PHP_SELF est utilisé dans votre page, un utilisateur peut entrer une barre oblique (/) puis
+quelques commandes Cross Site Scripting (XSS) à exécuter.</p>
+<div class="yass-panel yass-note">
+<p><strong>Cross-site scripting (XSS) est un type de faille de sécurité informatique
+trouve généralement dans les applications Web. XSS permet aux attaquants d'injecter côté client
+script dans des pages Web consultées par d'autres utilisateurs.
+</strong></p>
+</div>
+
+<p>Supposons que nous ayons le formulaire suivant dans une page nommée &quot;test_form.php&quot; :</p>
+
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo $_SERVER[&quot;PHP_SELF&quot;];?&gt;&quot;&gt;
+</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<p>Now, if a user enters the normal URL in the address bar like 
+&quot;http://www.example.com/test_form.php&quot;, the above code will be translated to:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Maintenant, si un utilisateur entre l'URL normale dans la barre d'adresse comme
+&quot;http://www.example.com/test_form.php&quot;, le code ci-dessus sera traduit en :</p>
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;test_form.php&quot;&gt;
+
+</div>
+
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>So far, so good.</p>
+
+<p>However, consider that a user enters the following URL in the address bar:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Jusqu'à présent, tout va bien.</p>
+
+<p>Toutefois, considérez qu'un utilisateur saisit l'URL suivante dans la barre d'adresse :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+http://www.example.com/test_form.php/%22%3E%3Cscript%3Ealert('hacked')%3C/script%3E
+</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>In this case, the above code will be translated to:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Dans ce cas, le code ci-dessus sera traduit en :</p>
+
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;test_form.php/&quot;&gt;&lt;script&gt;alert('hacked')&lt;/script&gt;
+</div>
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>This code adds a script tag and an alert command. And when the page loads, the 
+JavaScript code will be executed (the user will see an alert box). This is just a simple 
+and harmless example how the PHP_SELF variable can be exploited.</p>
+<p>Be aware of that <strong>any JavaScript code can be added inside the  
+&lt;script&gt; tag! </strong>A hacker can redirect the user to a file on another server, 
+and that file can hold malicious code 
+that can alter the global variables or submit the form to another 
+address to save the user data, for example.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Ce code ajoute une balise de script et une commande d'alerte. Et lorsque la page se charge, le
+Le code JavaScript sera exécuté (l'utilisateur verra une boîte d'alerte). Ce n'est qu'un simple
+et exemple inoffensif comment la variable PHP_SELF peut être exploitée.</p>
+<p>Sachez que <strong>tout code JavaScript peut être ajouté à l'intérieur du
+&lt;script&gt; étiquette! </strong>Un pirate peut rediriger l'utilisateur vers un fichier sur un autre serveur,
+et ce fichier peut contenir du code malveillant
+qui peut modifier les variables globales ou soumettre le formulaire à un autre
+adresse pour enregistrer les données de l'utilisateur, par exemple.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>How To Avoid $_SERVER[&quot;PHP_SELF&quot;] Exploits?</h2>
+<p>$_SERVER[&quot;PHP_SELF&quot;] exploits can be avoided by using the htmlspecialchars() function.</p>
+<p>The form code should look like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Comment éviter les exploits $_SERVER[&quot;PHP_SELF&quot;] ?</h2>
+<p>Les exploits $_SERVER[&quot;PHP_SELF&quot;] peuvent être évités en utilisant la fonction htmlspecialchars().</p>
+<p>Le code du formulaire devrait ressembler à ceci :</p>
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
+</div>
+
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The htmlspecialchars() function converts special characters to HTML entities. Now if the user 
+tries to exploit the PHP_SELF variable, it will result in the following output:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>La fonction htmlspecialchars() convertit les caractères spéciaux en entités HTML. Maintenant, si l'utilisateur
+essaie d'exploiter la variable PHP_SELF, il en résultera la sortie suivante :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;form method=&quot;post&quot; action=&quot;test_form.php/&amp;quot;&amp;gt;&amp;lt;script&amp;gt;alert('hacked')&amp;lt;/script&amp;gt;&quot;&gt;
+</div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The exploit attempt fails, and no harm is done!</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>La tentative d'exploitation échoue et aucun mal n'est fait !</p>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Validate Form Data With PHP</h2>
+<p>The first thing we will do is to pass all variables through PHP's htmlspecialchars() function.</p>
+<p>When we use the htmlspecialchars() function; then if a user tries to submit the following in a text field:</p>
+<p>&lt;script&gt;location.href('http://www.hacked.com')&lt;/script&gt;</p>
+<p>- this would not be executed, because it would be saved as HTML escaped code, like this:</p>
+<p>&amp;lt;script&amp;gt;location.href('http://www.hacked.com')&amp;lt;/script&amp;gt;</p>
+<p>The code is now safe to be displayed on a page or inside an e-mail.</p>
+<p>We will also do two more things when the user submits the form:</p>
+<ol>
+  <li>Strip unnecessary characters (extra space, tab, newline) from the user input data (with the PHP trim() function)</li>
+  <li>Remove backslashes (\) from the user input data (with the PHP stripslashes() function)</li>
+</ol>
+
+<p>The next step is to create a function that will do all the checking for us 
+(which is much more convenient than writing the same code over and over again).</p>
+<p>We will name the function test_input().</p>
+<p>Now, we can 
+check each $_POST variable with the test_input() function, and the script looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Valider les données du formulaire avec PHP</h2>
+<p>La première chose que nous allons faire est de passer toutes les variables via la fonction htmlspecialchars() de PHP.</p>
+<p>Lorsque nous utilisons la fonction htmlspecialchars() ; puis si un utilisateur essaie de soumettre ce qui suit dans un champ de texte :</p>
+<p>&lt;script&gt;location.href('http://www.hacked.com')&lt;/script&gt;</p>
+<p>- cela ne serait pas exécuté, car il serait enregistré en tant que code échappé HTML, comme ceci :</p>
+<p>&amp;lt;script&amp;gt;location.href('http://www.hacked.com')&amp;lt;/script&amp;gt;</p>
+<p>Le code peut désormais être affiché en toute sécurité sur une page ou dans un e-mail.</p>
+<p>Nous ferons également deux choses supplémentaires lorsque l'utilisateur soumettra le formulaire :</p>
+<ol>
+   <li>Supprimez les caractères inutiles (espace supplémentaire, tabulation, retour à la ligne) des données saisies par l'utilisateur (avec la fonction PHP trim())</li>
+   <li>Supprimez les barres obliques inverses (\) des données saisies par l'utilisateur (avec la fonction PHP stripslashes())</li>
+</ol>
+
+<p>La prochaine étape consiste à créer une fonction qui effectuera toutes les vérifications pour nous
+(ce qui est beaucoup plus pratique que d'écrire le même code encore et encore).</p>
+<p>Nous nommerons la fonction test_input().</p>
+<p>Maintenant, nous pouvons
+vérifiez chaque variable $_POST avec la fonction test_input(), et le script ressemble à ceci :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color: #6FCCF1;">
+<h3>Example</h3>
+<div  class="code" id="code_553" data-ace-editor-id="553" data-ace-editor-allow-execution="false" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_553" >
+ &lt;?php
+// define variables and set to empty values
+$name = $email = $gender = $comment = $website = &quot;&quot;;
+
+if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+ $name = test_input($_POST[&quot;name&quot;]);
+ $email = test_input($_POST[&quot;email&quot;]);
+ $website = test_input($_POST[&quot;website&quot;]);
+ $comment = test_input($_POST[&quot;comment&quot;]);
+ $gender = test_input($_POST[&quot;gender&quot;]);
+}
+
+function test_input($data) {
+ $data = trim($data);
+ $data = stripslashes($data);
+ $data = htmlspecialchars($data);
+ return $data;
+
+
+ }
+
+?&gt;
+
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>Notice that at the start of the script, we check whether the form has been 
+submitted using $_SERVER[&quot;REQUEST_METHOD&quot;]. If the REQUEST_METHOD is POST, then 
+the form has been submitted - and it 
+should be validated. If it has not been submitted, skip the validation and 
+display a blank form.</p>
+<p>However, in the example above, all input fields are optional. The script 
+works fine even if the user does not enter any data.</p>
+<p>The next step is to make input fields required and create error messages if 
+needed.</p>
+
+<br>
+<br>
+
+</div>
+<div class="yass-columnFr">
+<p>Remarquez qu'au début du script, nous vérifions si le formulaire a été
+soumis à l'aide de $_SERVER[&quot;REQUEST_METHOD&quot;]. Si REQUEST_METHOD est POST, alors
+le formulaire a été soumis - et il
+doit être validé. S'il n'a pas été soumis, ignorez la validation et
+afficher un formulaire vierge.</p>
+<p>Cependant, dans l'exemple ci-dessus, tous les champs de saisie sont facultatifs. Le scénario
+fonctionne bien même si l'utilisateur ne saisit aucune donnée.</p>
+<p>L'étape suivante consiste à rendre les champs de saisie obligatoires et à créer des messages d'erreur si
+nécessaire.</p>
+
+<br>
+<br>
+
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_forms.html">❮ Prior</a><a class="yass-right yass-btn" href="php_form_required.html">Next ❯</a></div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

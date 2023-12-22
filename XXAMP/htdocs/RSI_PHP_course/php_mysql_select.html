@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Select</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">MySQL Select Data</span></h1>
+
+<h2>Select Data From a MySQL Database</h2>
+<p>The SELECT statement is used to select data from one or more tables:</p>
+
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">MySQL Sélectionner les données</span></h1>
+
+<h2>Sélectionner des données à partir d'une base de données MySQL</h2>
+<p>L'instruction SELECT est utilisée pour sélectionner des données dans une ou plusieurs tables :</p>
+
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate"><div>
+SELECT column_name(s)
+FROM table_name
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>or we can use the * character to select ALL columns from a table:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>ou nous pouvons utiliser le caractère * pour sélectionner TOUTES les colonnes d'une table :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+SELECT *
+FROM table_name
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select Data With MySQLi</h2>
+<p>The following example selects the id, firstname and lastname columns from the MyClients 
+table and displays it on the page:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionner des données avec MySQLi</h2>
+<p>L'exemple suivant sélectionne les colonnes id, firstname et lastname de MyClients
+tableau et l'affiche sur la page :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+ // Create connection 
+ $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection 
+if ($conn-&gt;connect_error) { 
+   die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } $sql = &quot;SELECT id, firstname, lastname FROM MyClients&quot;;
+$result = $conn-&gt;query($sql);
+ if ($result-&gt;num_rows &gt; 0) {
+// output data of each row 
+   while($row = $result-&gt;fetch_assoc()) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+   }
+} else {
+ echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>Code lines to explain from the example above:</p>
+<p>First, we set up an SQL query that selects the id, firstname and lastname columns from the MyClients 
+table. The next line of code runs the query and puts the resulting data into a 
+variable called $result.</p>
+<p>Then, the function <code class="yass-codespan">num_rows()</code> checks if there are more than zero 
+rows returned.</p>
+<p>If there are more than zero rows returned, the 
+function <code class="yass-codespan">fetch_assoc()</code> puts all the results into an associative array that we can loop 
+through. The <code class="yass-codespan">while()</code> loop loops through the result set and outputs the data from 
+the id, firstname and lastname columns.</p>
+<p>The following example shows the same as the example above, in the MySQLi 
+procedural way:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Lignes de code à expliquer à partir de l'exemple ci-dessus :</p>
+<p>Tout d'abord, nous configurons une requête SQL qui sélectionne les colonnes id, firstname et lastname de MyClients
+table. La ligne de code suivante exécute la requête et place les données résultantes dans un
+variable appelée $résultat.</p>
+<p>Ensuite, la fonction <code class="yass-codespan">num_rows()</code> vérifie s'il y a plus de zéro
+lignes renvoyées.</p>
+<p>Si plus de zéro ligne est renvoyée, le
+la fonction <code class="yass-codespan">fetch_assoc()</code> place tous les résultats dans un tableau associatif que nous pouvons boucler
+à travers. La boucle <code class="yass-codespan">while()</code> parcourt le jeu de résultats et sort les données de
+les colonnes id, firstname et lastname.</p>
+<p>L'exemple suivant montre la même chose que l'exemple ci-dessus, dans MySQLi
+manière procédurale :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_113" data-ace-editor-id="113" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_113" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+// Create connection 
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection 
+ if (!$conn) { 
+ die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+$sql = &quot;SELECT id, firstname, lastname FROM MyClients&quot;;
+$result = mysqli_query($conn, $sql);
+ if (mysqli_num_rows($result) &gt; 0) { 
+   // output data of each row
+while($row = mysqli_fetch_assoc($result)) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+   }
+} else {
+echo &quot;0 results&quot;;
+}
+ mysqli_close($conn);
+
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>You can also put the result in an HTML table:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Vous pouvez également mettre le résultat dans un tableau HTML :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_23" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+ // Create connection 
+ $conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection 
+if ($conn-&gt;connect_error) { 
+   die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } $sql = &quot;SELECT id, firstname, lastname FROM MyClients&quot;;
+
+$result = $conn-&gt;query($sql);
+ if ($result-&gt;num_rows &gt; 0) { 
+  echo  &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&quot;;
+   // output data of each row
+ while($row = $result-&gt;fetch_assoc()) {
+ echo &quot;&lt;tr&gt;&lt;td&gt;&quot;.$row[&quot;id&quot;].&quot;&lt;/td&gt;&lt;td&gt;&quot;.$row[&quot;firstname&quot;].&quot; &quot;.$row[&quot;lastname&quot;].&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+   }
+ echo &quot;&lt;/table&gt;&quot;;
+} else {
+echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+
+
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select Data With PDO (+ Prepared Statements)</h2>
+<p>The following example uses prepared statements.</p>
+<p>It selects the id, firstname and lastname columns from the MyClients table and 
+displays it in an HTML table:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionnez les données avec PDO (+ déclarations préparées)</h2>
+<p>L'exemple suivant utilise des instructions préparées.</p>
+<p>Il sélectionne les colonnes id, firstname et lastname de la table MyClients et
+l'affiche dans un tableau HTML :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_33" data-ace-editor-id="33" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_33" >
+&lt;?php
+ echo &quot;&lt;table style='border: solid 1px black;'&gt;&quot;;
+ echo &quot;&lt;tr&gt;&lt;th&gt;Id&lt;/th&gt;&lt;th&gt;Firstname&lt;/th&gt;&lt;th&gt;Lastname&lt;/th&gt;&lt;/tr&gt;&quot;;
+
+ class TableRows extends RecursiveIteratorIterator {
+ function __construct($it) { 
+ parent::__construct($it, self::LEAVES_ONLY); 
+   }
+
+ function current() {
+ return &quot;&lt;td style='width:150px;border:1px solid black;'&gt;&quot; . parent::current(). &quot;&lt;/td&gt;&quot;;
+   }
+
+ function beginChildren() { 
+ echo &quot;&lt;tr&gt;&quot;; 
+   } 
+function endChildren() { 
+ echo &quot;&lt;/tr&gt;&quot; . &quot;\n&quot;;
+   } 
+ } 
+ 
+ $servername = &quot;localhost&quot;;
+ $username = &quot;root&quot;;
+ $password = &quot;tebessauniv12&quot;;
+ $dbname = &quot;myDB&quot;;
+ 
+ try {
+ $conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+  $conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $stmt = $conn-&gt;prepare(&quot;SELECT id, firstname, lastname FROM MyClients&quot;); 
+  $stmt-&gt;execute();
+
+
+// set the resulting array to associative
+$result = $stmt-&gt;setFetchMode(PDO::FETCH_ASSOC); 
+foreach(new TableRows(new RecursiveArrayIterator($stmt-&gt;fetchAll())) as $k=&gt;$v) { 
+echo $v;
+   }
+} catch(PDOException $e) {
+echo &quot;Error: &quot; . $e-&gt;getMessage();
+}
+$conn = null;
+echo &quot;&lt;/table&gt;&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">MySQL Use The WHERE Clause</span></h1>
+
+<h2>Select and Filter Data From a MySQL Database</h2>
+<p>The WHERE clause is used to filter records.</p>
+<p>The WHERE clause is used to extract only those records that fulfill a 
+specified condition.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">MySQL utilise la clause WHERE</span></h1>
+
+<h2>Sélectionner et filtrer les données d'une base de données MySQL</h2>
+<p>La clause WHERE est utilisée pour filtrer les enregistrements.</p>
+<p>La clause WHERE est utilisée pour extraire uniquement les enregistrements qui remplissent une
+condition spécifiée.</p>
+</div>
+</div>
+<div class="yass-code yass-border notranslate"><div>
+SELECT column_name(s)
+FROM table_name WHERE column_name operator value 
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select and Filter Data With MySQLi</h2>
+<p>The following example selects the id, firstname and lastname columns from the MyClients 
+table where the lastname is &quot;Doe&quot;, and displays it on the page:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionner et filtrer les données avec MySQLi</h2>
+<p>L'exemple suivant sélectionne les colonnes id, firstname et lastname de MyClients
+table où le nom de famille est &quot;Doe&quot;, et l'affiche sur la page :</p>
+
+</div>
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_223" data-ace-editor-id="223" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_223" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+// Create connection 
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection 
+if ($conn-&gt;connect_error) {
+die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } 
+ $sql = &quot;SELECT id, firstname, lastname FROM MyClients WHERE 
+ lastname='Doe'&quot;;
+ $result = $conn-&gt;query($sql);
+
+ if ($result-&gt;num_rows &gt; 0) {
+// output data of each row
+while($row = $result-&gt;fetch_assoc()) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+ }
+} else {
+echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>Code lines to explain from the example above:</p>
+<p>First, we set up the SQL query that selects the id, firstname and lastname columns from the MyClients 
+table where the lastname is &quot;Doe&quot;. The next line of code runs the query and puts the resulting data into a 
+variable called $result.</p>
+
+<p>Then, the <code class="yass-codespan">function num_rows()</code> checks if there are more than zero 
+rows returned.</p>
+<p>If there are more than zero rows returned, the 
+function <code class="yass-codespan">fetch_assoc()</code> puts all the results into an associative array that we can loop 
+through. The <code class="yass-codespan">while()</code> loop loops through the result set and outputs the data from 
+the id, firstname and lastname columns.</p>
+<p>The following example shows the same as the example above, in the MySQLi procedural way:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Lignes de code à expliquer à partir de l'exemple ci-dessus :</p>
+<p>Tout d'abord, nous configurons la requête SQL qui sélectionne les colonnes id, firstname et lastname de MyClients
+table où le nom de famille est &quot;Doe&quot;. La ligne de code suivante exécute la requête et place les données résultantes dans un
+variable appelée $résultat.</p>
+
+<p>Ensuite, la <code class="yass-codespan">fonction num_rows()</code> vérifie s'il y a plus de zéro
+lignes renvoyées.</p>
+<p>Si plus de zéro ligne est renvoyée, le
+la fonction <code class="yass-codespan">fetch_assoc()</code> place tous les résultats dans un tableau associatif que nous pouvons boucler
+à travers. La boucle <code class="yass-codespan">while()</code> parcourt le jeu de résultats et sort les données de
+les colonnes id, firstname et lastname.</p>
+<p>L'exemple suivant montre la même chose que l'exemple ci-dessus, de la manière procédurale MySQLi :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_43" data-ace-editor-id="43" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_43" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+
+// Create connection 
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection 
+ if (!$conn) { 
+   die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+ $sql = &quot;SELECT id, firstname, lastname FROM MyClients 
+ WHERE lastname='Doe'&quot;;
+ $result = mysqli_query($conn, $sql);
+
+ if (mysqli_num_rows($result) &gt; 0) {
+// output data of each row 
+ while($row = mysqli_fetch_assoc($result)) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+ }
+} else {
+echo &quot;0 results&quot;;
+}
+ mysqli_close($conn);
+
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>You can also put the result in an HTML table:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Vous pouvez également mettre le résultat dans un tableau HTML :</p>
+</div>
+
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_443" data-ace-editor-id="443" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_443" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+ // Create connection 
+ $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection 
+if ($conn-&gt;connect_error) {
+ die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } 
+ 
+ $sql = &quot;SELECT id, firstname, lastname FROM MyClients WHERE 
+ lastname='Doe'&quot;;
+ $result = $conn-&gt;query($sql);
+
+ if ($result-&gt;num_rows &gt; 0) {
+echo &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&quot;;
+   // output data of each row
+while($row = $result-&gt;fetch_assoc()) {
+ echo &quot;&lt;tr&gt;&lt;td&gt;&quot;.$row[&quot;id&quot;].&quot;&lt;/td&gt;&lt;td&gt;&quot;.$row[&quot;firstname&quot;].&quot; &quot;.$row[&quot;lastname&quot;].&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+   }
+echo &quot;&lt;/table&gt;&quot;;
+} else {
+ echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select Data With PDO (+ Prepared Statements)</h2>
+<p>The following example uses prepared statements.</p>
+<p>It selects the id, firstname and lastname columns from the MyClients table 
+where the lastname is &quot;Doe&quot;, and 
+displays it in an HTML table:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionnez les données avec PDO (+ déclarations préparées)</h2>
+<p>L'exemple suivant utilise des instructions préparées.</p>
+<p>Il sélectionne les colonnes id, firstname et lastname de la table MyClients
+où le nom de famille est &quot;Doe&quot;, et
+l'affiche dans un tableau HTML :</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_322" data-ace-editor-id="322" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_322" >
+&lt;?php
+ echo &quot;&lt;table style='border: solid 1px black;'&gt;&quot;;
+ echo &quot;&lt;tr&gt;&lt;th&gt;Id&lt;/th&gt;&lt;th&gt;Firstname&lt;/th&gt;&lt;th&gt;Lastname&lt;/th&gt;&lt;/tr&gt;&quot;;
+
+ class TableRows extends RecursiveIteratorIterator {
+ function __construct($it) { 
+ parent::__construct($it, self::LEAVES_ONLY); 
+ }
+
+ 
+ function current() {
+ return &quot;&lt;td style='width:150px;border:1px solid black;'&gt;&quot; . parent::current(). &quot;&lt;/td&gt;&quot;;
+ }
+
+function beginChildren() { 
+ echo &quot;&lt;tr&gt;&quot;; 
+} 
+ function endChildren() { 
+ echo &quot;&lt;/tr&gt;&quot; . &quot;\n&quot;;
+ } 
+ } 
+ $servername = &quot;localhost&quot;;
+ $username = &quot;root&quot;;
+ $password = &quot;tebessauniv12&quot;;
+ $dbname = &quot;myDB&quot;;
+ try {
+ $conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+ $conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ $stmt = $conn-&gt;prepare(&quot;SELECT id, firstname, lastname FROM MyClients 
+  WHERE lastname='Doe'&quot;); 
+ $stmt-&gt;execute();
+
+ // set the resulting array to associative
+ $result = $stmt-&gt;setFetchMode(PDO::FETCH_ASSOC); 
+foreach(new TableRows(new RecursiveArrayIterator($stmt-&gt;fetchAll())) as $k=&gt;$v) { 
+   echo  $v;
+}
+}
+catch(PDOException $e) {
+echo &quot;Error: &quot; . $e-&gt;getMessage();
+}
+$conn = null;
+echo &quot;&lt;/table&gt;&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">MySQL Use The ORDER BY Clause</span></h1>
+
+<h2>Select and Order Data From a MySQL Database</h2>
+<p>The ORDER BY clause is used to sort the result-set in ascending or descending 
+order.</p>
+<p>The ORDER BY clause sorts the records in ascending order by default. To sort 
+the records in descending order, use the DESC keyword.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">MySQL utilise la clause ORDER BY</span></h1>
+
+<h2>Sélectionner et commander des données à partir d'une base de données MySQL</h2>
+<p>La clause ORDER BY est utilisée pour trier le jeu de résultats par ordre croissant ou décroissant
+commande.</p>
+<p>La clause ORDER BY trie les enregistrements par ordre croissant par défaut. Trier
+les enregistrements par ordre décroissant, utilisez le mot-clé DESC.</p>
+</div>
+
+</div>
+<div class="yass-code yass-border notranslate">
+  <div>
+SELECT column_name(s)
+FROM table_name ORDER BY column_name(s) ASC|DESC 
+</div></div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<p>To learn more about SQL, please visit our <a href="https://www.tebessa-univ.dz/sql/default.asp">SQL tutorial</a>.</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Pour en savoir plus sur SQL, veuillez consulter notre <a href="https://www.tebessa-univ.dz/sql/default.asp">tutoriel SQL</a>.</p>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select and Order Data With MySQLi</h2>
+<p>The following example selects the id, firstname and lastname columns from the MyClients 
+table. The records will be ordered by the lastname column:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionnez et commandez des données avec MySQLi</h2>
+<p>L'exemple suivant sélectionne les colonnes id, firstname et lastname de MyClients
+table. Les enregistrements seront triés par la colonne nom :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_2333" data-ace-editor-id="2333" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2333" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+ // Create connection 
+ $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection 
+if ($conn-&gt;connect_error) { 
+   die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } 
+ 
+$sql = &quot;SELECT id, firstname, lastname FROM MyClients ORDER BY lastname&quot;;
+$result = $conn-&gt;query($sql);
+ if ($result-&gt;num_rows &gt; 0) {
+ // output data of each row
+ while($row = $result-&gt;fetch_assoc()) { 
+  echo  &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+   }
+} else {
+ echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+?&gt;
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>Code lines to explain from the example above:</p>
+<p>First, we set up the SQL query that selects the id, firstname and lastname columns from the MyClients 
+table. The records will be ordered by the lastname column. The next line of code runs the query and puts the resulting data into a 
+variable called $result.</p>
+<p>Then, the <code class="yass-codespan">function num_rows()</code> checks if there are more than zero 
+rows returned.</p>
+<p>If there are more than zero rows returned, the 
+function <code class="yass-codespan">fetch_assoc()</code> puts all the results into an associative array that we can loop 
+through. The <code class="yass-codespan">while()</code> loop loops through the result set and outputs the data from 
+the id, firstname and lastname columns.</p>
+<p>The following example shows the same as the example above, in the MySQLi procedural way:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Lignes de code à expliquer à partir de l'exemple ci-dessus :</p>
+<p>Tout d'abord, nous configurons la requête SQL qui sélectionne les colonnes id, firstname et lastname de MyClients
+table. Les enregistrements seront triés par la colonne du nom de famille. La ligne de code suivante exécute la requête et place les données résultantes dans un
+variable appelée $résultat.</p>
+<p>Ensuite, la <code class="yass-codespan">fonction num_rows()</code> vérifie s'il y a plus de zéro
+lignes renvoyées.</p>
+<p>Si plus de zéro ligne est renvoyée, le
+la fonction <code class="yass-codespan">fetch_assoc()</code> place tous les résultats dans un tableau associatif que nous pouvons boucler
+à travers. La boucle <code class="yass-codespan">while()</code> parcourt le jeu de résultats et sort les données de
+les colonnes id, firstname et lastname.</p>
+<p>L'exemple suivant montre la même chose que l'exemple ci-dessus, de la manière procédurale MySQLi :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_355" data-ace-editor-id="355" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_355" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+ // Create connection 
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+ // Check connection 
+ if (!$conn) { 
+   die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+ $sql = &quot;SELECT id, firstname, lastname FROM MyClients 
+ ORDER BY lastname&quot;;
+$result = mysqli_query($conn, $sql);
+ if (mysqli_num_rows($result) &gt; 0) { 
+   // output data of each row
+ while($row = mysqli_fetch_assoc($result)) {
+ echo &quot;id: &quot; . $row[&quot;id&quot;]. &quot; - Name: &quot; . $row[&quot;firstname&quot;]. &quot; &quot; . $row[&quot;lastname&quot;]. &quot;&lt;br&gt;&quot;;
+   }
+} else {
+echo &quot;0 results&quot;;
+}
+ mysqli_close($conn);
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>You can also put the result in an HTML table:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Vous pouvez également mettre le résultat dans un tableau HTML :</p>
+
+</div>
+
+
+</div>
+
+<div class="yass-example" style="background-color:#45B39D ;">
+<h3>Example (MySQLi Object-oriented)</h3>
+<div  class="code" id="code_3444" data-ace-editor-id="3444" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3444" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$dbname = &quot;myDB&quot;;
+ // Create connection 
+ $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection 
+if ($conn-&gt;connect_error) { 
+   die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+ } 
+ $sql = &quot;SELECT id, firstname, lastname FROM MyClients ORDER BY lastname&quot;;
+$result = $conn-&gt;query($sql);
+ if ($result-&gt;num_rows &gt; 0) {
+ echo &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&quot;;
+ // output data of each row
+ while($row = $result-&gt;fetch_assoc()) {
+ echo &quot;&lt;tr&gt;&lt;td&gt;&quot;.$row[&quot;id&quot;].&quot;&lt;/td&gt;&lt;td&gt;&quot;.$row[&quot;firstname&quot;].&quot; &quot;.$row[&quot;lastname&quot;].&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+   }
+  echo &quot;&lt;/table&gt;&quot;;
+} else {
+ echo &quot;0 results&quot;;
+}
+ $conn-&gt;close();
+
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Select Data With PDO (+ Prepared Statements)</h2>
+<p>The following example uses prepared statements.</p>
+<p>Here we select the id, firstname and lastname columns from the MyClients table. 
+The records will be ordered by the lastname column, and it will be 
+displayed in an HTML table:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Sélectionnez les données avec PDO (+ déclarations préparées)</h2>
+<p>L'exemple suivant utilise des instructions préparées.</p>
+<p>Ici, nous sélectionnons les colonnes id, firstname et lastname de la table MyClients.
+Les enregistrements seront triés par la colonne nom de famille, et il sera
+affiché dans un tableau HTML :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_37" data-ace-editor-id="37" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_37" >
+&lt;?php
+echo &quot;&lt;table style='border: solid 1px black;'&gt;&quot;;
+ echo &quot;&lt;tr&gt;&lt;th&gt;Id&lt;/th&gt;&lt;th&gt;Firstname&lt;/th&gt;&lt;th&gt;Lastname&lt;/th&gt;&lt;/tr&gt;&quot;;
+ class TableRows extends RecursiveIteratorIterator {
+ function __construct($it) { 
+ parent::__construct($it, self::LEAVES_ONLY); 
+   }
+
+function current() {
+ return &quot;&lt;td style='width:150px;border:1px solid black;'&gt;&quot; . parent::current(). &quot;&lt;/td&gt;&quot;;
+  }
+
+ function beginChildren() { 
+ echo &quot;&lt;tr&gt;&quot;; 
+  } 
+function endChildren() { 
+ echo &quot;&lt;/tr&gt;&quot; . &quot;\n&quot;;
+   }
+
+ } 
+ $servername = &quot;localhost&quot;;
+ $username = &quot;root&quot;;
+ $password = &quot;tebessauniv12&quot;;
+ $dbname = &quot;myDB&quot;;
+ 
+ try {
+ $conn = new PDO(&quot;mysql:host=$servername;dbname=$dbname&quot;, $username, $password);
+ $conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   $stmt = $conn-&gt;prepare(&quot;SELECT id, firstname, lastname FROM MyClients 
+  ORDER BY lastname&quot;); 
+ $stmt-&gt;execute();
+
+// set the resulting array to associative
+$result = $stmt-&gt;setFetchMode(PDO::FETCH_ASSOC); 
+foreach(new TableRows(new RecursiveArrayIterator($stmt-&gt;fetchAll())) as $k=&gt;$v) { 
+   echo  $v;
+}
+} catch(PDOException $e) {
+ echo &quot;Error: &quot; . $e-&gt;getMessage();
+}
+$conn = null;
+echo &quot;&lt;/table&gt;&quot;;
+?&gt;
+</div>
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_prepared_statements.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_delete.html">Next ❯</a></div>
+
+
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

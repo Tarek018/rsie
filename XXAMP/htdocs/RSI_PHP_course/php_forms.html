@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Forms</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+  <h1>PHP <span class="color_h1">Form Handling</span></h1>
+
+<p class="yass-intro">The PHP superglobals $_GET and $_POST are used to collect form-data.</p>
+</div>
+
+<div class="yass-columnFr">
+   <h1>PHP <span class="color_h1">Gestion des formulaires</span></h1>
+
+<p class="yass-intro">Les superglobales PHP $_GET et $_POST sont utilisées pour collecter les données de formulaire.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP - A Simple HTML Form</h2>
+<p>The example below displays a simple HTML form with two input fields and a submit button:</p>
+</div>
+  
+  
+  <div class="yass-columnFr">
+<h2>PHP - Un formulaire HTML simple</h2>
+<p>L'exemple ci-dessous affiche un formulaire HTML simple avec deux champs de saisie et un bouton d'envoi :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;html&gt;
+&lt;body&gt;
+&lt;form action=&quot;welcome.php&quot; method=&quot;post&quot;&gt;
+Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+E-mail: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+<p>When the user fills out the form above and clicks the submit button, the form data is sent 
+for processing to a PHP file named &quot;welcome.php&quot;. The form data is sent with 
+the HTTP POST method.</p>
+
+<p>To display the submitted data you could simply echo all the variables. The &quot;welcome.php&quot; looks like this:</p>
+</div>
+<div class="yass-columnFr">
+<p>Lorsque l'utilisateur remplit le formulaire ci-dessus et clique sur le bouton d'envoi, les données du formulaire sont envoyées
+pour le traitement dans un fichier PHP nommé &quot;welcome.php&quot;. Les données du formulaire sont envoyées avec
+la méthode HTTP POST.</p>
+
+<p>Pour afficher les données soumises, vous pouvez simplement faire écho à toutes les variables. Le &quot;welcome.php&quot; ressemble à ceci :</p>
+</div>
+</div>
+<div class="yass-code yass-border notranslate">
+&lt;html&gt;
+&lt;body&gt;
+
+Welcome &lt;?php echo $_POST[&quot;name&quot;]; ?&gt;&lt;br&gt;
+Your email address is: &lt;?php echo $_POST[&quot;email&quot;]; ?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<p>The output could be something like this:</p>
+</div>
+<div class="yass-columnFr">
+<p>Le résultat pourrait ressembler à ceci :</p>
+</div>
+</div>
+
+<div class="yass-code htmlHigh yass-border notranslate">
+<div>
+ Welcome John<br>
+Your email address is john.doe@example.com </div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The same result could also be achieved using the HTTP GET method:</p>
+</div>
+<div class="yass-columnFr">
+
+<p>Le même résultat peut également être obtenu en utilisant la méthode HTTP GET :</p>
+</div>
+</div>
+
+<div class="yass-example" style="background-color: #6FCCF1;">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;form action=&quot;welcome_get.php&quot; method=&quot;get&quot;&gt;
+Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+E-mail: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+</div>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>and &quot;welcome_get.php&quot; looks like this:</p>
+</div>
+<div class="yass-columnFr">
+
+<p>et &quot;welcome_get.php&quot; ressemble à ceci :</p>
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate"><div>
+&lt;html&gt;
+
+
+&lt;body&gt;
+
+
+<br>
+Welcome &lt;?php echo $_GET[&quot;name&quot;]; ?&gt;&lt;br&gt;
+
+
+ Your email address is: &lt;?php echo $_GET[&quot;email&quot;]; ?&gt;
+
+
+<br>
+&lt;/body&gt;
+
+
+&lt;/html&gt;
+</div></div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<p>The code above is quite simple. However, the most important thing is missing. You need 
+to validate form data to protect your script from malicious code.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Think SECURITY when processing PHP forms!</strong></p>
+<p>This page does not contain any form validation, it just shows how you can 
+send and retrieve form data.</p>
+<p>However, the next pages will show how to process PHP forms with security in mind! Proper validation of form data is important 
+to protect your form from hackers and spammers!</p>
+</div>
+</div>
+<div class="yass-columnFr">
+
+<p>Le code ci-dessus est assez simple. Cependant, il manque la chose la plus importante. Vous avez besoin
+pour valider les données du formulaire afin de protéger votre script contre les codes malveillants.</p>
+
+<div class="yass-panel yass-note">
+<p><strong>Pensez SÉCURITÉ lors du traitement des formulaires PHP !</strong></p>
+<p>Cette page ne contient aucune validation de formulaire, elle montre simplement comment vous pouvez
+envoyer et récupérer des données de formulaire.</p>
+<p>Cependant, les pages suivantes montreront comment traiter les formulaires PHP en gardant la sécurité à l'esprit ! Une validation correcte des données du formulaire est importante
+pour protéger votre formulaire des pirates et des spammeurs !</p>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+<h2>GET vs. POST</h2>
+<p>Both GET and POST create an array (e.g. array( key1 =&gt; value1, 
+key2 =&gt; value2, key3 =&gt; value3, ...)). This array holds key/value pairs, where 
+keys are the names of the form controls and values are the input data from the user.</p>
+<p>Both GET and POST are treated as $_GET and $_POST. These are superglobals, 
+which means that they are always accessible, regardless of scope - and you can access them from any function,
+class or file without having to do anything special.</p>
+<p>$_GET is an array of variables passed to the current script via the URL parameters.</p>
+<p>$_POST is an array of variables passed to the current script via the HTTP POST method.</p>
+</div>
+<div class="yass-columnFr">
+<h2>GET vs POST</h2>
+<p> GET et POST créent tous deux un tableau (par exemple, array( key1 =&gt; value1,
+key2 =&gt; valeur2, key3 =&gt; valeur3, ...)). Ce tableau contient des paires clé/valeur, où
+les clés sont les noms des contrôles de formulaire et les valeurs sont les données d'entrée de l'utilisateur.</p>
+<p> GET et POST sont traités comme $_GET et $_POST. Ce sont des superglobales,
+ce qui signifie qu'ils sont toujours accessibles, quelle que soit leur portée - et vous pouvez y accéder depuis n'importe quelle fonction,
+classe ou fichier sans avoir à faire quoi que ce soit de spécial.</p>
+<p>$_GET est un tableau de variables transmis au script actuel via les paramètres d'URL.</p>
+<p>$_POST est un tableau de variables transmis au script actuel via la méthode HTTP POST.</p>
+</div>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<h2>When to use GET?</h2>
+<p>Information sent from a form with the GET method is <strong>visible to everyone</strong> (all 
+variable names and values are displayed in the URL). GET also has limits on the amount of 
+information to send. The limitation is about 2000 characters. However, 
+because the variables are displayed in the URL, it is possible to bookmark the 
+page. This can be useful in some cases.</p>
+<p>GET may be used for sending non-sensitive data.</p>
+<p><b>Note:</b> GET should NEVER be used for sending passwords or other sensitive information!</p>
+</div>
+<div class="yass-columnFr">
+
+<h2>Quand utiliser GET ?</h2>
+<p>Les informations envoyées depuis un formulaire avec la méthode GET sont <strong>visibles par tout le monde</strong> (tous
+les noms et les valeurs des variables sont affichés dans l'URL). GET a également des limites sur le montant de
+informations à envoyer. La limite est d'environ 2000 caractères. Cependant,
+étant donné que les variables sont affichées dans l'URL, il est possible de marquer
+page. Cela peut être utile dans certains cas.</p>
+<p>GET peut être utilisé pour envoyer des données non sensibles.</p>
+<p><b>Remarque :</b> GET ne doit JAMAIS être utilisé pour envoyer des mots de passe ou d'autres informations sensibles !</p>
+</div>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+
+<h2>When to use POST?</h2>
+<p>Information sent from a form with the POST method is <strong>invisible to others</strong> 
+(all names/values are embedded within the body of the HTTP request) and 
+has <strong>no limits</strong> on the amount of information to send.</p>
+<p>Moreover POST supports advanced functionality such as support for multi-part 
+binary input while uploading files to server.</p>
+<p>However, because the variables are not displayed in the URL, it is not possible to bookmark the page.</p>
+<div class="yass-panel yass-note">
+<p><strong>Developers prefer POST for sending form data.</strong></p>
+</div>
+<p>Next, lets see how we can process PHP forms the secure way!</p>
+
+</div>
+<div class="yass-columnFr">
+
+<h2>Quand utiliser POST ?</h2>
+<p>Les informations envoyées à partir d'un formulaire avec la méthode POST sont <strong>invisibles pour les autres</strong>
+(tous les noms/valeurs sont intégrés dans le corps de la requête HTTP) et
+n'a <strong>aucune limite</strong> sur la quantité d'informations à envoyer.</p>
+<p>De plus, POST prend en charge des fonctionnalités avancées telles que la prise en charge des
+entrée binaire lors du téléchargement de fichiers sur le serveur.</p>
+<p>Cependant, comme les variables ne sont pas affichées dans l'URL, il n'est pas possible de marquer la page.</p>
+<div class="yass-panel yass-note">
+<p><strong>Les développeurs préfèrent POST pour envoyer des données de formulaire.</strong></p>
+</div>
+<p>Ensuite, voyons comment nous pouvons traiter les formulaires PHP de manière sécurisée !</p>
+
+</div>
+</div>
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_looping_break.html">❮ Prior</a><a class="yass-right yass-btn" href="php_form_validation.html">Next ❯</a></div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

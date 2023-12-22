@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">echo print</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">echo and print Statements</span></h1>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1"> Les instructions echo et print</span></h1>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<p class="yass-intro">With PHP, there are two basic ways to get output: <code class="yass-codespan">echo</code> and <code class="yass-codespan">print</code>.</p>
+<p class="yass-intro">In this tutorial we use <code class="yass-codespan">echo</code> 
+or <code class="yass-codespan">print</code> in almost every 
+example. So, this chapter contains a little more info about those two output 
+statements.</p>
+</div>
+
+<div class="yass-columnFr">
+<p class="yass-intro">Avec PHP, il existe deux méthodes de base pour obtenir une sortie : <code class="yass-codespan">echo</code> et <code class="yass-codespan">print</code>.</p>
+<p class="yass-intro">Dans ce tutoriel, nous utilisons <code class="yass-codespan">echo</code>
+ou <code class="yass-codespan">print</code> dans presque tous
+Exemple. Donc, ce chapitre contient un peu plus d'informations sur ces deux sorties
+déclarations.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP echo and print Statements</h2>
+<p><code class="yass-codespan">echo</code> and <code class="yass-codespan">print</code> are more or less the same. They are both used to output data 
+to the screen. </p>
+<p>The differences are small: <code class="yass-codespan">echo</code> has no return value while <code class="yass-codespan">print</code> has a return value of 1 so it can be used in 
+expressions. <code class="yass-codespan">echo</code> can take multiple parameters (although such usage is rare) 
+while <code class="yass-codespan">print</code> can take one argument. <code class="yass-codespan">echo</code> is marginally 
+faster than <code class="yass-codespan">print</code>.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Les instructions echo et print</h2>
+<p><code class="yass-codespan">echo</code> et <code class="yass-codespan">print</code> sont plus ou moins identiques. Ils sont tous deux utilisés pour produire des données
+à l'écran. </p>
+<p>Les différences sont minimes : <code class="yass-codespan">echo</code> n'a pas de valeur de retour alors que <code class="yass-codespan">print</code> a une valeur de retour de 1 donc il peut être utilisé dans
+expressions. <code class="yass-codespan">echo</code> peut prendre plusieurs paramètres (bien qu'une telle utilisation soit rare)
+tandis que <code class="yass-codespan">print</code> peut prendre un argument. <code class="yass-codespan">echo</code> est légèrement
+plus rapide que <code class="yass-codespan">print</code>.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The PHP echo Statement</h2>
+<p>The <code class="yass-codespan">echo</code> statement can be used with or without parentheses: 
+<code class="yass-codespan">echo</code> or <code class="yass-codespan">echo()</code>.</p>
+<p><strong>Display Text</strong></p>
+<p>The following example shows how to output text with the <code class="yass-codespan">echo</code> 
+command (notice that the text can contain HTML markup):</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>La déclaration d'écho PHP</h2>
+<p>L'instruction <code class="yass-codespan">echo</code> peut être utilisée avec ou sans parenthèses :
+<code class="yass-codespan">echo</code> ou <code class="yass-codespan">echo()</code>.</p>
+<p><strong>Afficher le texte</strong></p>
+<p>L'exemple suivant montre comment générer du texte avec le <code class="yass-codespan">echo</code>
+commande (notez que le texte peut contenir du balisage HTML) :</p>
+</div>
+
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_5" data-ace-editor-id="5" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_5" >
+&lt;?php
+<br>
+ echo &quot;&lt;h2&gt;PHP is Fun!&lt;/h2&gt;&quot;;
+ echo &quot;Hello world!&lt;br&gt;&quot;;
+ echo &quot;I'm about to learn PHP!&lt;br&gt;&quot;;
+ echo &quot;This &quot;, &quot;string &quot;, &quot;was &quot;, &quot;made &quot;, &quot;with multiple parameters.&quot;;
+
+?&gt;
+</pre>
+</div>
+<!--tryphp_echo1-->
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Display Variables</strong></p>
+<p>The following example shows how to output text and variables with the <code class="yass-codespan">echo</code> 
+statement:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Affichage de variables </strong></p>
+<p>L'exemple suivant montre comment générer du texte et des variables avec le <code class="yass-codespan">echo</code>
+déclaration :</p>
+</div>
+
+</div>
+		
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3"
+	data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" 
+	data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+	
+
+<pre class="editor" id="code_editor_3" >
+
+&lt;?php 
+
+ $txt1 = &quot;Learn PHP&quot;;
+ $txt2 = &quot;tebessa-univ.dz&quot;;
+ $x = 5;
+ $y = 4;
+ echo &quot;&lt;h2&gt;&quot; . $txt1 . &quot;&lt;/h2&gt;&quot;;
+ echo &quot;Study PHP at 
+  &quot; . $txt2 . &quot;&lt;br&gt;&quot;;
+  echo $x + $y;
+ 
+ ?&gt; 
+
+</pre>
+</div>
+</div>
+		
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>The PHP print Statement</h2>
+<p>The <code class="yass-codespan">print</code> statement can be used with or without 
+parentheses: 
+<code class="yass-codespan">print</code> or <code class="yass-codespan">print()</code>.</p>
+<p><strong>Display Text</strong></p>
+<p>The following example shows how to output text with the <code class="yass-codespan">print</code> 
+command (notice that the text can contain HTML markup):</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>La déclaration d'impression PHP</h2>
+<p>L'instruction <code class="yass-codespan">print</code> peut être utilisée avec ou sans
+parenthèses :
+<code class="yass-codespan">print</code> ou <code class="yass-codespan">print()</code>.</p>
+<p><strong>Afficher le texte</strong></p>
+<p>L'exemple suivant montre comment générer du texte avec le <code class="yass-codespan">print</code>
+commande (notez que le texte peut contenir du balisage HTML) :</p>
+</div>
+
+</div>
+
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_2" data-ace-editor-id="2"
+	data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" 
+	data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+	
+
+<pre class="editor" id="code_editor_2" >
+
+&lt;?php 
+
+print &quot;&lt;h2&gt;PHP is Fun!&lt;/h2&gt;&quot;;
+print &quot;Hello world!&lt;br&gt;&quot;;
+print &quot;I'm about to learn PHP!&quot;;
+ 
+ ?&gt; 
+
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p><strong>Display Variables</strong></p>
+<p>The following example shows how to output text and variables with the 
+<code class="yass-codespan">print</code> statement:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p><strong>Affichage de variables</strong></p>
+<p>L'exemple suivant montre comment générer du texte et des variables avec le
+Instruction <code class="yass-codespan">print</code> :</p>
+</div>
+
+
+</div>
+
+
+
+<div class="yass-example">
+<h3>Example</h3>
+
+<div  class="code" id="code_1" data-ace-editor-id="1"
+	data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" 
+	data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+<pre class="editor" id="code_editor_1" >
+
+&lt;?php 
+
+$txt1 = &quot;Learn PHP&quot;;
+$txt2 = &quot;tebessa-univ.dz&quot;;
+
+$x = 5;
+$y = 4;
+
+print &quot;&lt;h2&gt;&quot; . $txt1 . &quot;&lt;/h2&gt;&quot;;
+print &quot;Study PHP at &quot; . $txt2 . &quot;&lt;br&gt;&quot;;
+print $x + $y
+
+?&gt; 
+
+</pre>
+</div>
+	
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_comments.html">❮ Prior</a><a class="yass-right yass-btn" href="php_functions.html">Next ❯</a></div>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

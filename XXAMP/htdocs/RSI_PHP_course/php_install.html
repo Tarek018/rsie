@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Installation</div>
+
+
+
+<div  class="yass-div">
+
+<div class="row">
+<div class="yass-columnEn">
+   <h1>Server Side programming</h1>
+
+
+<p>Web programming Server Side is the practice of writing applications that run on a web server and can be used by many different people.</p>
+<p> Web programming allows you to turn a simple, static HTML page into a dynamic masterpiece. 
+ <ul>
+<li> It allows others to interact with your web site and use the application on any computer with Internet access. </li> 
+<li> It is often easier than programming applications that will run directly on the computer. </li> 
+<li> It allows you to make or edit anything dynamic on your website, such as a forum, a guestbook, or even a form submission.</li> 
+ </p>
+<p>This course will help you understand, what Server Side Web Programming  is 
+</p>
+ 
+  </div>
+<div class="yass-columnFr">
+    <h1>La Programmation côté serveur</h1>
+
+<p>La programmation Web côté serveur consiste à écrire des applications qui s'exécutent sur un serveur Web et peuvent être utilisées par de nombreuses personnes différentes.</p>
+<p> La programmation Web vous permet de transformer une simple page HTML statique en un chef-d'œuvre dynamique.
+  <ul>
+<li> Il permet à d'autres personnes d'interagir avec votre site Web et d'utiliser l'application sur n'importe quel ordinateur ayant accès à Internet. </li>
+<li> C'est souvent plus simple que de programmer des applications qui s'exécuteront directement sur l'ordinateur. </li>
+<li> Il vous permet de créer ou de modifier quoi que ce soit de dynamique sur votre site Web, comme un forum, un livre d'or ou même une soumission de formulaire.</li>
+  </p>
+<p>Ce cours vous aidera à comprendre ce qu'est la programmation Web côté serveur.
+</p>
+ 
+   </div>
+</div>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+   <h1>Web Server</h1>
+
+  <p>
+The term web server can refer to either the hardware (the computer) or the software (the
+computer application) that helps to deliver web content that can be accessed through the
+Internet.
+The most common use of web servers is to host websites, but there are other uses such as
+gaming, data storage or running enterprise applications.
+ <ul>
+<li> IIS - Internet Information Services</li>
+<ul><li> Microsoft Windows</li></ul>
+<li>Apache Web Server</li>
+<ul>
+<li> Open Source</li>
+<li> Cross-platform: UNIX, Linux, OS X, Windows, ...</li>
+</ul>
+<li> Nginx (pronounced "engine x") - Has become very popular latly</li>
+<li>...</li>
+</ul>
+</p>
+
+ 
+  </div>
+ <div class="yass-columnFr">
+    <h1>Serveur Web</h1>
+
+   <p>
+Le terme serveur Web peut désigner soit le matériel (l'ordinateur), soit le logiciel (le
+application informatique) qui permet de fournir du contenu Web accessible via le
+L'Internet.
+L'utilisation la plus courante des serveurs Web consiste à héberger des sites Web, mais il existe d'autres utilisations telles que
+les jeux, le stockage de données ou l'exécution d'applications d'entreprise.
+  <ul>
+<li> IIS – Services d'informations Internet</li>
+<ul><li> Microsoft Windows</li></ul>
+<li>Serveur Web Apache</li>
+<ul>
+<li>Open Source</li>
+<li> Multiplateforme : UNIX, Linux, OS X, Windows, ...</li>
+</ul>
+<li> Nginx (prononcé "engine x") : est devenu très populaire ces derniers temps</li>
+<li>...</li>
+</ul>
+</p>
+
+ 
+   
+   </div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+   <h1>What is W3Techs?</h1>
+
+  <p>
+
+W3Techs - World Wide Web Technology Surveys. W3Techs provides information about the usage of various types of technologies on the web. Our vision.
+</p>
+
+ 
+  </div>
+
+<div class="yass-columnFr">
+    <h1>Qu'est-ce que W3Techs ?</h1>
+
+   <p>
+
+W3Techs - Enquêtes sur les technologies du World Wide Web. W3Techs fournit des informations sur l'utilisation de différents types de technologies sur le Web. Notre vision.
+</p>
+
+ 
+   </div>
+</div>
+<img class="yass-image-center" src="./Images/Webserver.jpg" alt="xampp-download-screen"></p>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+   <h1>PHP is Popular</h1>
+
+  <p>
+
+According to W3Techs, PHP is used by around 79% of all websites. 
+It’s eight times more popular than ASP.NET, its nearest rival in server-side programming languages. PHP’s usage share has remained consistent over the last year, despite the competition from other languages.
+
+PHP is also the most loved programming language according to a statistical analysis that predicts it will hold a 49.47% market share in 2023. This means that PHP developers are satisfied with their choice of language and are likely to continue using it.
+</p>
+
+ 
+  </div>
+  
+  <div class="yass-columnFr">
+    <h1>PHP est populaire</h1>
+
+   <p>
+
+Selon W3Techs, PHP est utilisé par environ 79 % de tous les sites Web.
+Il est huit fois plus populaire qu’ASP.NET, son plus proche rival dans les langages de programmation côté serveur. La part d’utilisation de PHP est restée constante au cours de l’année dernière, malgré la concurrence d’autres langages.
+
+PHP est également le langage de programmation le plus apprécié selon une analyse statistique qui prévoit qu'il détiendra une part de marché de 49,47 % en 2023. Cela signifie que les développeurs PHP sont satisfaits de leur choix de langage et continueront probablement à l'utiliser.
+</p>
+
+ 
+   </div>
+</div>
+
+
+
+<div class="row">
+  <div class="yass-columnEn">
+   <h1>PHP <span class="color_h1">Installation</span></h1>
+
+<h2>What Do I Need?</h2>
+  <p>To start using PHP, you can:</p>
+ <ul>
+  <li>Find a web host with PHP and MySQL support</li>
+  <li>Install a web server on your own PC, and then install PHP and MySQL</li>
+ </ul>
+ 
+  </div>
+<div class="yass-columnFr">
+    <h1>PHP <span class="color_h1">Installation</span></h1>
+
+<h2>De quoi ai-je besoin ?</h2>
+   <p>Pour commencer à utiliser PHP, vous pouvez :</p>
+  <ul>
+   <li>Trouvez un hébergeur Web prenant en charge PHP et MySQL</li>
+   <li>Installez un serveur Web sur votre propre PC, puis installez PHP et MySQL</li>
+  </ul>
+ 
+   </div>
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<h2>Use a Web Host With PHP Support</h2>
+<p>If your server has activated support for PHP you do not 
+need to do anything.</p>
+<p>Just create some <code class="yass-codespan">.php</code> files, place them in your web directory, and the server 
+will automatically parse them for you.</p>
+<p>You do not need to compile anything or install any extra tools.</p>
+<p>Because PHP is free, most web hosts 
+offer PHP support.</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Utiliser un hébergeur Web avec support PHP</h2>
+<p>Si votre serveur a activé la prise en charge de PHP, vous ne
+besoin de faire quelque chose.</p>
+<p>Créez simplement des fichiers <code class="yass-codespan">.php</code>, placez-les dans votre répertoire Web et le serveur
+les analysera automatiquement pour vous.</p>
+<p>Vous n'avez pas besoin de compiler quoi que ce soit ou d'installer des outils supplémentaires.</p>
+<p>Parce que PHP est gratuit, la plupart des hébergeurs
+offrir un support PHP.</p>
+</div>
+
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+
+<h2>Introduction to XAMPP</h2>
+<p><strong>XAMPP</strong> is the most popular software package which is used to set up a PHP development environment for web services by providing all the required software components. During the process of software deployment, most of the web servers use almost similar components, so use of <strong>XAMPP</strong> provides easy transition from local server to live server. <strong>XAMPP</strong> is a <strong>AMP</strong> stack which stands for Cross platform, <strong>A</strong>pache, <strong>M</strong>ySQL, <strong>P</strong>HP, <strong>p</strong>erl with some additional administrative software tools such as PHPMyAdmin (for database access), FileZilla FTP server, Mercury mail server and JSP Tomcat server. 
+
+
+    Other commonly known software packages like XAMPP are WAMP, LAMP, and others.<br>
+    The XAMPP server is used to test PHP pages. It works as local server. It contains a MySQL database to manage or save data on a local server.<br>
+
+</div>
+  <div class="yass-columnFr">
+
+<h2>Présentation de XAMPP</h2>
+<p><strong>XAMPP</strong> est le progiciel le plus populaire utilisé pour configurer un environnement 
+de développement PHP pour les services Web en fournissant tous les composants logiciels requis. 
+Au cours du processus de déploiement de logiciels, la plupart des serveurs Web utilisent des composants presque similaires. L'utilisation de 
+<strong>XAMPP</strong> permet donc une transition facile du serveur local au serveur en direct. <strong>XAMPP</strong> est une pile <strong>AMP</strong> 
+qui signifie Cross platform, <strong>A</strong>pache, <strong>M</strong>ySQL, <strong>P</strong>HP, <strong>p</strong>erl avec quelques outils logiciels d'administration supplémentaires tels que PHPMyAdmin (pour l'accès à la base de données), le serveur FTP FileZilla, le serveur de messagerie Mercury et le serveur JSP Tomcat. 
+
+
+     D'autres progiciels connus comme XAMPP sont WAMP, LAMP et autres.<br>
+     Le serveur XAMPP est utilisé pour tester les pages PHP. Il fonctionne comme serveur local. Il contient une base de données MySQL pour gérer ou enregistrer des données sur un serveur local.<br>
+
+</div>
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+      <strong>Advantages of XAMPP:</strong> 
+
+
+     </p>
+  <ul>
+    <li>It is free and easy to use and easily available for Windows, Linux and Mac OS .</li>
+    <li>It is a beginners friendly solution package for full stack web development.</li>
+    <li>It is a <strong>open source</strong> software package which gives a easy installation experience.</li>
+    <li>It is very simple and <strong>lightweight</strong> to create set up for development, testing and deployment.</li>
+    <li>It is a time-saver and provides several ways for managing configuration changes.</li>
+    <li>It handles many administrative tasks like checking the status and security.</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+       <strong>Avantages de XAMPP :</strong> 
+
+
+      </p>
+   <ul>
+     <li>Il est gratuit et facile à utiliser et facilement disponible pour Windows, Linux et Mac OS.</li>
+     <li>Il s'agit d'un ensemble de solutions conviviales pour les débutants pour le développement Web complet.</li>
+     <li>Il s'agit d'un progiciel <strong>open source</strong> qui offre une expérience d'installation facile.</li>
+     <li>Il est très simple et <strong>léger</strong> de créer une configuration pour le développement, les tests et le déploiement.</li>
+     <li>C'est un gain de temps et offre plusieurs façons de gérer les changements de configuration.</li>
+     <li>Il gère de nombreuses tâches administratives telles que la vérification de l'état et de la sécurité.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+  <p><strong>Software components of XAMPP:</strong> 
+
+
+     </p>
+
+  <ul>
+    <li><strong>Apache</strong> plays the role of processing the HTTP request. It is the actual default web server application. It is the most popular web servers maintained by Apache Software Foundation.</li>
+    <li><strong>MySQL</strong> The role of database management system in XAMPP is played by MySQL. It helps to store and manage collected data very efficiently. It is an open-source and most popular.</li>
+    <li><strong>PHP</strong> is the server-side scripting language which stand for Hypertext Preprocessor. It is embedded with HTML code which interacts with the webserver. It is an open-source and work well with MySQL and has become a common choice for web developers.</li>
+    <li><strong>Perl</strong> is the high-level programming language designed for text editing which serves purpose like web development and network programming.</li>
+  </ul>
+</div>
+
+<div class="yass-columnFr">
+   <p><strong>Composants logiciels de XAMPP :</strong> 
+
+
+      </p>
+
+   <ul>
+     <li><strong>Apache</strong> joue le rôle de traitement de la requête HTTP. Il s'agit de l'application de serveur Web par défaut. Il s'agit des serveurs Web les plus populaires gérés par Apache Software Foundation.</li>
+     <li><strong>MySQL</strong> Le rôle de système de gestion de base de données dans XAMPP est joué par MySQL. Il permet de stocker et de gérer très efficacement les données collectées. C'est une source ouverte et la plus populaire.</li>
+     <li><strong>PHP</strong> est le langage de script côté serveur qui signifie Hypertext Preprocessor. Il est intégré au code HTML qui interagit avec le serveur Web. Il s'agit d'un open source qui fonctionne bien avec MySQL et est devenu un choix courant pour les développeurs Web.</li>
+     <li><strong>Perl</strong> est le langage de programmation de haut niveau conçu pour l'édition de texte qui sert à des fins telles que le développement Web et la programmation réseau.</li>
+   </ul>
+</div>
+
+
+</div>
+
+<div class="row">
+  <div class="yass-columnEn">
+  
+  <p><strong>Steps to install XAMPP on Windows:</strong> 
+
+
+     </p>
+  <ul>
+    <li>In the web browser, visit <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.apachefriends.org/index.html">Apache Friends</a> and download XAMPP installer. 
+
+
+       </li>
+  </ul>
+  </div>
+  <div class="yass-columnFr">
+  
+   <p><strong>Étapes pour installer XAMPP sous Windows :</strong> 
+
+
+      </p>
+   <ul>
+     <li>Dans le navigateur Web, visitez <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.apachefriends.org/index.html">Apache Friends</a> et téléchargez XAMPP installateur. 
+
+
+        </li>
+   </ul>
+   </div>
+  
+</div>
+
+<img class="yass-image-center" src="./Images/xamppDownloadScreen.jpg" alt="xampp-download-screen"></p>
+
+
+<div class="row">
+  <div class="yass-columnEn">
+  <ul>
+    <li>During the installation process, select the required components like MySQL, FileZilla ftp server, PHP, phpMyAdmin or leave the default options and click the <strong>Next</strong> button. 
+
+
+       </li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+   <ul>
+     <li>Pendant le processus d'installation, sélectionnez les composants requis tels que MySQL, le serveur ftp FileZilla, PHP, phpMyAdmin ou laissez les options par défaut et cliquez sur le bouton <strong>Suivant</strong>. 
+
+
+        </li>
+</ul>
+</div>
+
+</div>
+
+<img class="yass-image-center" src="./Images/xamppDownloadForWindowsScreen.jpg" alt="xampp-download-window-screen"></p>
+
+<div class="row">
+  <div class="yass-columnEn">
+  <ul>
+    <li>Uncheck the <strong>Learn more about bitnami</strong> option and click <strong>Next</strong> button.</li>
+    <li>Choose the root directory path to set up the <i>htdocs</i> folder for our applications. For example <i>‘C:\xampp’.</i></li>
+    <li>Click the <strong>Allow access</strong> button to allow the XAMPP modules from the Windows firewall.</li>
+    <li>After the installation process, click the <strong>Finish</strong> button of the XAMPP Setup wizard.</li>
+    <li>Now the XAMPP icon is clearly visible on the right side of start menu. Show or Hide can be set by using the control panel by clicking on the icon.</li>
+    <li>To start Apache and MySql, just click on the <strong>Start</strong> button on the control panel. 
+
+
+       </li>
+  </ul>
+</div>
+
+<div class="yass-columnFr">
+   <ul>
+     <li>Décochez l'option <strong>En savoir plus sur bitnami</strong> et cliquez sur le bouton <strong>Suivant</strong>.</li>
+     <li>Choisissez le chemin du répertoire racine pour configurer le dossier <i>htdocs</i> pour nos applications. Par exemple <i>‘C:\xampp’.</i></li>
+     <li>Cliquez sur le bouton <strong>Autoriser l'accès</strong> pour autoriser les modules XAMPP à partir du pare-feu Windows.</li>
+     <li>Après le processus d'installation, cliquez sur le bouton <strong>Terminer</strong> de l'assistant de configuration XAMPP.</li>
+     <li>Maintenant, l'icône XAMPP est clairement visible sur le côté droit du menu Démarrer. Afficher ou Masquer peut être défini à l'aide du panneau de configuration en cliquant sur l'icône.</li>
+     <li>Pour démarrer Apache et MySql, cliquez simplement sur le bouton <strong>Démarrer</strong> du panneau de configuration. 
+
+
+        </li>
+   </ul>
+</div>
+
+</div>
+<div>
+<img class="yass-image-center" src="./Images/xamppControlPanel.jpg" alt="control-panel-xampp"></p>
+</div>
+<div class="row">
+  <div class="yass-columnEn">
+  <p><strong>Note:</strong> Suppose Apache is not starting, it means some other service is running at port <strong>80.</strong> In this case, stop the other service temporarily and restart it.<br>
+    <strong>Making server request:</strong> Open your web browser and check whether the XAMPP service has properly installed or not. Type in the URL: <strong>http://localhost</strong>. If you are able to see the default page for XAMPP, you have successfully installed your XAMPP Server.<br>
+    <strong>To Check if PHP is Working:</strong> All the website related files are organized in a folder called <i>htdocs</i> and then run index.php file by using <strong>http://localhost/index.php</strong> or <strong>http://localhost</strong>.<br>
+    <strong>Note:</strong> For every new website or application, its always better to create a different folder inside <i>htdocs</i>, to keep it organized and avoid confusion.<br>
+  </p>
+</div>
+
+<div class="yass-columnFr">
+   <p><strong>Remarque :</strong> Supposons qu'Apache ne démarre pas, cela signifie qu'un autre service est en cours d'exécution sur le port <strong>80.</strong> Dans ce cas, arrêtez temporairement l'autre service et redémarrez-le.<br>
+     <strong>Faire une requête au serveur :</strong> Ouvrez votre navigateur Web et vérifiez si le service XAMPP est correctement installé ou non. Saisissez l'URL : <strong>http://localhost</strong>. Si vous pouvez voir la page par défaut pour XAMPP, vous avez installé avec succès votre serveur XAMPP.<br>
+     <strong>Pour vérifier si PHP fonctionne :</strong> Tous les fichiers liés au site Web sont organisés dans un dossier appelé <i>htdocs</i>, puis exécutez le fichier index.php en utilisant <strong>http://localhost /index.php</strong> ou <strong>http://localhost</strong>.<br>
+     <strong>Remarque :</strong> Pour chaque nouveau site Web ou application, il est toujours préférable de créer un dossier différent dans <i>htdocs</i>, pour le garder organisé et éviter toute confusion.<br>
+   </p>
+</div>
+
+    </div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="">❮ Prior</a><a class="yass-right yass-btn" href="php_syntax.html">Next ❯</a></div>
+ 
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

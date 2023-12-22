@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Introduction</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Introduction</span></h1>
+
+<p class="yass-intro">PHP code is executed on the server.</p>
+</div>
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Introduction</span></h1>
+
+<p class="yass-intro">Le code PHP est exécuté sur le serveur.</p>
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>What You Should Already Know</h2>
+<p>Before you continue you should have a basic understanding of the following:</p>
+<ul>
+  <li><a href="https://www.tebessa-univ.dz/html/default.asp">HTML</a></li>
+  <li><a href="https://www.tebessa-univ.dz/css/default.asp">CSS</a></li>
+  <li><a href="https://www.tebessa-univ.dz/js/default.asp">JavaScript</a></li>
+</ul>
+
+<h2>What is PHP?</h2>
+<ul>
+<li>PHP is an acronym for &quot;PHP: Hypertext Preprocessor&quot;</li> 
+<li>PHP is a widely-used, open source scripting language</li>
+<li>PHP scripts are executed on the server</li>
+<li>PHP is free to download and use</li> 
+</ul>
+
+<div class="yass-panel yass-note">
+<p><strong>PHP is an amazing and popular language!</strong></p>
+<p>It is powerful enough to be at the core of the biggest 
+blogging system on the web (WordPress)!<br>It is deep enough to run large social networks!<br>It is also easy enough to be a beginner's first server side 
+language!</p></div>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Ce que vous devez déjà savoir</h2>
+<p>Avant de continuer, vous devez avoir une compréhension de base des éléments suivants :</p>
+<ul>
+   <li><a href="https://www.tebessa-univ.dz/html/default.asp">HTML</a></li>
+   <li><a href="https://www.tebessa-univ.dz/css/default.asp">CSS</a></li>
+   <li><a href="https://www.tebessa-univ.dz/js/default.asp">JavaScript</a></li>
+</ul>
+
+<h2>Qu'est-ce que PHP ?</h2>
+<ul>
+<li>PHP est l'acronyme de &quot;PHP : Hypertext Preprocessor&quot;</li>
+<li>PHP est un langage de script open source largement utilisé</li>
+<li>Les scripts PHP sont exécutés sur le serveur</li>
+<li>PHP est gratuit à télécharger et à utiliser</li>
+</ul>
+
+<div class="yass-panel yass-note">
+<p><strong>PHP est un langage incroyable et populaire !</strong></p>
+<p>Il est suffisamment puissant pour être au cœur des plus grands
+système de blogging sur le web (WordPress) !
+<br>C'est assez profond pour faire fonctionner de grands réseaux sociaux !
+<br>C'est aussi assez facile pour être le premier langage côté serveur pour un débutant !</p>
+</div>
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>What is a PHP File?</h2>
+<ul>
+<li>PHP files can contain text, HTML, CSS, JavaScript, and PHP code</li>
+<li>PHP code is executed on the server, and the result is returned to the browser as plain HTML</li>
+<li>PHP files have extension &quot;<code class="yass-codespan">.php</code>&quot;</li> 
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Qu'est-ce qu'un fichier PHP ?</h2>
+<ul>
+<li>Les fichiers PHP peuvent contenir du texte, du code HTML, CSS, JavaScript et PHP</li>
+<li>Le code PHP est exécuté sur le serveur et le résultat est renvoyé au navigateur sous forme HTML brut</li>
+<li>Les fichiers PHP ont l'extension &quot;<code class="yass-codespan">.php</code>&quot;</li>
+</ul>
+</div>
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>What Can PHP Do?</h2>
+<ul>
+  <li>PHP can generate dynamic page content</li>
+  <li>PHP can create, open, read, write, delete, and close files on the server</li>
+  <li>PHP can collect form data</li>
+  <li>PHP can send and receive cookies</li>
+  <li>PHP can add, delete, modify data in your database</li>
+  <li>PHP can be used to control user-access</li>
+  <li>PHP can encrypt data</li>
+</ul>
+<p>With PHP you are not limited to output HTML. You can output images, PDF 
+files, and even Flash movies. You can also output any text, such as XHTML and 
+XML.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Que peut faire PHP ?</h2>
+<ul>
+   <li>PHP peut générer du contenu de page dynamique</li>
+   <li>PHP peut créer, ouvrir, lire, écrire, supprimer et fermer des fichiers sur le serveur</li>
+   <li>PHP peut collecter des données de formulaire</li>
+   <li>PHP peut envoyer et recevoir des cookies</li>
+   <li>PHP peut ajouter, supprimer, modifier des données dans votre base de données</li>
+   <li>PHP peut être utilisé pour contrôler l'accès des utilisateurs</li>
+   <li>PHP peut chiffrer les données</li>
+</ul>
+<p>Avec PHP, vous n'êtes pas limité à la sortie HTML. Vous pouvez produire des images, PDF
+fichiers, et même des films Flash. Vous pouvez également produire n'importe quel texte, tel que XHTML et
+XML.</p>
+</div>
+
+</div>
+<div class="row">
+ <div class="yass-columnEn">
+
+<h2>Why PHP?</h2>
+<ul>
+  <li>PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+  <li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)</li>
+  <li>PHP supports a wide range of databases</li>
+  <li>PHP is free. Download it from the official PHP resource: <a target="_blank" href="http://www.php.net/">www.php.net</a></li>
+  <li>PHP is easy to learn and runs efficiently on the server side</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Pourquoi PHP ?</h2>
+<ul>
+   <li>PHP fonctionne sur différentes plateformes (Windows, Linux, Unix, Mac OS X, etc.)</li>
+   <li>PHP est compatible avec presque tous les serveurs utilisés aujourd'hui (Apache, IIS, etc.)</li>
+   <li>PHP prend en charge un large éventail de bases de données</li>
+   <li>PHP est gratuit. Téléchargez-le depuis la ressource PHP officielle : <a target="_blank" href="http://www.php.net/">www.php.net</a></li>
+   <li>PHP est facile à apprendre et fonctionne efficacement côté serveur</li>
+</ul>
+</div>
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="default.html">❮ Prior</a><a class="yass-right yass-btn" href="php_install.html">Next ❯</a></div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

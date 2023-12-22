@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Math</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP Math</h1>
+<p class="yass-intro">PHP has a set of math functions that allows you to perform mathematical tasks on numbers.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>Mathématiques PHP</h1>
+<p class="yass-intro">PHP dispose d'un ensemble de fonctions mathématiques qui vous permettent d'effectuer des tâches mathématiques sur des nombres.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP pi() Function</h2>
+<p>The <code class="yass-codespan">pi()</code> function returns the value of PI:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonction PHP pi()</h2>
+<p>La fonction <code class="yass-codespan">pi()</code> renvoie la valeur de PI :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+echo(pi()); // returns 3.1415926535898
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP min() and max() Functions</h2>
+<p>The <code class="yass-codespan">min()</code> and <code class="yass-codespan">max()</code> functions can be used to find the lowest or highest value in a list of arguments:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonctions PHP min() et max()</h2>
+<p>Les fonctions <code class="yass-codespan">min()</code> et <code class="yass-codespan">max()</code> peuvent être utilisées pour trouver la valeur la plus basse ou la plus haute dans une liste d'arguments :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_12" data-ace-editor-id="12" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_12" >
+&lt;?php
+echo(min(0, 150, 30, 20, -8, -200)); // returns -200
+echo &quot;&lt;br&gt;&quot;;
+echo(max(0, 150, 30, 20, -8, -200)); // returns 150
+?&gt;
+</pre></div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP abs() Function</h2>
+<p>The <code class="yass-codespan">abs()</code> function returns the absolute (positive) value of a number:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonction PHP abs()</h2>
+<p>La fonction <code class="yass-codespan">abs()</code> renvoie la valeur absolue (positive) d'un nombre :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_11" data-ace-editor-id="11" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_11" >
+&lt;?php
+echo(abs(-6.7)); // returns 6.7
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP sqrt() Function</h2>
+<p>The <code class="yass-codespan">sqrt()</code> function returns the square root of a number:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonction PHP sqrt()</h2>
+<p>La fonction <code class="yass-codespan">sqrt()</code> renvoie la racine carrée d'un nombre :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_10" data-ace-editor-id="10" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_10" >
+&lt;?php
+echo(sqrt(64)); // returns 8
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP round() Function</h2>
+<p>The <code class="yass-codespan">round()</code> function rounds a floating-point number 
+to its nearest integer:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonction PHP round()</h2>
+<p>La fonction <code class="yass-codespan">round()</code> arrondit un nombre à virgule flottante
+à son entier le plus proche :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_9" data-ace-editor-id="9" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_9" >
+  &lt;?php
+ echo(round(0.60)); // returns 1
+ echo &quot;&lt;br&gt;&quot;;
+ echo(round(0.49)); // returns 0
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Random Numbers</h2>
+<p>The <code class="yass-codespan">rand()</code> function generates a random number:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Nombres aléatoires</h2>
+<p>La fonction <code class="yass-codespan">rand()</code> génère un nombre aléatoire :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_8" data-ace-editor-id="8" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_8" >
+&lt;?php
+echo(rand());
+?&gt;
+</pre>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<p>To get more control over the random number, you can add the optional <em>min</em> and <em>max</em> parameters to specify the lowest integer and the highest integer to be returned.</p>
+<p>For example, if you want a random integer between 10 and 100 (inclusive), use 
+<code class="yass-codespan">rand(10, 100)</code>:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Pour mieux contrôler le nombre aléatoire, vous pouvez ajouter les paramètres facultatifs <em>min</em> et <em>max</em> pour spécifier l'entier le plus bas et l'entier le plus élevé à renvoyer.</ p>
+<p>Par exemple, si vous voulez un entier aléatoire entre 10 et 100 (inclus), utilisez
+<code class="yass-codespan">rand(10, 100)</code> :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_7" data-ace-editor-id="7" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_7" >
+&lt;?php
+echo(rand(10, 100));
+?&gt;
+</pre>
+
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_form_url_email.html">❮ Prior</a><a class="yass-right yass-btn" href="php_regex.html">Next ❯</a></div>	
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Introduction MySQL</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">MySQL Database</span></h1>
+
+<p class="yass-intro">With PHP, you can connect to and manipulate databases.</p>
+<p class="yass-intro">MySQL is the most popular database system used with PHP.</p>
+
+</div>
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Base de données MySQL</span></h1>
+
+<p class="yass-intro">Avec PHP, vous pouvez vous connecter et manipuler des bases de données.</p>
+<p class="yass-intro">MySQL est le système de base de données le plus utilisé avec PHP.</p>
+
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>What is MySQL?</h2>
+<ul>
+  <li>MySQL is a database system used on the web</li>
+  <li>MySQL is a database system that runs on a server</li> 
+<li>MySQL is ideal for both small and large applications</li>
+  <li>MySQL is very fast, reliable, and easy to use</li> 
+<li>MySQL uses standard SQL</li> 
+<li>MySQL compiles on a number of platforms</li> 
+<li>MySQL is free to download and use</li>
+  <li>MySQL is developed, distributed, and supported by Oracle Corporation</li>
+  <li>MySQL is named after co-founder Monty Widenius's daughter: My</li>
+</ul>
+<p>The data in a MySQL database are stored in tables. A table is a collection of related data, and it consists of columns 
+and rows.</p>
+<p>Databases are useful for storing information categorically. A company may 
+have a database with the following tables:</p>
+<ul>
+  <li>Employees</li>
+  <li>Products</li>
+  <li>Customers</li>
+  <li>Orders</li>
+</ul>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Qu'est-ce que MySQL ?</h2>
+<ul>
+   <li>MySQL est un système de base de données utilisé sur le Web</li>
+   <li>MySQL est un système de base de données qui s'exécute sur un serveur</li>
+<li>MySQL est idéal pour les petites et les grandes applications</li>
+   <li>MySQL est très rapide, fiable et facile à utiliser</li>
+<li>MySQL utilise le SQL standard</li>
+<li>MySQL compile sur un certain nombre de plates-formes</li>
+<li>MySQL est téléchargeable et utilisable gratuitement</li>
+   <li>MySQL est développé, distribué et pris en charge par Oracle Corporation</li>
+   <li>MySQL porte le nom de la fille du co-fondateur Monty Widenius : My</li>
+</ul>
+<p>Les données d'une base de données MySQL sont stockées dans des tables. Une table est une collection de données liées, et elle se compose de colonnes
+et lignes.</p>
+<p>Les bases de données sont utiles pour stocker des informations de manière catégorique. Une entreprise peut
+avoir une base de données avec les tables suivantes :</p>
+<ul>
+  <li>Employees(Employés)</li>
+  <li>Products(Produits)</li>
+  <li>Customers(Clients)</li>
+  <li>Orders(Commandes)</li>
+</ul>
+
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP + MySQL Database System</h2>
+<ul>
+  <li>PHP combined with MySQL are cross-platform (you can develop in 
+  Windows and serve on a Unix platform)</li>
+</ul>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Système de base de données PHP + MySQL</h2>
+<ul>
+   <li>PHP combiné à MySQL sont multiplateformes (vous pouvez développer en
+   Windows et servir sur une plate-forme Unix)</li>
+</ul>
+
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+<h2> Database Queries</h2>
+<p> A query is a question or a request.</p>
+
+<p>We can query a database for specific information and have a 
+recordset returned.</p>
+
+<p>Look at the following query (using standard SQL):</p>
+</div>
+
+<div class="yass-columnFr">
+<h2> Requêtes de base de données</h2>
+<p> Une requête est une question ou une demande.</p>
+
+<p>Nous pouvons interroger une base de données pour obtenir des informations spécifiques et disposer d'un
+jeu d'enregistrements renvoyé.</p>
+
+<p>Regardez la requête suivante (en SQL standard) :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate sqlHigh"><div>
+
+SELECT LastName FROM Employees
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>The query above selects all the data in the &quot;LastName&quot; column from the &quot;Employees&quot; 
+table.</p>
+
+</div>
+
+<div class="yass-columnFr">
+<p>La requête ci-dessus sélectionne toutes les données dans le &quot;LastName&quot; de la colonne &quot;Employés&quot;
+tableau.</p>
+
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Download MySQL Database</h2>
+<p>If you don't have a PHP server with a MySQL Database, you can download it 
+for free here: <a href="http://www.mysql.com/" target="_blank">
+http://www.mysql.com</a><br>
+</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Télécharger la base de données MySQL</h2>
+<p>Si vous n'avez pas de serveur PHP avec une base de données MySQL, vous pouvez le télécharger
+gratuitement ici : <a href="http://www.mysql.com/" target="_blank">
+http://www.mysql.com</a><br>
+</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Facts About MySQL Database</h2>
+<p>MySQL is the de-facto standard database system for web sites 
+with HUGE volumes of both data and end-users (like Facebook, Twitter, 
+and Wikipedia).</p>
+<p>Another great thing about MySQL is that it can be scaled down to support 
+embedded database applications.</p>
+<p>Look at <a target="_blank" href="http://www.mysql.com/customers/">
+http://www.mysql.com/customers/</a> for an overview of companies using MySQL.</p>
+
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Faits sur la base de données MySQL</h2>
+<p>MySQL est le système de base de données standard de facto pour les sites Web
+avec d'énormes volumes de données et d'utilisateurs finaux (comme Facebook, Twitter,
+et Wikipédia).</p>
+<p>Un autre avantage de MySQL est qu'il peut être réduit pour prendre en charge
+applications de base de données embarquées.</p>
+<p>Regardez <a target="_blank" href="http://www.mysql.com/customers/">
+http://www.mysql.com/customers/</a> pour un aperçu des entreprises utilisant MySQL.</p>
+
+
+</div>
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="HTTP_protocol.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_connect.html">Next ❯</a></div>
+
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

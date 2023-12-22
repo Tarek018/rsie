@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Numbers</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Numbers</span></h1>
+<p class="yass-intro">In this chapter we will look in depth into Integers, Floats, and 
+Number Strings.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Les Nombres</span></h1>
+<p class="yass-intro">Dans ce chapitre, nous examinerons en profondeur les entiers, les flottants et
+Chaînes de nombres.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Numbers</h2>
+<p>One thing to notice about PHP is that it provides automatic data type 
+conversion.</p>
+<p>So, if you assign an integer value to a variable, the type of that variable 
+will automatically be an integer. Then, if you assign a string to 
+the same variable, the type will change to a string.</p>
+<p>This automatic conversion can sometimes break your code.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Les Nombres en PHP</h2>
+<p>Une chose à remarquer à propos de PHP est qu'il fournit un type de données automatique
+transformation.</p>
+<p>Ainsi, si vous affectez une valeur entière à une variable, le type de cette variable
+sera automatiquement un entier. Ensuite, si vous affectez une chaîne à
+la même variable, le type deviendra une chaîne.</p>
+<p>Cette conversion automatique peut parfois casser votre code.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Integers</h2>
+<p>2, 256, -256, 10358, -179567 are all integers.</p>
+<p>An integer is a number without any decimal part.</p>
+<p>An integer data type is a non-decimal number between -2147483648 and 
+2147483647 in 32 bit systems, and between -9223372036854775808 and 
+9223372036854775807 in 64 bit systems. A value greater (or lower) than this, will be stored as float, 
+because it exceeds the limit of an integer.</p>
+<p><strong>Note:</strong> Another important thing to know is that even if 4 * 2.5 is 10, the result is 
+stored as float, because one of the operands is a float (2.5).</p>
+<p>Here are some rules for integers:</p>
+<ul>
+  <li>An integer must have at least one digit</li>
+  <li>An integer must NOT have a decimal point</li>
+  <li>An integer can be either positive or negative</li>
+  <li>Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)</li>
+</ul>
+<p>PHP has the following predefined constants for integers:</p>
+<ul>
+  <li>PHP_INT_MAX - The largest integer supported</li>
+  <li>PHP_INT_MIN - The smallest integer supported</li>
+  <li>PHP_INT_SIZE - The size of an integer in bytes</li>
+</ul>
+<p>PHP has the following functions to check if the type of a variable is 
+integer:</p>
+<ul>
+  <li>is_int()</li>
+  <li>is_integer() - alias of is_int()</li>
+  <li>is_long() - alias of is_int()</li>
+</ul>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Entiers PHP</h2>
+<p>2, 256, -256, 10358, -179567 sont tous des entiers.</p>
+<p>Un entier est un nombre sans partie décimale.</p>
+<p>Un type de données entier est un nombre non décimal entre -2147483648 et
+2147483647 dans les systèmes 32 bits, et entre -9223372036854775808 et
+9223372036854775807 dans les systèmes 64 bits. Une valeur supérieure (ou inférieure) à celle-ci sera stockée en tant que float,
+car il dépasse la limite d'un entier.</p>
+<p><strong>Remarque :</strong> Une autre chose importante à savoir est que même si 4 * 2,5 est égal à 10, le résultat est
+stocké en tant que float, car l'un des opérandes est un float (2.5).</p>
+<p>Voici quelques règles pour les nombres entiers :</p>
+<ul>
+   <li>Un entier doit avoir au moins un chiffre</li>
+   <li>Un entier ne doit PAS avoir de point décimal</li>
+   <li>Un entier peut être positif ou négatif</li>
+   <li>Les nombres entiers peuvent être spécifiés dans trois formats : décimal (base 10), hexadécimal (base 16 - préfixé par 0x) ou octal (base 8 - préfixé par 0)</li>
+</ul>
+<p>PHP a les constantes prédéfinies suivantes pour les entiers :</p>
+<ul>
+   <li>PHP_INT_MAX - Le plus grand nombre entier pris en charge</li>
+   <li>PHP_INT_MIN - Le plus petit entier pris en charge</li>
+   <li>PHP_INT_SIZE -&nbsp ; La taille d'un entier en octets</li>
+</ul>
+<p>PHP a les fonctions suivantes pour vérifier si le type d'une variable est
+entier :</p>
+<ul>
+   <li>is_int()</li>
+   <li>is_integer() - alias de is_int()</li>
+   <li>is_long() - alias de is_int()</li>
+</ul>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Check if the type of a variable is integer:</p>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php 
+ $x = 5985;
+ var_dump(is_int($x));
+ 
+ echo "&lt;br&gt;";
+ 
+ $x = 59.85;
+ var_dump(is_int($x));
+?&gt;
+ </pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Floats</h2>
+<p>A float is a number with a decimal point or a number in exponential form.</p>
+<p>2.0, 256.4, 10.358, 7.64E+5, 5.56E-5 are all floats.</p>
+<p>The float data type can commonly store a value up to 1.7976931348623E+308 
+(platform dependent), and have a maximum precision of 14 digits.</p>
+<p>PHP has the following predefined constants for floats (from PHP 7.2):</p>
+<ul>
+  <li>PHP_FLOAT_MAX - The largest representable floating point number</li>
+  <li>PHP_FLOAT_MIN - The smallest representable positive floating point number</li>
+  <li> PHP_FLOAT_MAX - The smallest representable negative floating point 
+  number</li>
+  <li>PHP_FLOAT_DIG - The number of decimal digits that can be rounded into a 
+  float and back without precision loss</li>
+  <li>PHP_FLOAT_EPSILON - The smallest representable positive number x, so that 
+  x + 1.0 != 1.0</li>
+</ul>
+<p>PHP has the following functions to check if the type of a variable is 
+float:</p>
+<ul>
+  <li>is_float()</li>
+  <li>is_double() - alias of is_float()</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Flottants PHP</h2>
+<p>Un flottant est un nombre avec un point décimal ou un nombre sous forme exponentielle.</p>
+<p>2.0, 256.4, 10.358, 7.64E+5, 5.56E-5 sont tous des flottants.</p>
+<p>Le type de données flottant peut généralement stocker une valeur jusqu'à 1,7976931348623E+308
+(en fonction de la plate-forme) et ont une précision maximale de 14 chiffres.</p>
+<p>PHP a les constantes prédéfinies suivantes pour les flottants (à partir de PHP 7.2) :</p>
+<ul>
+   <li>PHP_FLOAT_MAX - Le plus grand nombre à virgule flottante représentable</li>
+   <li>PHP_FLOAT_MIN - Le plus petit nombre à virgule flottante positif représentable</li>
+   <li> PHP_FLOAT_MAX - La plus petite virgule flottante négative représentable
+   numéro</li>
+   <li>PHP_FLOAT_DIG - Le nombre de chiffres décimaux qui peuvent être arrondis en un
+   flotter et revenir sans perte de précision</li>
+   <li>PHP_FLOAT_EPSILON - Le plus petit nombre positif représentable x, de sorte que
+   x + 1.0 != 1.0</li>
+</ul>
+<p>PHP a les fonctions suivantes pour vérifier si le type d'une variable est
+flottant :</p>
+<ul>
+   <li>is_float()</li>
+   <li>is_double() - alias de is_float()</li>
+</ul>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Check if the type of a variable is float:</p>
+<div  class="code" id="code_12" data-ace-editor-id="12" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_12" >
+ &lt;?php 
+ $x = 10.365;
+ var_dump(is_float($x));
+
+ ?&gt; 
+ </pre>
+	
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Infinity</h2>
+<p>A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.</p>
+<p>PHP has the following functions to check if a numeric value is finite or 
+infinite:</p>
+<ul>
+  <li><a href="func_math_is_finite.html">is_finite()</a></li>
+  <li><a href="func_math_is_infinite.html">is_infinite()</a></li>
+</ul>
+<p>However, the PHP var_dump() function returns the data type and value:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP Infini</h2>
+<p>Une valeur numérique supérieure à PHP_FLOAT_MAX est considérée comme infinie.</p>
+<p>PHP a les fonctions suivantes pour vérifier si une valeur numérique est finie ou
+infini :</p>
+<ul>
+   <li><a href="func_math_is_finite.html">is_finite()</a></li>
+   <li><a href="func_math_is_infinite.html">is_infinite()</a></li>
+</ul>
+<p>Cependant, la fonction PHP var_dump() renvoie le type de données et la valeur :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Check if a numeric value is finite or infinite:</p>
+<div  class="code" id="code_11" data-ace-editor-id="11" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_11" >
+ &lt;?php 
+ $x = 1.9e411;
+ var_dump($x);
+
+?&gt;
+ </pre>
+	</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP NaN</h2>
+<p>NaN stands for Not a Number.</p>
+<p>NaN is used for impossible mathematical operations.</p>
+<p>PHP has the following functions to check if a value is not a number:</p>
+<ul>
+  <li><a href="func_math_is_nan.html">is_nan()</a></li>
+</ul>
+<p>However, the PHP var_dump() function returns the data type and value:</p>
+</div>
+<div class="yass-columnFr">
+
+<h2>PHP NaN</h2>
+<p>NaN signifie pas un nombre.</p>
+<p>NaN est utilisé pour les opérations mathématiques impossibles.</p>
+<p>PHP a les fonctions suivantes pour vérifier si une valeur n'est pas un nombre :</p>
+<ul>
+   <li><a href="func_math_is_nan.html">is_nan()</a></li>
+</ul>
+<p>Cependant, la fonction PHP var_dump() renvoie le type de données et la valeur :</p>
+</div>
+
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Invalid calculation will return a NaN value:</p>
+<div  class="code" id="code_10" data-ace-editor-id="10" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_10" >
+ &lt;?php
+ $x = acos(8);
+ var_dump($x);
+
+?&gt;
+ </pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Numerical Strings</h2>
+<p>The PHP is_numeric() function can be used to find whether a variable is 
+numeric. The function returns true if the variable is a number or a numeric 
+string, false otherwise.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Chaînes numériques PHP</h2>
+<p>La fonction PHP is_numeric() peut être utilisée pour déterminer si une variable est
+numérique. La fonction renvoie true si la variable est un nombre ou un numérique
+chaîne, false sinon.</p>
+</div>
+
+
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Check if the variable is numeric:</p>
+<div  class="code" id="code_9" data-ace-editor-id="9" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_9" >
+ &lt;?php 
+ $x = 5985;
+ var_dump(is_numeric($x));
+ $x = &quot;5985&quot;;
+ var_dump(is_numeric($x));
+ $x = &quot;59.85&quot; + 100;
+ var_dump(is_numeric($x));
+ $x = &quot;Hello&quot;;
+ var_dump(is_numeric($x));
+
+?&gt;
+  </pre>
+  </div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<div class="yass-panel yass-note">
+<p><strong>Note:</strong> From PHP 7.0: The is_numeric() function will return 
+FALSE for numeric strings in hexadecimal form (e.g. 0xf4c3b00c), as they are no 
+longer considered as numeric strings.</p>
+</div>
+</div>
+
+
+<div class="yass-columnFr">
+<div class="yass-panel yass-note">
+<p><strong>Remarque :</strong> Depuis PHP 7.0 : la fonction is_numeric() renverra
+FALSE pour les chaînes numériques sous forme hexadécimale (par exemple 0xf4c3b00c), car elles ne sont pas
+plus considérées comme des chaînes numériques.</p>
+</div>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Casting Strings and Floats to Integers</h2>
+<p>Sometimes you need to cast a numerical value into another data type.</p>
+<p>The (int), (integer), or intval() function are often used to convert a value 
+to an integer.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2> PHP Casting Strings and Floats to Integers </h2>
+<p>Parfois, vous devez convertir une valeur numérique en un autre type de données.</p>
+<p>La fonction (int), (integer) ou intval() est souvent utilisée pour convertir une valeur
+à un entier.</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+  <p>Cast float and string to integer:</p>
+<div  class="code" id="code_8" data-ace-editor-id="8" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_8" >
+  &lt;?php
+// Cast float to int 
+$x = 23465.768;
+$int_cast = (int)$x;
+echo $int_cast;
+echo &quot;&lt;br&gt;&quot;;
+// Cast string to int
+$x = &quot;23465.768&quot;;
+$int_cast = (int)$x;
+echo $int_cast;
+
+?&gt;
+  </pre>
+
+</div>
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_constants.html">❮ Prior</a><a class="yass-right yass-btn" href="php_string.html">Next ❯</a></div>	
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

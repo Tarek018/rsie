@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Form Required</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Forms - Required Fields</span></h1>
+
+<p class="yass-intro">This chapter shows how to make input fields required and create error messages if needed.</p>
+
+<h2>PHP - Required Fields</h2>
+
+<p>From the validation rules table on the previous page, we see that the &quot;Name&quot;, &quot;E-mail&quot;, and 
+&quot;Gender&quot; fields are required. These fields cannot be empty and must be filled out in the 
+HTML form.</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:25%">Field</th>
+    <th style="width:75%">Validation Rules</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Required. + Must only contain letters and whitespace</td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td>Required. + Must contain a valid email address (with @ and .)</td>
+  </tr>
+  <tr>
+    <td>Website</td>
+    <td>Optional. If present, it must contain a valid URL</td>
+  </tr>
+  <tr>
+    <td>Comment</td>
+    <td>Optional. Multi-line input field (textarea)</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>Required. Must select one</td>
+  </tr>
+  </table>
+<p>In the previous chapter, all input fields were optional. </p>
+<p>In the following code we have added some new variables: $nameErr, $emailErr, 
+$genderErr, and $websiteErr. These error variables will hold error messages for the 
+required fields. We have also added an <code class="yass-codespan">if else</code> statement for each $_POST variable. This 
+checks if the $_POST variable is empty (with the PHP <code class="yass-codespan">empty()</code> 
+function). If it is empty, an error message is stored in the different error variables, 
+and if it is not empty, it sends the user input data through the <code class="yass-codespan">test_input()</code> 
+function:</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Formulaires - Champs obligatoires</span></h1>
+
+<p class="yass-intro">Ce chapitre montre comment rendre les champs de saisie obligatoires et créer des messages d'erreur si nécessaire.</p>
+
+<h2>PHP - Champs obligatoires</h2>
+
+<p>Dans le tableau des règles de validation de la page précédente, nous voyons que le &quot;Nom&quot;, &quot;E-mail&quot;, et
+&quot;Genre&quot; champs sont obligatoires. Ces champs ne peuvent pas être vides et doivent être remplis dans le
+Formulaire HTML.</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:25%">Champ</th>
+     <th style="width:75%">Règles de validation</th>
+   </tr>
+   <tr>
+     <td>Nom</td>
+     <td>Obligatoire. + Ne doit contenir que des lettres et des espaces</td>
+   </tr>
+   <tr>
+     <td>E-mail</td>
+     <td>Obligatoire. + Doit contenir une adresse e-mail valide (avec @ et .)</td>
+   </tr>
+   <tr>
+     <td>Site Web</td>
+     <td>Facultatif. S'il est présent, il doit contenir une URL valide</td>
+   </tr>
+   <tr>
+     <td>Commentaire</td>
+     <td>Facultatif. Champ de saisie multi-lignes (textarea)</td>
+   </tr>
+   <tr>
+     <td>Sexe</td>
+     <td>Obligatoire. Vous devez en sélectionner un</td>
+   </tr>
+   </table>
+<p>Dans le chapitre précédent, tous les champs de saisie étaient facultatifs. </p>
+<p>Dans le code suivant, nous avons ajouté de nouvelles variables : $nameErr, $emailErr,
+$genderErr et $websiteErr. Ces variables d'erreur contiendront des messages d'erreur pour le
+Champs obligatoires. Nous avons également ajouté une instruction <code class="yass-codespan">if else</code> pour chaque variable $_POST. Cette
+vérifie si la variable $_POST est vide (avec le PHP <code class="yass-codespan">empty()</code>
+fonction). S'il est vide, un message d'erreur est stocké dans les différentes variables d'erreur,
+et s'il n'est pas vide, il envoie les données d'entrée de l'utilisateur via le <code class="yass-codespan">test_input()</code>
+fonction :</p>
+</div>
+
+</div>
+<div class="yass-code yass-border notranslate htmlHigh"><div>
+&lt;?php
+<br>// define variables and set to empty values
+<br>$nameErr = $emailErr = $genderErr = $websiteErr = &quot;&quot;;
+<br>$name = $email = $gender = $comment = $website = &quot;&quot;;
+<br>if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+<br>if (empty($_POST[&quot;name&quot;])) {
+<br>$nameErr = &quot;Name is required&quot;;
+<br>} else {
+<br>$name = tes_input($_POST[&quot;name&quot;]);
+<br>}
+<br>if (empty($_POST[&quot;email&quot;]))
+<br>{
+<br>$emailErr = &quot;Email is required&quot;;
+<br>} else {
+<br>$email = test_input($_POST[&quot;email&quot;]);
+<br>}
+<br>if (empty($_POST[&quot;website&quot;]))
+<br>{
+<br>$website = &quot;&quot;;
+<br>} else {
+<br>$website = test_input($_POST[&quot;website&quot;]);
+<br>}
+<br>if (empty($_POST[&quot;comment&quot;])) {
+<br>$comment = &quot;&quot;;
+<br>} else {
+<br>$comment = test_input($_POST[&quot;comment&quot;]);
+<br>}
+<br>if (empty($_POST[&quot;gender&quot;])) {
+<br>$genderErr = &quot;Gender is required&quot;;
+<br>} else
+<br>{
+<br>$gender = test_input($_POST[&quot;gender&quot;]);
+<br>}
+<br>}
+<br>?&gt;
+</pre></div></div>
+
+<div class="row">
+  <div class="yass-columnEn">
+<h2>PHP - Display The Error Messages</h2>
+<p>Then in the HTML form, we add a little script after each required field, 
+which generates the correct error message if needed (that is if the user tries to submit 
+the form without filling out the required fields):</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>PHP - Afficher les messages d'erreur</h2>
+<p>Ensuite dans le formulaire HTML, on ajoute un petit script après chaque champ obligatoire,
+qui génère le message d'erreur correct si nécessaire (c'est-à-dire si l'utilisateur essaie de soumettre
+le formulaire sans remplir les champs obligatoires) :</p>
+</div>
+
+</div>
+<div class="yass-example" style="background-color: #6FCCF1;">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+
+&lt;?php
+	// define variables and set to empty values
+	$nameErr = $emailErr = $genderErr = $websiteErr = &quot;&quot;;
+	$name = $email = $gender = $comment = $website = &quot;&quot;;
+	if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {
+
+	 if (empty($_POST[&quot;name&quot;])) {
+		$nameErr = &quot;Name is required&quot;;
+		} 
+	 else {
+		$name = tes_input($_POST[&quot;name&quot;]);
+		}
+
+	 if (empty($_POST[&quot;email&quot;]))
+		{
+		$emailErr = &quot;Email is required&quot;;
+		} 
+	  else {
+		$email = test_input($_POST[&quot;email&quot;]);
+		}
+
+	 if (empty($_POST[&quot;website&quot;]))
+		{
+		$website = &quot;&quot;;
+		} 
+	 else {
+		$website = test_input($_POST[&quot;website&quot;]);
+		}
+	 
+	 if (empty($_POST[&quot;comment&quot;])) {
+		$comment = &quot;&quot;;
+		}
+     else {
+		$comment = test_input($_POST[&quot;comment&quot;]);
+		}
+		
+	 if (empty($_POST[&quot;gender&quot;])) {
+		$genderErr = &quot;Gender is required&quot;;
+		} 
+	  else
+		{
+		$gender = test_input($_POST[&quot;gender&quot;]);
+		}
+	}
+	?&gt;
+
+
+ &lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
+ Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+&lt;span class=&quot;error&quot;&gt;* &lt;?php echo $nameErr;?&gt;&lt;/span&gt;
+E-mail:
+&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;
+&lt;span class=&quot;error&quot;&gt;* &lt;?php echo $emailErr;?&gt;&lt;/span&gt;
+Website:
+&lt;input type=&quot;text&quot; name=&quot;website&quot;&gt;
+&lt;span class=&quot;error&quot;&gt;&lt;?php echo $websiteErr;?&gt;&lt;/span&gt;
+Comment: &lt;textarea name=&quot;comment&quot; rows=&quot;5&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+Gender:
+&lt;input type=&quot;radio&quot; name=&quot;gender&quot;  value=&quot;female&quot;&gt;Female
+<br>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;Male
+<br>&lt;span class=&quot;error&quot;&gt;* &lt;?php echo $genderErr;?&gt;&lt;/span&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Submit&quot;&gt; <br>
+ &lt;/form&gt;
+
+</div>
+  </div>
+
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_form_validation.html">❮ Prior</a><a class="yass-right yass-btn" href="php_form_url_email.html">Next ❯</a></div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

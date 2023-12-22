@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Exceptions</div>
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Exceptions</span></h1>
+
+<h2>What is an Exception?</h2>
+<p>An exception is an object that describes an error or unexpected behaviour of a PHP script.
+<p>Exceptions are thrown by many PHP functions and classes.</p>
+<p>User defined functions and classes can also throw exceptions.</p>
+<p>Exceptions are a good way to stop a function when it comes across data that it cannot use.</p>
+</div>
+
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Exceptions</span></h1>
+
+<h2>Qu'est-ce qu'une exception ?</h2>
+<p>Une exception est un objet qui décrit une erreur ou un comportement inattendu d'un script PHP.
+<p>Des exceptions sont levées par de nombreuses fonctions et classes PHP.</p>
+<p>Les fonctions et les classes définies par l'utilisateur peuvent également lever des exceptions.</p>
+<p>Les exceptions sont un bon moyen d'arrêter une fonction lorsqu'elle rencontre des données qu'elle ne peut pas utiliser.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Throwing an Exception</h2>
+<p>The <code class="yass-codespan">throw</code> statement allows a user defined 
+function or method to throw an exception. When an exception is thrown, the code 
+following it will not be executed.</p>
+<p>If an exception is not caught, a fatal error will occur with an &quot;Uncaught 
+Exception&quot; message.</p>
+<p>Lets try to throw an exception without catching it:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Lancer une exception</h2>
+<p>L'instruction <code class="yass-codespan">throw</code> permet à un utilisateur défini
+fonction ou méthode pour lever une exception. Lorsqu'une exception est levée, le code
+le suivant ne sera pas exécuté.</p>
+<p>Si une exception n'est pas interceptée, une erreur fatale se produira avec un &quot;Uncaught
+Exception" message.</p>
+<p>Essayons de lancer une exception sans l'attraper :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_1" data-ace-editor-id="1" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_1" >
+ &lt;?php
+<br>function divide($dividend, $divisor) {
+ if($divisor == 0) 
+  {
+ throw new Exception(&quot;Division by zero&quot;);
+ }
+  return $dividend / $divisor;
+}
+echo divide(5, 3);
+echo divide(5, 0);
+?&gt;
+  </pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>The result will look something like this:</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Le résultat ressemblera à ceci :</p>
+</div>
+
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+
+<b>Fatal error</b>: <strong>Uncaught Exception</strong>: Division by zero in 
+  C:\webfolder\test.php:4<br>
+Stack trace: #0 C:\webfolder\test.php(9): <br>
+  divide(5, 0) #1 {main} thrown in <b>C:\webfolder\test.php</b> on line <b>4</b>
+
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The try...catch Statement</h2>
+<p>To avoid the error from the example above, we can use the
+<code class="yass-codespan">try...catch</code> statement to catch exceptions and continue the process.</p>
+
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>L'instruction try...catch</h2>
+<p>Pour éviter l'erreur de l'exemple ci-dessus, nous pouvons utiliser le
+Instruction <code class="yass-codespan">try...catch</code> pour intercepter les exceptions et poursuivre le processus.</p>
+
+<h3>Syntaxe</h3>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate jsHigh"><div>
+  try {
+ code that can throw exceptions<br>} catch(Exception $e) {
+ 
+  code that runs when an exception is caught<br>}</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<p>Show a message when an exception is thrown:</p>
+<div  class="code" id="code_2" data-ace-editor-id="2" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2" >
+ &lt;?php
+<br>function divide($dividend, $divisor) {
+ if($divisor == 0) {
+ throw new Exception(&quot;Division by zero&quot;);
+   }
+ return $dividend / $divisor;
+}
+try {
+ echo divide(5, 0);
+} catch(Exception $e) {
+ echo &quot;Unable to divide.&quot;;
+  }
+?&gt;
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<p>The catch block indicates what type of exception should be caught and the name of the
+variable which can be used to access the exception. In the example above, the type of
+exception is <code class="yass-codespan">Exception</code> and the variable name is <code class="yass-codespan">$e</code>.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Le bloc catch indique quel type d'exception doit être intercepté et le nom du
+variable qui peut être utilisée pour accéder à l'exception. Dans l'exemple ci-dessus, le type de
+l'exception est <code class="yass-codespan">Exception</code> et le nom de la variable est <code class="yass-codespan">$e</code>.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The try...catch...finally Statement</h2>
+<p>The <code class="yass-codespan">try...catch...finally</code> statement can be used to catch exceptions. Code in the
+<code class="yass-codespan">finally</code> block will always run regardless of whether an exception was caught. If
+<code class="yass-codespan">finally</code> is present, the <code class="yass-codespan">catch</code> block is optional.</p>
+
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>La déclaration try...catch...finally</h2>
+<p>L'instruction <code class="yass-codespan">try...catch...finally</code> peut être utilisée pour intercepter les exceptions. Coder dans le
+Le bloc <code class="yass-codespan">finally</code> sera toujours exécuté, qu'une exception ait été interceptée ou non. Si
+<code class="yass-codespan">enfin</code> est présent, le bloc <code class="yass-codespan">catch</code> est facultatif.</p>
+
+<h3>Syntaxe</h3>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate jsHigh"><div>
+  try {
+ code that can throw exceptions<br>} catch(Exception $e) {
+ 
+  code that runs when an exception is caught<br>} finally {
+ code that 
+  always runs regardless of whether an exception was caught<br>}</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<p>Show a message when an exception is thrown and then indicate that the process 
+has ended:</p>
+<div  class="code" id="code_9" data-ace-editor-id="9" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_9" >
+ &lt;?php
+function divide($dividend, $divisor) {
+ if($divisor == 0) {
+ throw new Exception(&quot;Division by zero&quot;);
+ }
+ return $dividend / $divisor;
+}
+try {
+ echo divide(5, 0);
+} catch(Exception $e) {
+ echo "Unable to divide. ";
+
+} finally {
+ echo "Process complete.";
+}
+
+?&gt;
+</pre>
+</div>
+</div>
+		
+<div class="yass-example">
+<h3>Example</h3>
+<p>Output a string even if an exception was not caught:</p>
+<div  class="code" id="code_4" data-ace-editor-id="4" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_4" >
+ &lt;?php
+function divide($dividend, $divisor) {
+ if($divisor == 0) 
+  {
+ throw new Exception(&quot;Division by zero&quot;);
+ }
+  return $dividend / $divisor;
+}
+try {
+ echo divide(5, 0);
+} finally {
+ echo 
+  "Process complete.";
+}
+
+?&gt;</pre>
+	
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The Exception Object</h2>
+<p>The Exception Object contains information about the error or unexpected behaviour that
+the function encountered.</p>
+<h3>Syntax</h3>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>L'objet d'exception</h2>
+<p>L'objet d'exception contient des informations sur l'erreur ou le comportement inattendu qui
+la fonction rencontrée.</p>
+<h3>Syntaxe</h3>
+
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+  new Exception(message, code, previous)</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Parameter Values</h3>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:20%">Parameter</th>
+    <th style="width:80%">Description</th>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td>Optional. A string describing why the exception was thrown</td>
+  </tr>
+  <tr>
+    <td>code</td>
+    <td>Optional. An integer that can be used used to easily distinguish this exception from others of the same type</td>
+  </tr>
+  <tr>
+    <td>previous</td>
+    <td>Optional. If this exception was thrown in a catch block of another exception, it is recommended to pass that exception into this parameter</td>
+  </tr>
+</table>
+
+<h3>Methods</h3>
+<p>When catching an exception, the following table shows some of the methods that can be used to
+get information about the exception:</p>
+
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:20%">Method</th>
+    <th style="width:80%">Description</th>
+  </tr>
+  <tr>
+    <td>getMessage()</td>
+    <td>Returns a string describing why the exception was thrown</td>
+  </tr>
+  <tr>
+    <td>getPrevious()</td>
+    <td>If this exception was triggered by another one, this method returns the previous exception. If not, then it returns <em>null</em></td>
+  </tr>
+  <tr>
+    <td>getCode()</td>
+    <td>Returns the exception code</td>
+  </tr>
+  <tr>
+    <td>getFile()</td>
+    <td>Returns the full path of the file in which the exception was thrown</td>
+  </tr>
+  <tr>
+    <td>getLine()</td>
+    <td>Returns the line number of the line of code which threw the exception</td>
+  </tr>
+</table>
+</div>
+
+<div class="yass-columnFr">
+
+<h3>Valeurs des paramètres</h3>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:20%">Paramètre</th>
+     <th style="width:80%">Description</th>
+   </tr>
+   <tr>
+     <td>message</td>
+     <td>Facultatif. Une chaîne décrivant pourquoi l'exception a été levée</td>
+   </tr>
+   <tr>
+     <td>code</td>
+     <td>Facultatif. Un entier qui peut être utilisé pour distinguer facilement cette exception des autres du même type</td>
+   </tr>
+   <tr>
+     <td>précédent</td>
+     <td>Facultatif. Si cette exception a été levée dans un bloc catch d'une autre exception, il est recommandé de passer cette exception dans ce paramètre</td>
+   </tr>
+</table>
+
+<h3>Méthodes</h3>
+<p>Lors de la capture d'une exception, le tableau suivant montre certaines des méthodes qui peuvent être utilisées pour
+obtenir des informations sur l'exception :</p>
+
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:20%">Méthode</th>
+     <th style="width:80%">Description</th>
+   </tr>
+   <tr>
+     <td>getMessage()</td>
+     <td>Renvoie une chaîne décrivant pourquoi l'exception a été levée</td>
+   </tr>
+   <tr>
+     <td>getPrevious()</td>
+     <td>Si cette exception a été déclenchée par une autre, cette méthode renvoie l'exception précédente. Sinon, il renvoie <em>null</em></td>
+   </tr>
+   <tr>
+     <td>getCode()</td>
+     <td>Renvoie le code d'exception</td>
+   </tr>
+   <tr>
+     <td>getFile()</td>
+     <td>Renvoie le chemin complet du fichier dans lequel l'exception a été levée</td>
+   </tr>
+   <tr>
+     <td>getLine()</td>
+     <td>Renvoie le numéro de ligne de la ligne de code qui a levé l'exception</td>
+   </tr>
+</table>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<p>Output information about an exception that was thrown:</p>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+ &lt;?php
+function divide($dividend, $divisor) {
+ if($divisor == 0) 
+  {
+ throw new Exception(&quot;Division by zero&quot;, 1);
+  }
+ return $dividend / $divisor;
+}
+try {
+ echo divide(5, 0);
+} catch(Exception $ex) {
+ $code = $ex-&gt;getCode();
+ $message = $ex-&gt;getMessage();
+ $file = $ex-&gt;getFile();
+  $line = $ex-&gt;getLine();
+ echo &quot;Exception thrown in $file on line 
+  $line: [Code $code]
+ $message&quot;;
+}
+
+?&gt;
+</pre></div>
+
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_cookies.html">❮ Prior</a><a class="yass-right yass-btn" href="HTTP_protocol.html">Next ❯</a></div>
+	
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

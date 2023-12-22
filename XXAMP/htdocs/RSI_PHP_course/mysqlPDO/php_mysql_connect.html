@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2022/2023</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Connect</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+      <h1>PHP <span class="color_h1">Connect to MySQL</span></h1>
+<p class="yass-intro">PHP 5 and later can work with a MySQL database using:</p>
+<ul>
+  <li><strong>MySQLi extension</strong> (the &quot;i&quot; stands for improved)</li>
+  <li><strong>PDO (PHP Data Objects)</strong></li>
+</ul>
+<p class="yass-intro">Earlier versions of PHP used the MySQL extension. However, this 
+extension was deprecated in 2012.</p>
+</div>
+
+<div class="yass-columnFr">
+
+       <h1>PHP <span class="color_h1">Se connecter à MySQL</span></h1>
+<p class="yass-intro">PHP 5 et versions ultérieures peuvent fonctionner avec une base de données MySQL en utilisant :</p>
+<ul>
+   <li><strong>Extension MySQLi</strong> (le "i" signifie amélioré)</li>
+   <li><strong>PDO (objets de données PHP)</strong></li>
+</ul>
+<p class="yass-intro">Les versions antérieures de PHP utilisaient l'extension MySQL. Cependant, cela
+l'extension a été abandonnée en 2012.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Should I Use MySQLi or PDO?</h2>
+<p>If you need a short answer, it would be &quot;Whatever you like&quot;.</p>
+<p>Both MySQLi and PDO have their advantages:</p>
+<p>PDO will work on 12 different database systems, whereas MySQLi will only 
+work with MySQL databases.</p>
+<p>So, if you have to switch your project 
+to use another database, PDO makes the process easy. You only have 
+to change the connection string and a few queries. With MySQLi, you will need 
+to rewrite the entire code - queries included.</p>
+<p>Both are object-oriented, but MySQLi also offers a procedural API.</p>
+<p>Both support Prepared Statements. Prepared Statements protect 
+from SQL injection, and are very important for web application security.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Dois-je utiliser MySQLi ou PDO ?</h2>
+<p>Si vous avez besoin d'une réponse courte, ce serait &quot;Tout ce que vous voulez&quot;.</p>
+<p>MySQLi et PDO ont leurs avantages :</p>
+<p>PDO fonctionnera sur 12 systèmes de base de données différents, alors que MySQLi ne fonctionnera que
+travailler avec des bases de données MySQL.</p>
+<p>Donc, si vous devez changer de projet
+pour utiliser une autre base de données, PDO facilite le processus. Vous n'avez que
+pour changer la chaîne de connexion et quelques requêtes. Avec MySQLi, vous aurez besoin
+pour réécrire tout le code - requêtes incluses.</p>
+<p>Les deux sont orientés objet, mais MySQLi propose également une API procédurale.</p>
+<p>Les deux prennent en charge les relevés préparés. Les relevés préparés protègent
+de l'injection SQL, et sont très importantes pour la sécurité des applications Web.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>MySQL Examples in Both MySQLi and PDO Syntax</h2>
+<p>In this, and in the following chapters we demonstrate three ways of working 
+with PHP and MySQL:</p>
+<ul>
+  <li>MySQLi (object-oriented)</li>
+  <li>MySQLi (procedural)</li>
+  <li>PDO</li>
+</ul>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Exemples MySQL dans la syntaxe MySQLi et PDO</h2>
+<p>Dans ce chapitre et dans les chapitres suivants, nous montrons trois façons de travailler
+avec PHP et MySQL :</p>
+<ul>
+   <li>MySQLi (orienté objet)</li>
+   <li>MySQLi (procédural)</li>
+   <li>AOP</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>MySQLi Installation</h2>
+<p>For Linux and Windows: The MySQLi extension is automatically installed in 
+most cases, when php5 mysql package is installed.</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Installation de MySQLi</h2>
+<p>Pour Linux et Windows : l'extension MySQLi est automatiquement installée dans
+la plupart des cas, lorsque le package php5 mysql est installé.</p>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Open a Connection to MySQL</h2>
+<p>Before we can access data in the MySQL database, we need to be able to connect to 
+the server:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Ouvrir une connexion à MySQL</h2>
+<p>Avant de pouvoir accéder aux données de la base de données MySQL, nous devons pouvoir nous connecter à
+le serveur :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi Object-Oriented)</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+ if ($conn-&gt;connect_error) {
+ die(&quot;Connection failed: &quot; . $conn-&gt;connect_error);
+}
+echo &quot;Connected successfully&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<div class="yass-panel yass-note">
+<p><strong>Note on the object-oriented example above:</strong> </p>
+  <p>$connect_error was 
+broken until PHP 5.2.9 and 5.3.0. If you need to ensure compatibility with PHP 
+versions prior to 5.2.9 and 5.3.0, use the following code instead:<br><br>
+// Check connection<br>if (mysqli_connect_error()) {
+die(&quot;Database connection failed: &quot; . mysqli_connect_error());
+
+}</p></div>
+</div>
+
+<div class="yass-columnFr">
+
+<div class="yass-panel yass-note">
+<p><strong>Remarque sur l'exemple orienté objet ci-dessus :</strong> </p>
+   <p>$connect_error était
+cassé jusqu'à PHP 5.2.9 et 5.3.0. Si vous avez besoin d'assurer la compatibilité avec PHP
+versions antérieures à 5.2.9 et 5.3.0, utilisez plutôt le code suivant :<br><br>
+// Vérifier la connexion<br>if (mysqli_connect_error()) {
+die(&quot;Échec de la connexion à la base de données : &quot; . mysqli_connect_error());
+
+}</p></div>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example (MySQLi Procedural)</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_23" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+// Check connection
+ if (!$conn) {
+   die(&quot;Connection failed: &quot; . mysqli_connect_error());
+}
+echo &quot;Connected successfully&quot;;
+?&gt;
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example (PDO)</h3>
+<div  class="code" id="code_43" data-ace-editor-id="43" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_43" >
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;root&quot;;
+$password = &quot;tebessauniv12&quot;;
+$myDB= &quot;MYDB&quot;;
+$dsn = "mysql:host=$servername;dbname=$myDB";
+
+try {
+$conn = new PDO($dsn, $username, $password);
+ // set the PDO error mode to exception
+
+$conn-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+echo  &quot;Connected successfully&quot;;
+}catch(PDOException $e) {
+echo &quot;Connection failed: &quot; . $e-&gt;getMessage();
+}
+?&gt;
+</div>
+<br>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<div class="yass-panel yass-note">
+<p><strong>Note:</strong> In the PDO example above we have also 
+<strong>specified a database (myDB)</strong>. PDO require a valid database 
+to connect to. If no database is specified, an exception is thrown.</p>
+</div>
+
+<p><strong>Tip:</strong> A great benefit of PDO is that it 
+has an exception class to handle any problems that may 
+occur in our database queries. If an exception is thrown within the try{ } block, 
+the script stops executing and flows directly to the first catch(){ } block.</p>
+</div>
+
+<div class="yass-columnFr">
+<div class="yass-panel yass-note">
+<p><strong>Remarque :</strong> Dans l'exemple de PDO ci-dessus, nous avons également
+<strong>spécifié une base de données (myDB)</strong>. PDO nécessite une base de données valide
+pour se connecter. Si aucune base de données n'est spécifiée, une exception est levée.</p>
+</div>
+
+<p><strong>Astuce :</strong> un grand avantage de PDO est qu'il
+a une classe d'exception pour gérer tous les problèmes qui peuvent
+se produire dans nos requêtes de base de données. Si une exception est levée dans le bloc try{ },
+le script arrête de s'exécuter et passe directement au premier bloc catch(){ }.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Close the Connection</h2>
+<p>The connection will be closed automatically when the script ends. To close the 
+connection before, use the following:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fermer la connexion</h2>
+<p>La connexion sera fermée automatiquement à la fin du script. Pour fermer le
+connexion avant, utilisez ce qui suit :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>MySQLi Object-Oriented:</h3>
+<div class="yass-code notranslate">
+$conn-&gt;close();
+</div>
+<br>
+</div>
+
+<div class="yass-example">
+<h3>MySQLi Procedural:</h3>
+<div class="yass-code notranslate">
+mysqli_close($conn);
+</div>
+<br>
+</div>
+
+<div class="yass-example">
+<h3>PDO:</h3>
+<div class="yass-code notranslate">
+$conn = null;
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_mysql_intro.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_create.html">Next ❯</a></div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

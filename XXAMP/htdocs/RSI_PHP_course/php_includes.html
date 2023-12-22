@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Include</div>
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+
+
+      <h1>PHP <span class="color_h1">Include Files</span></h1>
+
+<p class="yass-intro">The <code class="yass-codespan">include</code> (or <code class="yass-codespan">require</code>) statement takes all the text/code/markup that exists in the specified file and copies it into
+the file that uses the include statement.</p>
+<p class="yass-intro">Including files is very useful when you want to include the same PHP,
+HTML, or text on multiple pages of a website.</p>
+</div>
+
+<div class="yass-columnFr">
+
+
+       <h1>PHP <span class="color_h1">Inclure les fichiers</span></h1>
+
+<p class="yass-intro">L'instruction <code class="yass-codespan">include</code> (ou <code class="yass-codespan">require</code>) prend tout le texte/ code/balisage qui existe dans le fichier spécifié et le copie dans
+le fichier qui utilise l'instruction include.</p>
+<p class="yass-intro">L'inclusion de fichiers est très utile lorsque vous souhaitez inclure le même PHP,
+HTML ou texte sur plusieurs pages d'un site Web.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP include and require Statements</h2>
+<p>It is possible to insert the content of one PHP file into another PHP file (before the 
+server executes it), with the include or require statement.</p>
+<p><b>The include and require statements are identical, except upon failure:</b></p>
+<ul>
+  <li><code class="yass-codespan">require</code> will produce a fatal error (E_COMPILE_ERROR) and stop the script</li>
+  <li><code class="yass-codespan">include</code> will only produce a warning (E_WARNING) and the script will continue</li>
+</ul>
+<p>So, if you want the execution to go on and show users the output, even if the 
+include file is missing, use the include statement. Otherwise, in case of FrameWork, CMS, or a 
+complex PHP application coding, always use the require statement to include a key file to the 
+flow of execution. This will help avoid compromising your application's security 
+and integrity, just in-case one key file is accidentally missing.</p>
+
+<p>Including files saves a lot of work. This means that 
+you can create a standard header, footer, or menu file for all your web pages. 
+Then, when the header needs to be updated, you can only 
+update the header include file.</p>
+
+<h3>Syntax</h3>
+
+</div>
+
+<div class="yass-columnFr">
+<h2>PHP inclut et exige des déclarations</h2>
+<p>Il est possible d'insérer le contenu d'un fichier PHP dans un autre fichier PHP (avant
+serveur l'exécute), avec l'instruction include ou require.</p>
+<p><b>Les instructions include et require sont identiques, sauf en cas d'échec :</b></p>
+<ul>
+   <li><code class="yass-codespan">require</code> produira une erreur fatale (E_COMPILE_ERROR) et arrêtera le script</li>
+   <li><code class="yass-codespan">include</code> ne produira qu'un avertissement (E_WARNING) et le script continuera</li>
+</ul>
+<p>Donc, si vous voulez que l'exécution se poursuive et montre aux utilisateurs la sortie, même si le
+fichier include est manquant, utilisez l'instruction include. Sinon, en cas de FrameWork, de CMS ou d'un
+codage d'application PHP complexe, utilisez toujours l'instruction require pour inclure un fichier clé dans
+flux d'exécution. Cela vous évitera de compromettre la sécurité de votre application
+et l'intégrité, juste au cas où un fichier clé serait accidentellement manquant.</p>
+
+<p>L'inclusion de fichiers permet d'économiser beaucoup de travail. Cela signifie que
+vous pouvez créer un en-tête, un pied de page ou un fichier de menu standard pour toutes vos pages Web.
+Ensuite, lorsque l'en-tête doit être mis à jour, vous pouvez uniquement
+mettre à jour le fichier d'en-tête inclus.</p>
+
+<h3>Syntaxe</h3>
+
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+include '<i>filename</i>';
+
+
+<br>
+or<br>
+<br>
+require '<i>filename</i>';
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP include Examples</h2>
+<h3>Example 1</h3>
+<p>Assume we have a standard footer file called &quot;footer.php&quot;, that looks like this:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP inclut des exemples</h2>
+<h3>Exemple 1</h3>
+<p>Supposons que nous ayons un fichier de pied de page standard appelé &quot;footer.php&quot;, qui ressemble à ceci :</p>
+</div>
+</div>
+
+
+<div class="yass-code yass-border notranslate"><div>
+ &lt;?php
+ echo &quot;&lt;p&gt;Copyright &amp;copy; 1999-&quot; . date(&quot;Y&quot;) . &quot; tebessa-univ.com&lt;/p&gt;&quot;;
+?&gt;
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>To include the footer file in a page, use the <code class="yass-codespan">include</code> statement:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Pour inclure le fichier de pied de page dans une page, utilisez l'instruction <code class="yass-codespan">include</code> :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_223" data-ace-editor-id="223" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_223" >
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to my home page!&lt;/h1&gt;
+&lt;p&gt;Some text.&lt;/p&gt;
+&lt;p&gt;Some more text.&lt;/p&gt;
+&lt;?php include 'footer.php';?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Example 2</h3>
+<p>Assume we have a standard menu file called &quot;menu.php&quot;:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h3>Exemple 2</h3>
+<p>Supposons que nous ayons un fichier de menu standard appelé &quot;menu.php&quot; :</p>
+</div>
+
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+ &lt;?php
+ echo '&lt;a href=&quot;/default.asp&quot;&gt;Home&lt;/a&gt; -<br>&lt;a href=&quot;/html/default.asp&quot;&gt;HTML Tutorial&lt;/a&gt; -<br>&lt;a href=&quot;/css/default.asp&quot;&gt;CSS Tutorial&lt;/a&gt; -<br>&lt;a href=&quot;/js/default.asp&quot;&gt;JavaScript Tutorial&lt;/a&gt; -<br>&lt;a href=&quot;default.asp&quot;&gt;PHP Tutorial&lt;/a&gt;';
+ ?&gt;
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>All pages in the Web site should use this menu file. Here is how it can be done 
+(we are using a &lt;div&gt; element so that the menu easily can be styled with CSS later):</p>
+</div>
+
+<div class="yass-columnFr">
+
+<p>Toutes les pages du site Web doivent utiliser ce fichier de menu. Voici comment cela peut être fait
+(nous utilisons un élément &lt;div&gt; pour que le menu puisse facilement être stylisé avec CSS plus tard) :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_103" data-ace-editor-id="103" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_103" >
+&lt;html&gt;
+&lt;body&gt;
+
+ &lt;div class=&quot;menu&quot;&gt;
+
+&lt;?php include 'menu.php';?&gt;
+
+&lt;/div&gt;
+
+&lt;h1&gt;Welcome to my home page!&lt;/h1&gt;
+&lt;p&gt;Some text.&lt;/p&gt;
+&lt;p&gt;Some more text.&lt;/p&gt;
+
+&lt;/body&gt;
+
+
+&lt;/html&gt;</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Example 3</h3>
+<p>Assume we have a file called &quot;vars.php&quot;, with some variables defined:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h3>Exemple 3</h3>
+<p>Supposons que nous ayons un fichier nommé &quot;vars.php&quot;, avec quelques variables définies :</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate"><div>
+&lt;?php
+
+$color='red';
+$car='BMW';
+
+?&gt;
+
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>Then, if we include the &quot;vars.php&quot; file, the variables can be used in the calling file:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Ensuite, si nous incluons le &quot;vars.php&quot; file, les variables peuvent être utilisées dans le fichier appelant :</p>
+
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_303" data-ace-editor-id="303" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_303" >
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to my home page!&lt;/h1&gt;
+&lt;?php include 'vars.php';
+echo &quot;I have a $color $car.&quot;;
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP include vs. require</h2>
+<p>The <code class="yass-codespan">require</code> statement is also used to include a file into the PHP code.</p>
+<p>However, there is one big difference between include and require; when a 
+file is included with the <code class="yass-codespan">include</code> statement and PHP cannot find it, the script 
+will continue to execute:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>PHP inclure vs exiger</h2>
+<p>L'instruction <code class="yass-codespan">require</code> est également utilisée pour inclure un fichier dans le code PHP.</p>
+<p>Cependant, il existe une grande différence entre inclure et exiger ; lorsqu'un
+le fichier est inclus avec l'instruction <code class="yass-codespan">include</code> et PHP ne peut pas le trouver, le script
+continuera à s'exécuter :</p>
+</div>
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_23" data-ace-editor-id="23" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_23" >
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to my home page!&lt;/h1&gt;
+&lt;?php include 'noFileExists.php';
+echo &quot;I have a $color $car.&quot;;
+
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<p>If we do the same example using the <code class="yass-codespan">require</code> statement, the 
+echo statement will not be executed because the script execution dies after the 
+<code class="yass-codespan">require</code> statement returned a fatal error:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<p>Si nous faisons le même exemple en utilisant l'instruction <code class="yass-codespan">require</code>, le
+l'instruction echo ne sera pas exécutée car l'exécution du script meurt après la
+L'instruction <code class="yass-codespan">require</code> a renvoyé une erreur fatale :</p>
+
+</div>
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_73" data-ace-editor-id="73" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_73" >
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to my home page!&lt;/h1&gt;
+&lt;?php require 'noFileExists.php';
+echo &quot;I have a $color $car.&quot;;
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+ <div class="yass-columnEn">
+
+<div class="yass-panel yass-note">
+<p>Use <code class="yass-codespan">require</code> when the file is required by the application.</p>
+<p>Use <code class="yass-codespan">include</code> when the file is not required and application should continue when file is not found.</p>
+<br>
+<br>
+</div>
+
+</div>
+
+
+<div class="yass-columnFr">
+
+<div class="yass-panel yass-note">
+<p>Utilisez <code class="yass-codespan">require</code> lorsque le fichier est requis par l'application.</p>
+<p>Utilisez <code class="yass-codespan">include</code> lorsque le fichier n'est pas requis et l'application doit continuer lorsque le fichier n'est pas trouvé.</p>
+<br>
+<br>
+</div>
+
+</div>
+
+
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_date.html">❮ Prior</a><a class="yass-right yass-btn" href="php_file.html">Next ❯</a></div>	
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

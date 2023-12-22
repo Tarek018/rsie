@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a>
+		<a href="HTTP_protocol.html">Basics HTTP Protocol</a> 
+	  
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">HTTP protocol</div>
+
+
+<div  class="yass-div">
+    
+<div class="row">
+<div class="yass-columnEn">
+
+        <p>
+            <strong>HTTP</strong> is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+        </p>
+    </div>
+
+<div class="yass-columnFr">
+
+         <p>
+             <strong>HTTP</strong> est un protocole pour récupérer des ressources telles que des documents HTML. C'est la base de tout échange de données sur le Web et c'est un protocole client-serveur, ce qui signifie que les requêtes sont initiées par le destinataire, généralement le navigateur Web. Un document complet est reconstruit à partir des différents sous-documents récupérés, par exemple, du texte, une description de la mise en page, des images, des vidéos, des scripts, etc.
+         </p>
+     </div>
+
+</div> 
+		
+<img class="yass-image-center" src="./images/fetching_a_page.png" alt="A Web document is the composition of different resources" width="867" height="510" loading="lazy">
+
+<div class="row">
+<div class="yass-columnEn">
+        <p> Clients and servers communicate by exchanging individual messages (as opposed to a stream of data). The messages sent by the client, usually a Web browser, are called <em>requests</em> and the messages sent by the server as an answer are called <em>responses</em>. </p>
+ </div>
+	
+<div class="yass-columnFr">
+         <p> Les clients et les serveurs communiquent en échangeant des messages individuels (par opposition à un flux de données). Les messages envoyés par le client, généralement un navigateur Web, sont appelés <em>requêtes</em> et les messages envoyés par le serveur en réponse sont appelés <em>réponses</em>. </p>
+ </div>
+	 
+</div> 
+            <img class="yass-image-center" src="./images/http-layers.png" alt="HTTP as an application layer protocol, on top of TCP (transport layer) and IP (network layer) and below the presentation layer." width="867" height="510" loading="lazy">
+<div class="row">
+<div class="yass-columnEn">
+	Designed in the early 1990s, HTTP is an extensible protocol which has evolved over time. It is an application layer protocol that is sent over TCP, or over a TLS-encrypted TCP connection, though any reliable transport protocol could theoretically be used. Due to its extensibility, it is used to not only fetch hypertext documents, but also images and videos or to post content to servers, like with HTML form results. HTTP can also be used to fetch parts of documents to update Web pages on demand.
+</div>
+<div class="yass-columnFr">
+Conçu au début des années 1990, HTTP est un protocole extensible qui a évolué au fil du temps. Il s'agit d'un protocole de couche application qui est envoyé via TCP, ou via un TLS-Connexion TCP cryptée, bien que n'importe quel protocole de transport fiable puisse théoriquement être utilisé. En raison de son extensibilité, il est utilisé non seulement pour récupérer des documents hypertextes, mais aussi des images et des vidéos ou pour publier du contenu sur des serveurs, comme avec les résultats de formulaire HTML. HTTP peut également être utilisé pour récupérer des parties de documents afin de mettre à jour des pages Web à la demande.
+</div>	
+</div>	
+ 
+ <div class="row">
+<div class="yass-columnEn">
+       <h2>  Components of HTTP-based systems    </h2>
+        <div>
+            <p> HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example, a robot that crawls the Web to populate and maintain a search engine index. </p>
+            <p> Each individual request is sent to a server, which handles it and provides an answer called the <em>response</em>. Between the client and the server there are numerous entities, collectively called proxies, which perform different operations and act as gateways or caches, for example. </p>
+           
+       </div>
+</div>
+<div class="yass-columnFr">
+        <h2>Composants de systèmes basés sur HTTP</h2>
+         <div>
+             <p> HTTP est un protocole client-serveur : les requêtes sont envoyées par une entité, l'agent utilisateur (ou un proxy en son nom). La plupart du temps, l'agent utilisateur est un navigateur Web, mais il peut s'agir de n'importe quoi, par exemple un robot qui explore le Web pour remplir et maintenir un index de moteur de recherche. </p>
+             <p> Chaque demande individuelle est envoyée à un serveur, qui la gère et fournit une réponse appelée la <em>réponse</em>. Entre le client et le serveur, il existe de nombreuses entités, appelées collectivement proxy, qui effectuent différentes opérations et agissent comme des passerelles ou des caches, par exemple. </p>           
+        </div>
+</div>	 
+	 
+</div>	 
+<img class="yass-image-center" src="./images/client-server-chain.png" alt="Client server chain" width="819" height="121" loading="lazy">
+  <div class="row">
+<div class="yass-columnEn">
+    <p> In reality, there are more computers between a browser and the server handling the request: there are routers, modems, and more. Thanks to the layered design of the Web, these are hidden in the network and transport layers. HTTP is on top, at the application layer. Although important for diagnosing network problems, the underlying layers are mostly irrelevant to the description of HTTP. </p>
+   </div>
+	<div class="yass-columnFr">   
+             <p> En réalité, il y a plus d'ordinateurs entre un navigateur et le serveur qui traite la requête : il y a des routeurs, des modems, etc. Grâce à la conception en couches du Web, ceux-ci sont cachés dans les couches réseau et transport. HTTP est en haut, au niveau de la couche application. Bien qu'elles soient importantes pour diagnostiquer les problèmes de réseau, les couches sous-jacentes sont pour la plupart sans rapport avec la description de HTTP. </p>
+         </div>  
+    </div>
+
+
+<img class="yass-image-center" src="./images/client-server-chain.png" alt="Chaîne client-serveur" width="819" height="121" loading="lazy">
+
+ <div class="row">
+<div class="yass-columnEn">
+        <h3>  Client: the user-agent </h3>
+            <p> The <em>user-agent</em> is any tool that acts on behalf of the user. This role is primarily performed by the Web browser, but it may also be performed by programs used by engineers and Web developers to debug their applications. </p>
+            <p> The browser is <strong>always</strong> the entity initiating the request. It is never the server (though some mechanisms have been added over the years to simulate server-initiated messages). </p>
+            <p> To display a Web page, the browser sends an original request to fetch the HTML document that represents the page. It then parses this file, making additional requests corresponding to execution scripts, layout information (CSS) to display, and sub-resources contained within the page (usually images and videos). The Web browser then combines these resources to present the complete document, the Web page. Scripts executed by the browser can fetch more resources in later phases and the browser updates the Web page accordingly. </p>
+            <p> A Web page is a hypertext document. This means some parts of the displayed content are links, which can be activated (usually by a click of the mouse) to fetch a new Web page, allowing the user to direct their user-agent and navigate through the Web. The browser translates these directions into HTTP requests, and further interprets the HTTP responses to present the user with a clear response. </p>
+        </div>
+<div class="yass-columnFr">
+         <h3>Client : l'agent utilisateur </h3>
+             <p> L'<em>agent utilisateur</em> est tout outil qui agit au nom de l'utilisateur. Ce rôle est principalement joué par le navigateur Web, mais il peut également être joué par des programmes utilisés par les ingénieurs et les développeurs Web pour déboguer leurs applications. </p>
+             <p> Le navigateur est <strong>toujours</strong> l'entité à l'origine de la requête. Ce n'est jamais le serveur (bien que certains mécanismes aient été ajoutés au fil des ans pour simuler les messages initiés par le serveur). </p>
+             <p> Pour afficher une page Web, le navigateur envoie une requête originale pour récupérer le document HTML qui représente la page. Il analyse ensuite ce fichier, en faisant des requêtes supplémentaires correspondant aux scripts d'exécution, aux informations de mise en page (CSS) à afficher et aux sous-ressources contenues dans la page (généralement des images et des vidéos). Le navigateur Web combine ensuite ces ressources pour présenter le document complet, la page Web. Les scripts exécutés par le navigateur peuvent récupérer plus de ressources dans les phases ultérieures et le navigateur met à jour la page Web en conséquence. </p>
+             <p> Une page Web est un document hypertexte. Cela signifie que certaines parties du contenu affiché sont des liens, qui peuvent être activés (généralement par un clic de souris) pour récupérer une nouvelle page Web, permettant à l'utilisateur de diriger son agent utilisateur et de naviguer sur le Web. Le navigateur traduit ces instructions en requêtes HTTP et interprète ensuite les réponses HTTP pour présenter à l'utilisateur une réponse claire. </p>
+         </div>   
+</div>
+
+
+
+ <div class="row">
+<div class="yass-columnEn">
+        <h3>The Web server </h3>
+        <div>
+            <p> On the opposite side of the communication channel is the server, which <em>serves</em> the document as requested by the client. A server appears as only a single machine virtually; but it may actually be a collection of servers sharing the load (load balancing), or a complex piece of software interrogating other computers (like cache, a DB server, or e-commerce servers), totally or partially generating the document on demand. </p>
+            <p> A server is not necessarily a single machine, but several server software instances can be hosted on the same machine. With HTTP/1.1 and the <code>Host</code>
+              header, they may even share the same IP address. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h3>Le serveur Web </h3>
+         <div>
+             <p> De l'autre côté du canal de communication se trouve le serveur, qui <em>servit</em> le document comme demandé par le client. Un serveur apparaît virtuellement comme une seule machine ; mais il peut en fait s'agir d'un ensemble de serveurs partageant la charge (équilibrage de charge), ou d'un logiciel complexe interrogeant d'autres ordinateurs (comme un cache, un serveur de base de données ou des serveurs de commerce électronique), générant totalement ou partiellement le document à la demande. </p>
+             <p> Un serveur n'est pas nécessairement une seule machine, mais plusieurs instances de logiciel serveur peuvent être hébergées sur la même machine. Avec HTTP/1.1 et le <code>Hôte</code>
+               header, ils peuvent même partager la même adresse IP. </p>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+        <h3> Proxies </h3>
+        <div>
+            <p> Between the Web browser and the server, numerous computers and machines relay the HTTP messages. Due to the layered structure of the Web stack, most of these operate at the transport, network or physical levels, becoming transparent at the HTTP layer and potentially having a significant impact on performance. Those operating at the application layers are generally called <strong>proxies</strong>. These can be transparent, forwarding on the requests they receive without altering them in any way, or non-transparent, in which case they will change the request in some way before passing it along to the server. Proxies may perform numerous functions: </p>
+            <ul>
+                <li>caching (the cache can be public or private, like the browser cache)</li>
+                <li>filtering (like an antivirus scan or parental controls)</li>
+                <li>load balancing (to allow multiple servers to serve different requests)</li>
+                <li>authentication (to control access to different resources)</li>
+                <li>logging (allowing the storage of historical information)</li>
+            </ul>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h3> Proxy </h3>
+         <div>
+             <p> Entre le navigateur Web et le serveur, de nombreux ordinateurs et machines relaient les messages HTTP. En raison de la structure en couches de la pile Web, la plupart d'entre elles fonctionnent au niveau du transport, du réseau ou physique, devenant transparentes au niveau de la couche HTTP et ayant potentiellement un impact significatif sur les performances. Ceux qui opèrent au niveau des couches d'application sont généralement appelés <strong>proxy</strong>. Ceux-ci peuvent être transparents, transmettant les demandes qu'ils reçoivent sans les modifier de quelque manière que ce soit, ou non transparents, auquel cas ils modifieront la demande d'une manière ou d'une autre avant de la transmettre au serveur. Les proxys peuvent remplir de nombreuses fonctions : </p>
+             <ul>
+                 <li>mise en cache (le cache peut être public ou privé, comme le cache du navigateur)</li>
+                 <li>filtrage (comme une analyse antivirus ou un contrôle parental)</li>
+                 <li>équilibrage de charge (pour permettre à plusieurs serveurs de répondre à différentes requêtes)</li>
+                 <li>authentification (pour contrôler l'accès aux différentes ressources)</li>
+                 <li>journalisation (permettant le stockage d'informations historiques)</li>
+             </ul>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+        <h2> Basic aspects of HTTP </h2>
+        <h3>HTTP is simple </h3>
+        <div>
+            <p> HTTP is generally designed to be simple and human readable, even with the added complexity introduced in HTTP/2 by encapsulating HTTP messages into frames. HTTP messages can be read and understood by humans, providing easier testing for developers, and reduced complexity for newcomers. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h2> Aspects de base de HTTP </h2>
+         <h3>HTTP est simple </h3>
+         <div>
+             <p> HTTP est généralement conçu pour être simple et lisible par l'homme, même avec la complexité supplémentaire introduite dans HTTP/2 en encapsulant les messages HTTP dans des cadres. Les messages HTTP peuvent être lus et compris par les humains, ce qui facilite les tests pour les développeurs et réduit la complexité pour les nouveaux arrivants. </p>
+         </div>
+     </div>
+	
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+
+        <h3> HTTP is extensible </h3>
+        <div>
+            <p> Introduced in HTTP/1.0, HTTP headers make this protocol easy to extend and experiment with. New functionality can even be introduced by a simple agreement between a client and a server about a new header's semantics. </p>
+        </div>
+</div>
+<div class="yass-columnFr">
+
+         <h3> HTTP est extensible </h3>
+         <div>
+             <p> Introduits dans HTTP/1.0, les en-têtes HTTP facilitent l'extension et l'expérimentation de ce protocole. De nouvelles fonctionnalités peuvent même être introduites par un simple accord entre un client et un serveur sur la sémantique d'un nouvel en-tête. </p>
+         </div>
+</div>
+	
+	</div>
+ <div class="row">
+<div class="yass-columnEn">
+
+        <h3> HTTP is stateless, but not sessionless </h3>
+        <div>
+            <p> HTTP is stateless: there is no link between two requests being successively carried out on the same connection. This immediately has the prospect of being problematic for users attempting to interact with certain pages coherently, for example, using e-commerce shopping baskets. But while the core of HTTP itself is stateless, HTTP cookies allow the use of stateful sessions. Using header extensibility, HTTP Cookies are added to the workflow, allowing session creation on each HTTP request to share the same context, or the same state. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+
+         <h3> HTTP est sans état, mais pas sans session </h3>
+         <div>
+             <p> HTTP est sans état : il n'y a pas de lien entre deux requêtes s'exécutant successivement sur la même connexion. Cela a immédiatement la perspective d'être problématique pour les utilisateurs qui tentent d'interagir avec certaines pages de manière cohérente, par exemple en utilisant des paniers d'achat de commerce électronique. Mais alors que le cœur de HTTP lui-même est sans état, les cookies HTTP permettent l'utilisation de sessions avec état. Grâce à l'extensibilité de l'en-tête, des cookies HTTP sont ajoutés au flux de travail, permettant à la création de session sur chaque requête HTTP de partager le même contexte ou le même état. </p>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+
+        <h3> HTTP and connections
+        </h3>
+        <div>
+            <p> A connection is controlled at the transport layer, and therefore fundamentally out of scope for HTTP. HTTP doesn't require the underlying transport protocol to be connection-based; it only requires it to be <em>reliable</em>, or not lose messages (at minimum, presenting an error in such cases). Among the two most common transport protocols on the Internet, TCP is reliable and UDP isn't. HTTP therefore relies on the TCP standard, which is connection-based. </p>
+            <p> Before a client and server can exchange an HTTP request/response pair, they must establish a TCP connection, a process which requires several round-trips. The default behavior of HTTP/1.0 is to open a separate TCP connection for each HTTP request/response pair. This is less efficient than sharing a single TCP connection when multiple requests are sent in close succession. </p>
+            <p> In order to mitigate this flaw, HTTP/1.1 introduced <em>pipelining</em> (which proved difficult to implement) and <em>persistent connections</em>: the underlying TCP connection can be partially controlled using the             Connection                header. HTTP/2 went a step further by multiplexing messages over a single connection, helping keep the connection warm and more efficient. </p>
+            <p> Experiments are in progress to design a better transport protocol more suited to HTTP. For example, Google is experimenting with QUIC which builds on UDP to provide a more reliable and efficient transport protocol. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+
+         <h3> HTTP et connexions
+         </h3>
+         <div>
+             <p> Une connexion est contrôlée au niveau de la couche de transport, et donc fondamentalement hors de portée pour HTTP. HTTP n'exige pas que le protocole de transport sous-jacent soit basé sur la connexion ; il lui suffit d'être <em>fiable</em>, ou de ne pas perdre de messages (au minimum, présenter une erreur dans de tels cas). Parmi les deux protocoles de transport les plus courants sur Internet, TCP est fiable et UDP ne l'est pas. HTTP s'appuie donc sur la norme TCP, qui est basée sur la connexion. </p>
+             <p> Avant qu'un client et un serveur puissent échanger une paire requête/réponse HTTP, ils doivent établir une connexion TCP, un processus qui nécessite plusieurs allers-retours. Le comportement par défaut de HTTP/1.0 consiste à ouvrir une connexion TCP distincte pour chaque paire requête/réponse HTTP. Ceci est moins efficace que de partager une seule connexion TCP lorsque plusieurs requêtes sont envoyées en succession rapprochée. </p>
+             <p> Afin d'atténuer cette faille, HTTP/1.1 a introduit le <em>pipelining</em> (qui s'est avéré difficile à mettre en œuvre) et les <em>connexions persistantes</em> : la connexion TCP sous-jacente peut être partiellement contrôlée à l'aide du En-tête de connexion. HTTP/2 est allé un peu plus loin en multiplexant les messages sur une seule connexion, aidant à garder la connexion chaude et plus efficace. </p>
+             <p> Des expérimentations sont en cours pour concevoir un meilleur protocole de transport plus adapté à HTTP. Par exemple, Google expérimente QUIC qui s'appuie sur UDP pour fournir un protocole de transport plus fiable et efficace. </p>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+
+        <h2> What can be controlled by HTTP
+        </h2>
+        <div>
+            <p> This extensible nature of HTTP has, over time, allowed for more control and functionality of the Web. Cache and authentication methods were functions handled early in HTTP history. The ability to relax the <em>origin constraint</em>, by contrast, was only added in the 2010s. </p>
+            <p>Here is a list of common features controllable with HTTP:</p>
+            <ul>
+                <li>
+                    <em>                    Caching
+                    </em>: How documents are cached can be controlled by HTTP. The server can instruct proxies and clients about what to cache and for how long. The client can instruct intermediate cache proxies to ignore the stored document.
+                </li>
+                <li>
+                    <em>Relaxing the origin constraint</em>: To prevent snooping and other privacy invasions, Web browsers enforce strict separation between Web sites. Only pages from the <strong>same origin</strong> can access all the information of a Web page. Though such a constraint is a burden to the server, HTTP headers can relax this strict separation on the server side, allowing a document to become a patchwork of information sourced from different domains; there could even be security-related reasons to do so.
+                </li>
+                <li>
+                    <em>Authentication</em>: Some pages may be protected so that only specific users can access them. Basic authentication may be provided by HTTP, either using the                     WWW-Authenticate                   and similar headers, or by setting a specific session using HTTP cookies.
+                </li>
+                <li>
+                    <em>                    Proxy and tunneling
+                    </em>: Servers or clients are often located on intranets and hide their true IP address from other computers. HTTP requests then go through proxies to cross this network barrier. Not all proxies are HTTP proxies. The SOCKS protocol, for example, operates at a lower level. Other protocols, like ftp, can be handled by these proxies.
+                </li>
+                <li>
+                    <em>Sessions</em>: Using HTTP cookies allows you to link requests with the state of the server. This creates sessions, despite basic HTTP being a state-less protocol. This is useful not only for e-commerce shopping baskets, but also for any site allowing user configuration of the output.
+                </li>
+            </ul>
+        </div>
+    </div>
+<div class="yass-columnFr">
+
+         <h2> Ce qui peut être contrôlé par HTTP
+         </h2>
+         <div>
+             <p> Cette nature extensible de HTTP a, au fil du temps, permis plus de contrôle et de fonctionnalité du Web. Les méthodes de cache et d'authentification étaient des fonctions gérées au début de l'histoire de HTTP. La possibilité d'assouplir la <em>contrainte d'origine</em>, en revanche, n'a été ajoutée que dans les années 2010. </p>
+             <p>Voici une liste des fonctionnalités communes contrôlables avec HTTP :</p>
+             <ul>
+                 <li>
+                     <em> Mise en cache
+                     </em> : la façon dont les documents sont mis en cache peut être contrôlée par HTTP. Le serveur peut indiquer aux proxies et aux clients ce qu'il faut mettre en cache et pendant combien de temps. Le client peut ordonner aux proxys de cache intermédiaires d'ignorer le document stocké.
+                 </li>
+                 <li>
+                     <em>Assouplissement de la contrainte d'origine</em> : pour empêcher l'espionnage et d'autres atteintes à la vie privée, les navigateurs Web imposent une séparation stricte entre les sites Web. Seules les pages de <strong>même origine</strong> peuvent accéder à toutes les informations d'une page Web. Bien qu'une telle contrainte soit un fardeau pour le serveur, les en-têtes HTTP peuvent assouplir cette séparation stricte côté serveur, permettant à un document de devenir un patchwork d'informations provenant de différents domaines ; il pourrait même y avoir des raisons liées à la sécurité de le faire.
+                 </li>
+                 <li>
+                     <em>Authentification</em> : certaines pages peuvent être protégées afin que seuls des utilisateurs spécifiques puissent y accéder. L'authentification de base peut être fournie par HTTP, soit en utilisant les en-têtes WWW-Authenticate et similaires, soit en définissant une session spécifique à l'aide de cookies HTTP.
+                 </li>
+                 <li>
+                     <em> Proxy et tunnellisation
+                     </em> : les serveurs ou les clients sont souvent situés sur des intranets et cachent leur véritable adresse IP aux autres ordinateurs. Les requêtes HTTP passent ensuite par des proxys pour franchir cette barrière réseau. Tous les proxys ne sont pas des proxys HTTP. Le protocole SOCKS, par exemple, fonctionne à un niveau inférieur. D'autres protocoles, comme ftp, peuvent être gérés par ces proxys.
+                 </li>
+                 <li>
+                     <em>Sessions</em> : l'utilisation de cookies HTTP vous permet de lier les requêtes à l'état du serveur. Cela crée des sessions, bien que le protocole HTTP de base soit un protocole sans état. Ceci est utile non seulement pour les paniers d'achat de commerce électronique, mais également pour tout site permettant à l'utilisateur de configurer la sortie.
+                 </li>
+             </ul>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+
+        <h2> HTTP flow
+        </h2>
+        <div>
+            <p>When a client wants to communicate with a server, either the final server or an intermediate proxy, it performs the following steps:</p>
+            <ol>
+                <li> Open a TCP connection: The TCP connection is used to send a request, or several, and receive an answer. The client may open a new connection, reuse an existing connection, or open several TCP connections to the servers. </li>
+                <li> Send an HTTP message: HTTP messages (before HTTP/2) are human-readable. With HTTP/2, these simple messages are encapsulated in frames, making them impossible to read directly, but the principle remains the same.  </li>
+	            <li>Read the response sent by the server, such  </li>
+                <li>Close or reuse the connection for further requests.</li>
+            </ol>
+            <p> If HTTP pipelining is activated, several requests can be sent without waiting for the first response to be fully received. HTTP pipelining has proven difficult to implement in existing networks, where old pieces of software coexist with modern versions. HTTP pipelining has been superseded in HTTP/2 with more robust multiplexing requests within a frame. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+
+         <h2> flux HTTP
+         </h2>
+         <div>
+             <p>Lorsqu'un client souhaite communiquer avec un serveur, qu'il s'agisse du serveur final ou d'un proxy intermédiaire, il effectue les étapes suivantes :</p>
+             <ol>
+                 <li> Ouvrir une connexion TCP : La connexion TCP permet d'envoyer une requête, ou plusieurs, et de recevoir une réponse. Le client peut ouvrir une nouvelle connexion, réutiliser une connexion existante ou ouvrir plusieurs connexions TCP vers les serveurs. </li>
+                 <li> Envoyer un message HTTP : les messages HTTP (avant HTTP/2) sont lisibles par l'homme. Avec HTTP/2, ces messages simples sont encapsulés dans des trames, ce qui les rend impossibles à lire directement, mais le principe reste le même. </li>
+<li>Lire la réponse envoyée par le serveur, par exemple </li>
+                 <li>Fermer ou réutiliser la connexion pour d'autres requêtes.</li>
+             </ol>
+             <p> Si le pipelining HTTP est activé, plusieurs requêtes peuvent être envoyées sans attendre que la première réponse soit entièrement reçue. Le pipeline HTTP s'est avéré difficile à mettre en œuvre dans les réseaux existants, où d'anciens logiciels coexistent avec des versions modernes. Le pipelining HTTP a été remplacé dans HTTP/2 par des requêtes de multiplexage plus robustes dans une trame. </p>
+         </div>
+     </div>
+</div>
+	
+ <div class="row">
+<div class="yass-columnEn">
+        <h2> HTTP Messages
+        </h2>
+        <div>
+            <p> HTTP messages, as defined in HTTP/1.1 and earlier, are human-readable. In HTTP/2, these messages are embedded into a binary structure, a <em>frame</em>, allowing optimizations like compression of headers and multiplexing. Even if only part of the original HTTP message is sent in this version of HTTP, the semantics of each message is unchanged and the client reconstitutes (virtually) the original HTTP/1.1 request. It is therefore useful to comprehend HTTP/2 messages in the HTTP/1.1 format. </p>
+            <p>There are two types of HTTP messages, requests and responses, each with its own format.</p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h2> Messages HTTP
+         </h2>
+         <div>
+             <p> Les messages HTTP, tels que définis dans HTTP/1.1 et versions antérieures, sont lisibles par l'homme. Dans HTTP/2, ces messages sont intégrés dans une structure binaire, une <em>frame</em>, permettant des optimisations telles que la compression des en-têtes et le multiplexage. Même si seule une partie du message HTTP d'origine est envoyée dans cette version de HTTP, la sémantique de chaque message est inchangée et le client reconstitue (virtuellement) la requête HTTP/1.1 d'origine. Il est donc utile de comprendre les messages HTTP/2 au format HTTP/1.1. </p>
+             <p>Il existe deux types de messages HTTP, les requêtes et les réponses, chacun avec son propre format.</p>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+        <h3> Requests
+        </h3>
+        <div>
+            <p>An example HTTP request:</p>
+            <p>
+                </div>
+</div>
+<div class="yass-columnFr">
+         <h3> Requêtes
+         </h3>
+         <div>
+             <p>Un exemple de requête HTTP :</p>
+             <p>
+                 </div>
+</div>
+</div>
+	
+	 <img class="yass-image-center" src="./images/http_request.png" alt="A basic HTTP request" width="693" height="336" loading="lazy">
+ <div class="row">
+<div class="yass-columnEn">  
+          <p>Requests consist of the following elements:</p>
+            <ul>
+                <li> An HTTP method, usually a verb like                 GET                    ,                 POST                , or a noun like                 OPTIONS                 or                 HEAD                 that defines the operation the client wants to perform. Typically, a client wants to fetch a resource (using <code>GET</code>) or post the value of an HTML form (using <code>POST</code>), though more operations may be needed in other cases. </li>
+                <li>The path of the resource to fetch; the URL of the resource stripped from elements that are obvious from the context, for example without the protocol ( <code>http://</code>), the domain (here, <code>developer.mozilla.org</code>), or the TCP port (here, <code>80</code>). </li>
+                <li>The version of the HTTP protocol.</li>
+                <li>Optional headers that convey additional information for the servers. </li>
+                <li>A body, for some methods like <code>POST</code>, similar to those in responses, which contain the resource sent. </li>
+            </ul>
+        </div>
+<div class="yass-columnFr">
+           <p>Les demandes comprennent les éléments suivants :</p>
+             <ul>
+                 <li> Une méthode HTTP, généralement un verbe comme GET , POST , ou un nom comme OPTIONS ou HEAD qui définit l'opération que le client veut effectuer. Généralement, un client souhaite récupérer une ressource (en utilisant <code>GET</code>) ou publier la valeur d'un formulaire HTML (en utilisant <code>POST</code>), bien que d'autres opérations puissent être nécessaires dans d'autres cas. </li>
+                 <li>Le chemin de la ressource à récupérer ; l'URL de la ressource débarrassée des éléments évidents du contexte, par exemple sans le protocole ( <code>http://</code>), le domaine (ici, <code>developer.mozilla.org</code >), ou le port TCP (ici, <code>80</code>). </li>
+                 <li>La version du protocole HTTP.</li>
+                 <li>En-têtes facultatifs qui transmettent des informations supplémentaires pour les serveurs. </li>
+                 <li>Un corps, pour certaines méthodes comme <code>POST</code>, similaire à ceux des réponses, qui contient la ressource envoyée. </li>
+             </ul>
+         </div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+        <h3> Responses
+        </h3>
+        <div>
+            <p>An example response:</p>
+            <p>
+                </div>
+</div>
+<div class="yass-columnFr">
+         <h3> Réponses
+         </h3>
+         <div>
+             <p>Un exemple de réponse :</p>
+             <p>
+                 </div>
+</div>
+</div>
+	
+<img class="yass-image-center" src="./images/http_response.png" alt="HTTP Response image" width="758" height="494" loading="lazy">
+ <div class="row">
+<div class="yass-columnEn">  
+ 
+            <p>Responses consist of the following elements:</p>
+            <ul>
+                <li>The version of the HTTP protocol they follow.</li>
+                <li>A status code, indicating if the request was successful or not, and why. </li>
+                <li>A status message, a non-authoritative short description of the status code.</li>
+                <li>HTTP headers, like those for requests. </li>
+                <li>Optionally, a body containing the fetched resource.</li>
+            </ul>
+        </div>
+   <div class="yass-columnFr">
+ 
+             <p>Les réponses se composent des éléments suivants :</p>
+             <ul>
+                 <li>La version du protocole HTTP qu'ils suivent.</li>
+                 <li>Un code d'état, indiquant si la demande a réussi ou non, et pourquoi. </li>
+                 <li>Un message d'état, une brève description ne faisant pas autorité du code d'état.</li>
+                 <li>Les en-têtes HTTP, comme ceux des requêtes. </li>
+                 <li>Facultativement, un corps contenant la ressource récupérée.</li>
+             </ul>
+         </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+        <h2> APIs based on HTTP
+        </h2>
+        <div>
+            <p> The most commonly used API based on HTTP is the             XMLHttpRequest                API, which can be used to exchange data between a user agent and a server. The modern             Fetch API             provides the same features with a more powerful and flexible feature set. </p>
+            <p> Another API, server-sent events, is a one-way service that allows a server to send events to the client, using HTTP as a transport mechanism. Using the             EventSource                interface, the client opens a connection and establishes event handlers. The client browser automatically converts the messages that arrive on the HTTP stream into appropriate             Event             objects. Then it delivers them to the event handlers that have been registered for the events'             type             if known, or to the             onmessage             event handler if no type-specific event handler was established. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h2> API basées sur HTTP
+         </h2>
+         <div>
+             <p> L'API basée sur HTTP la plus couramment utilisée est l'API XMLHttpRequest, qui peut être utilisée pour échanger des données entre un agent utilisateur et un serveur. L'API Fetch moderne fournit les mêmes fonctionnalités avec un ensemble de fonctionnalités plus puissant et flexible. </p>
+             <p> Une autre API, les événements envoyés par le serveur, est un service unidirectionnel qui permet à un serveur d'envoyer des événements au client, en utilisant HTTP comme mécanisme de transport. À l'aide de l'interface EventSource, le client ouvre une connexion et établit des gestionnaires d'événements. Le navigateur client convertit automatiquement les messages qui arrivent sur le flux HTTP en objets Event appropriés. Ensuite, il les transmet aux gestionnaires d'événements qui ont été enregistrés pour le type d'événements s'il est connu, ou au gestionnaire d'événements onmessage si aucun gestionnaire d'événements spécifique au type n'a été établi. </p>
+         </div>
+     </div>
+</div>
+ <div class="row">
+<div class="yass-columnEn">
+        <h2> Conclusion
+        </h2>
+        <div>
+            <p> HTTP is an extensible protocol that is easy to use. The client-server structure, combined with the ability to add headers, allows HTTP to advance along with the extended capabilities of the Web. </p>
+            <p> Though HTTP/2 adds some complexity by embedding HTTP messages in frames to improve performance, the basic structure of messages has stayed the same since HTTP/1.0. Session flow remains simple, allowing it to be investigated and debugged with a simple HTTP message monitor. </p>
+        </div>
+    </div>
+<div class="yass-columnFr">
+         <h2>Conclusion
+         </h2>
+         <div>
+             <p> HTTP est un protocole extensible facile à utiliser. La structure client-serveur, combinée à la possibilité d'ajouter des en-têtes, permet à HTTP de progresser parallèlement aux capacités étendues du Web. </p>
+             <p> Bien que HTTP/2 ajoute une certaine complexité en incorporant des messages HTTP dans des trames pour améliorer les performances, la structure de base des messages est restée la même depuis HTTP/1.0. Le flux de session reste simple, ce qui permet de l'étudier et de le déboguer avec un simple moniteur de messages HTTP. </p>
+         </div>
+     </div>
+</div>
+
+
+
+ </div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_exceptions.html">❮ Prior</a><a class="yass-right yass-btn" href="php_mysql_intro.html">Next ❯</a></div>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

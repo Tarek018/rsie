@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">Datatypes</div>
+
+
+<div  class="yass-div">
+<div class="row">
+<div class="yass-columnEn">
+<h2>PHP Data Types</h2>
+<p>Variables can store data of different types, and different data types can do 
+different things.</p>
+<p>PHP supports the following data types:</p>
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+  <li>Float (floating point numbers - also called double)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+  <li>Resource</li>
+</ul>
+</div>
+
+
+<div class="yass-columnFr">
+<h2>Types de données PHP</h2>
+<p>Les variables peuvent stocker des données de différents types, et différents types de données peuvent faire
+différentes choses.</p>
+<p>PHP prend en charge les types de données suivants :</p>
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+   <li>Float (nombres à virgule flottante - également appelés doubles)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+  <li>Resource</li>
+ </ul>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP String</h2>
+<p>A string is a sequence of characters, like &quot;Hello world!&quot;.</p>
+<p>A string can be any text inside quotes. You can use single or double quotes:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Chaîne PHP</h2>
+<p>Une chaîne est une séquence de caractères, comme &quot;Hello world !&quot;.</p>
+<p>Une chaîne peut être n'importe quel texte entre guillemets. Vous pouvez utiliser des guillemets simples ou doubles :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_1" data-ace-editor-id="1" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_1" >
+
+ &lt;?php 
+ $x = &quot;Hello world!&quot;;
+ $y = 'Hello world!';
+ echo $x;
+ echo &quot;&lt;br&gt;&quot;;
+ echo $y;
+ ?&gt;
+
+</pre>
+	
+	</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+		
+<h2>PHP Integer</h2>
+<p>An integer data type is a non-decimal number between -2,147,483,648 and 
+2,147,483,647.</p>
+<p>Rules for integers:</p>
+<ul>
+  <li>An integer must have at least one digit</li>
+  <li>An integer must not have a decimal point</li>
+  <li>An integer can be either positive or negative</li>
+  <li>Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 
+  8), or binary (base 2) notation</li>
+</ul>
+<p>In the following example $x is an integer. The PHP var_dump() 
+function returns the data type and value:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Entier PHP</h2>
+<p>Un type de données entier est un nombre non décimal compris entre -2 147 483 648 et
+2 147 483 647.</p>
+<p>Règles pour les entiers :</p>
+<ul>
+   <li>Un entier doit avoir au moins un chiffre</li>
+   <li>Un entier ne doit pas avoir de point décimal</li>
+   <li>Un entier peut être positif ou négatif</li>
+   <li>Les nombres entiers peuvent être spécifiés en : décimal (base 10), hexadécimal (base 16), octal (base
+   8), ou notation binaire (base 2)</li>
+</ul>
+<p>Dans l'exemple suivant, $x est un entier. Le PHP var_dump()
+la fonction renvoie le type de données et la valeur :</p>
+
+</div>
+
+
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_2" data-ace-editor-id="2" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_2" >
+ &lt;?php
+ $x = 5985;
+ var_dump($x);
+ ?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Float</h2>
+<p>A float (floating point number) is a number with a decimal point or a number in exponential form.</p>
+<p>In the following example $x is a float. The PHP var_dump() 
+function returns the data type and value:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Flottant PHP</h2>
+<p>Un float (nombre à virgule flottante) est un nombre avec une virgule décimale ou un nombre sous forme exponentielle.</p>
+<p>Dans l'exemple suivant, $x est un flottant. Le PHP var_dump()
+la fonction renvoie le type de données et la valeur :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post="">
+
+<pre class="editor" id="code_editor_3" >
+
+ &lt;?php
+ $x = 10.365;
+ var_dump($x);
+ ?&gt; 
+ 
+ </pre>
+	
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Boolean</h2>
+<p>A Boolean represents two possible states: TRUE or FALSE.</p>
+<div class="w3-code htmlHigh w3-border notranslate">
+<div>
+ $x = true;
+ $y = false;
+ </div>
+ </div>
+<p>Booleans are often used in conditional testing. You will learn more about 
+conditional testing in a later chapter of this tutorial.</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Booléen PHP</h2>
+<p>Un booléen représente deux états possibles : VRAI ou FAUX.</p>
+<div class="w3-code htmlHigh w3-border notranslate">
+<div>
+  $x = vrai ;
+  $y = faux ;
+ </div>
+ </div>
+<p>Les booléens sont souvent utilisés dans les tests conditionnels. Vous en apprendrez plus sur
+tests conditionnels dans un chapitre ultérieur de ce didacticiel.</p>
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Array</h2>
+<p>An array stores multiple values in one single variable.</p>
+<p>In the following example $cars is an array. The PHP var_dump() 
+function returns the data type and value:</p>
+
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Tableau PHP</h2>
+<p>Un tableau stocke plusieurs valeurs dans une seule variable.</p>
+<p>Dans l'exemple suivant, $cars est un tableau. Le PHP var_dump()
+la fonction renvoie le type de données et la valeur :</p>
+
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_4" data-ace-editor-id="4" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_4" >
+
+ &lt;?php 
+ $cars = array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);
+ var_dump($cars);
+ ?&gt; 
+ 
+ </pre>
+</div>
+</div>
+
+
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Object</h2>
+<p>Classes and objects are the two main aspects of object-oriented programming.</p>
+<p>A class is a template for objects, and an object is an instance of a class.</p>
+<p>When the individual objects are created, they inherit all the properties and 
+behaviors from the class, but each object will have different values for the 
+properties.</p>
+<p>Let's assume we have a class named Car. A Car can have properties like model, 
+color, etc. We can define variables like $model, $color, and so on, to hold the 
+values of these properties.</p>
+<p>When the individual objects (Volvo, BMW, Toyota, etc.) are created, they 
+inherit all the properties and behaviors from the class, but each object will 
+have different values for the properties.</p>
+<p>If you create a __construct() function, PHP will automatically call this 
+function when you create an object from a class.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Objet PHP</h2>
+<p>Les classes et les objets sont les deux principaux aspects de la programmation orientée objet.</p>
+<p>Une classe est un modèle pour les objets, et un objet est une instance d'une classe.</p>
+<p>Lorsque les objets individuels sont créés, ils héritent de toutes les propriétés et
+comportements de la classe, mais chaque objet aura des valeurs différentes pour le
+propriétés.</p>
+<p>Supposons que nous ayons une classe nommée Car. Une voiture peut avoir des propriétés comme le modèle,
+color, etc. Nous pouvons définir des variables comme $model, $color, etc.
+valeurs de ces propriétés.</p>
+<p>Lorsque les objets individuels (Volvo, BMW, Toyota, etc.) sont créés, ils
+hérite de toutes les propriétés et comportements de la classe, mais chaque objet
+ont des valeurs différentes pour les propriétés.</p>
+<p>Si vous créez une fonction __construct(), PHP l'appellera automatiquement
+fonction lorsque vous créez un objet à partir d'une classe.</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<div  class="code" id="code_5" data-ace-editor-id="5" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_5" >
+
+ &lt;?php
+ class Car {
+ public $color;
+ public $model; 
+  public function __construct($color, $model) {
+  
+  $this-&gt;color = $color;
+  $this-&gt;model = $model;
+  }
+  public function message() {
+   return &quot;My car is a &quot; . $this-&gt;color . &quot; &quot; . $this-&gt;model . &quot;!&quot;;
+   }
+   
+  }
+   $myCar = new Car(&quot;black&quot;, &quot;Volvo&quot;);
+  
+  echo $myCar -&gt; message();
+  echo &quot;&lt;br&gt;&quot;;
+  $myCar = new Car(&quot;red&quot;, &quot;Toyota&quot;);
+  echo $myCar -&gt; message();
+  ?&gt; 
+  </pre>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP NULL Value</h2>
+<p>Null is a special data type which can have only one value: NULL.</p>
+<p>A variable of data type NULL is a variable that has no value assigned to it.</p>
+<p><strong>Tip:</strong> If a variable is created without a value, it is 
+automatically assigned a value of NULL.</p>
+<p>Variables can also be emptied by setting the value to NULL:</p>
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Valeur PHP NULL</h2>
+<p>Null est un type de données spécial qui ne peut avoir qu'une seule valeur : NULL.</p>
+<p>Une variable de type de données NULL est une variable à laquelle aucune valeur n'est affectée.</p>
+<p><strong>Astuce :</strong> Si une variable est créée sans valeur, elle est
+a automatiquement attribué une valeur de NULL.</p>
+<p>Les variables peuvent également être vidées en définissant la valeur sur NULL :</p>
+</div>
+
+
+</div>
+
+<div class="yass-example">
+ <h3>Example</h3>
+<div  class="code" id="code_7" data-ace-editor-id="7" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_7" >
+
+ &lt;?php
+ $x = &quot;Hello world!&quot;;
+ $x = null;
+ var_dump($x);
+ ?&gt; 
+ </pre>
+</div>
+</div>
+			
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>PHP Resource</h2>
+<p>The special resource type is not an actual data type. It is the storing of a 
+reference to functions and resources external to PHP.</p>
+<p>A common example of 
+using the resource data type is a database call.</p>
+<p>We will not talk about the resource type here, since it is an advanced topic.</p>
+
+
+</div>
+
+
+<div class="yass-columnFr">
+
+<h2>Ressource PHP</h2>
+<p>Le type de ressource spécial n'est pas un type de données réel. C'est le stockage d'un
+référence aux fonctions et ressources externes à PHP.</p>
+<p>Un exemple courant de
+l'utilisation du type de données de ressource est un appel de base de données.</p>
+<p>Nous ne parlerons pas du type de ressource ici, car il s'agit d'un sujet avancé.</p>
+
+
+</div>
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_functions.html">❮ Prior</a><a class="yass-right yass-btn" href="php_variables.html">Next ❯</a></div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

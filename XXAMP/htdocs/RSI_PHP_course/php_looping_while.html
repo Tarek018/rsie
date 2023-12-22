@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">While Loop</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">while</span>  Loop</h1>
+<p class="yass-intro">The <code class="yass-codespan">while</code> loop - Loops through 
+a block of code as long as the specified condition is true.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>Boucle PHP <span class="color_h1">while</span></h1>
+<p class="yass-intro">La boucle <code class="yass-codespan">while</code> - Boucle à travers
+un bloc de code tant que la condition spécifiée est vraie.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>The PHP while Loop</h2>
+<p>The <code class="yass-codespan">while</code> loop executes a block of code as long as the specified condition is true.</p>
+<h3>Syntax</h3>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>La boucle while de PHP</h2>
+<p>La boucle <code class="yass-codespan">while</code> exécute un bloc de code tant que la condition spécifiée est vraie.</p>
+<h3>Syntaxe</h3>
+</div>
+
+</div>
+<div class="yass-code yass-border notranslate"><div>
+while (<i>condition is true</i>) {<br>
+<i> code to be executed</i>;
+
+
+ }
+</div>
+
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Examples</h3>
+<p>The example below displays the numbers from 1 to 5:</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h3>Exemples</h3>
+<p>L'exemple ci-dessous affiche les nombres de 1 à 5 :</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+  <h3>Example</h3>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php
+ $x = 1;
+while($x &lt;= 5) {
+echo &quot;The number is: $x &lt;br&gt;&quot;;
+$x++;
+}
+?&gt; 
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h3>Example Explained</h3>
+<ul>
+  <li>$x = 1; - Initialize the loop counter ($x), and set the start value to 1</li>
+  <li>$x &lt;= 5 - Continue the loop as long as $x is less than or equal to 5</li>
+  <li>$x++; - Increase the loop counter value by 1 for each iteration</li>
+</ul>
+
+<p>This example counts to 100 by tens:</p>
+ </div>
+
+<div class="yass-columnFr">
+
+<h3>Exemple expliqué</h3>
+<ul>
+   <li>$x = 1 ; - Initialiser le compteur de boucle ($x), et mettre la valeur de départ à 1</li>
+   <li>$x &lt;= 5 - Continuer la boucle tant que $x est inférieur ou égal à 5</li>
+   <li>$x++ ; - Augmenter la valeur du compteur de boucle de 1 pour chaque itération</li>
+</ul>
+
+<p>Cet exemple compte jusqu'à 100 par dizaines :</p>
+  </div>
+  
+  
+</div>
+
+<div class="yass-example">
+  <h3>Example</h3>
+<div  class="code" id="code_12" data-ace-editor-id="12" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_12" >
+ &lt;?php
+ $x = 0; 
+ while($x &lt;= 100) {
+  echo &quot;The number is: $x &lt;br&gt;&quot;;
+   $x+=10;
+} 
+ ?&gt;
+ </pre> 
+ </div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+
+<h3>Example Explained</h3>
+<ul>
+  <li>$x = 0; - Initialize the loop counter ($x), and set the start value to 0</li>
+  <li>$x &lt;= 100 - Continue the loop as long as $x is less than or equal to 100</li>
+  <li>$x+=10; - Increase the loop counter value by 10 for each iteration</li>
+</ul>
+
+</div>
+
+<div class="yass-columnFr">
+
+
+<h3>Exemple expliqué</h3>
+<ul>
+   <li>$x = 0 ; - Initialiser le compteur de boucle ($x), et mettre la valeur de départ à 0</li>
+   <li>$x &lt;= 100 - Continuer la boucle tant que $x est inférieur ou égal à 100</li>
+   <li>$x+=10 ; - Augmentez la valeur du compteur de boucle de 10 pour chaque itération</li>
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_looping.html">❮ Prior</a><a class="yass-right yass-btn" href="php_looping_do_while.html">Next ❯</a></div>	
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>

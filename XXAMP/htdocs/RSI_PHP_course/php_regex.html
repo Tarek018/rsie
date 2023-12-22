@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" id="font-awesome"  href="libs/font-awesome.min.css" type="text/css" media="all" />
+<script src="libs/jquery-2.1.4.min.js"></script>	
+<link rel="stylesheet"  href="css/php-einfach-online-php-editor.css" type="text/css" media="all" />
+<link rel="stylesheet"  href="css/yass_course.css" type="text/css" media="all" />
+
+
+</head>
+<body>
+<div class="yass-titre"> Advanced Web Programming course (PHP)</div>
+
+<div class="yass-topnav" id="myTopnav">
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+     
+      <a href="php_intro.html">Introduction</a>
+	  <a href="php_install.html">Installation</a>
+	  
+    </div>
+  </div> 
+  
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Syntax
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  <a href="php_syntax.html">Syntax </a>
+      <a href="php_comments.html">Comments </a>
+      <a href="php_echo_print.html">Echo / Print</a>
+      <a href="php_functions.html">Function</a>
+    </div>
+  </div> 
+  
+
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Data Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_datatypes.html">Data Types</a>
+	  <a href="php_variables.html">Variables</a>
+	  <a href="php_variables_scope.html">Variables Scope</a>
+	  <a href="php_superglobals.html">Superglobals Variables</a>
+	  <a href="php_constants.html">Constants</a>	  
+	  <a href="php_numbers.html">Numbers </a>
+      <a href="php_string.html">Strings</a>
+      <a href="php_arrays.html">Arrays</a>
+    </div>
+  </div> 
+
+
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Control Structures
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_operators.html">Operators</a>
+      <a href="php_if_else.html">If...Else...Elseif</a>
+      <a href="php_switch.html">Switch</a>
+	  <a href="php_looping.html">Loop</a>
+      <a href="php_looping_while.html">While Loop</a>
+      <a href="php_looping_do_while.html">Do While Loop</a>
+      <a href="php_looping_for.html">For Loop</a>
+      <a href="php_looping_foreach.html">Foreach Loop</a>
+	  <a href="php_looping_break.html">Break/Continue</a>
+    </div>
+  </div> 
+
+  
+ <div class="yass-dropdown">
+    <button class="yass-dropbtn">Forms
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_forms.html">Form Handling</a>
+      <a href="php_form_validation.html">Form Validation</a>
+      <a href="php_form_required.html">Form Required</a>
+      <a href="php_form_url_email.html">Form URL/E-mail</a>
+
+     
+    </div>
+  </div> 
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Advanced
+	<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+	  
+      <a href="php_math.html">Math</a>
+      <a href="php_regex.html">RegEx</a>
+      <a href="php_date.html">Date and Time</a>
+      <a href="php_includes.html">Include</a>
+      <a href="php_file.html">File</a>
+      <a href="php_sessions.html">Sessions</a>
+	  <a href="php_cookies.html">Cookies</a>
+      <a href="php_exceptions.html">Exceptions</a> <a href="HTTP_protocol.html">Basics HTTP Protocol</a>
+
+    </div>
+  </div> 
+
+
+  
+<div class="yass-dropdown">
+    <button class="yass-dropbtn">Database
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="yass-dropdown-content">
+      <a href="php_mysql_intro.html">MySQL Database</a>
+      <a href="php_mysql_connect.html">Connect</a>
+      <a href="php_mysql_create.html">Create</a>
+      <a href="php_mysql_insert.html">Insert Data</a>
+      <a href="php_mysql_prepared_statements.html">Prepared </a>
+      <a href="php_mysql_select.html">Select Data </a>
+      <a href="php_mysql_delete.html">Delete Data </a>
+      <a href="php_mysql_update.html">Update Data </a>
+      <a href="php_mysql_select_limit.html">Limit Data </a>
+    </div>
+  </div> 
+
+
+ 
+  <a href="default.html" class="yass-active">HOME RSI Tebessa 2023/2024</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="yass-titre">RegEx</div>
+
+
+<div  class="yass-div">
+
+<div class="row">
+  <div class="yass-columnEn">
+      <h1>PHP <span class="color_h1">Regular Expressions</span></h1>
+
+<h2>What is a Regular Expression?</h2>
+<p>A regular expression is a sequence of characters that forms a search pattern.
+When you search for data in a text, you can use this search pattern to describe what you
+are searching for.</p>
+<p>A regular expression can be a single character, or a more complicated pattern.</p>
+<p>Regular expressions can be used to perform all types of text search and text replace
+operations.</p>
+</div>
+
+<div class="yass-columnFr">
+       <h1>PHP <span class="color_h1">Expressions régulières</span></h1>
+
+<h2>Qu'est-ce qu'une expression régulière ?</h2>
+<p>Une expression régulière est une séquence de caractères qui forme un modèle de recherche.
+Lorsque vous recherchez des données dans un texte, vous pouvez utiliser ce modèle de recherche pour décrire ce que vous
+recherchez.</p>
+<p>Une expression régulière peut être un caractère unique ou un modèle plus compliqué.</p>
+<p>Les expressions régulières peuvent être utilisées pour effectuer tous les types de recherche de texte et de remplacement de texte
+opérations.</p>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Syntax</h2>
+<p>In PHP, regular expressions are strings composed of delimiters, a pattern and optional
+modifiers.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Syntaxe</h2>
+<p>En PHP, les expressions régulières sont des chaînes composées de délimiteurs, d'un motif et de
+modificateurs.</p>
+</div>
+</div>
+
+<div class="yass-code yass-border notranslate phpHigh"><div>
+  $exp = &quot;/tebessa-univ/i&quot;;</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+<p>In the example above, <code class="yass-codespan">/</code> is the <strong>delimiter</strong>, <em>tebessa-univ</em> is the <strong>pattern </strong>that is being searched for,
+and <code class="yass-codespan">i</code> is a <strong>modifier </strong>that makes the search case-insensitive.</p>
+<p>The delimiter can be any character that is not a letter, number, backslash or space. The
+most common delimiter is the forward slash (/), but when your pattern contains forward
+slashes it is convenient to choose other delimiters such as # or ~.</p>
+</div>
+
+<div class="yass-columnFr">
+<p>Dans l'exemple ci-dessus, <code class="yass-codespan">/</code> est le <strong>délimiteur</strong>, <em>tebessa-univ</em> est le <strong>modèle </ strong>qui est recherché,
+et <code class="yass-codespan">i</code> est un <strong>modificateur </strong>qui rend la recherche insensible à la casse.</p>
+<p>Le délimiteur peut être n'importe quel caractère autre qu'une lettre, un chiffre, une barre oblique inverse ou un espace. La
+le délimiteur le plus courant est la barre oblique (/), mais lorsque votre modèle contient
+barres obliques, il est pratique de choisir d'autres délimiteurs tels que # ou ~.</p>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Regular Expression Functions</h2>
+<p>PHP provides a variety of functions that allow you to use regular expressions. The
+<code class="yass-codespan">preg_match()</code>, <code class="yass-codespan">preg_match_all()</code> and <code class="yass-codespan">preg_replace()</code> functions are some of the
+most commonly used ones:</p>
+
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:20%">Function</th>
+    <th style="width:80%">Description</th>
+  </tr>
+  <tr>
+    <td>preg_match()</td>
+    <td>Returns 1 if the pattern was found in the string and 0 if not</td>
+  </tr>
+  <tr>
+    <td>preg_match_all()</td>
+    <td>Returns the number of times the pattern was found in the string, which may also be 0</td>
+  </tr>
+  <tr>
+    <td>preg_replace()</td>
+    <td>Returns a new string where matched patterns have been replaced with another string</td>
+  </tr>
+</table>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Fonctions d'expression régulière</h2>
+<p>PHP fournit une variété de fonctions qui vous permettent d'utiliser des expressions régulières. La
+<code class="yass-codespan">preg_match()</code>, 
+<code class="yass-codespan">preg_match_all()</code> et 
+<code class="yass-codespan">preg_replace() Les fonctions </code> font partie des
+les plus couramment utilisés :</p>
+
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:20%">Fonction</th>
+     <th style="width:80%">Description</th>
+   </tr>
+   <tr>
+     <td>preg_match()</td>
+     <td>Renvoie 1 si le motif a été trouvé dans la chaîne et 0 sinon</td>
+   </tr>
+   <tr>
+     <td>preg_match_all()</td>
+     <td>Renvoie le nombre de fois que le motif a été trouvé dans la chaîne, qui peut aussi être 0</td>
+   </tr>
+   <tr>
+     <td>preg_replace()</td>
+     <td>Renvoie une nouvelle chaîne où les modèles correspondants ont été remplacés par une autre chaîne</td>
+   </tr>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Using preg_match()</h2>
+<p>The <code class="yass-codespan">preg_match()</code> function will tell you whether a string contains matches of a pattern.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Utiliser preg_match()</h2>
+<p>La fonction <code class="yass-codespan">preg_match()</code> vous dira si une chaîne contient des correspondances d'un modèle.</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<p>Use a regular expression to do a case-insensitive search for "tebessa-univ" in a string:</p>
+<div  class="code" id="code_3" data-ace-editor-id="3" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_3" >
+ &lt;?php
+$str = &quot;Visit tebessa-univ&quot;;
+$pattern = &quot;/tebessa-univ/i&quot;;
+echo preg_match($pattern, $str); // Outputs 1
+?&gt;
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+<h2>Using preg_match_all()</h2>
+<p>The <code class="yass-codespan">preg_match_all()</code> function will tell you how many matches were found for a pattern in a
+string.</p>
+</div>
+
+<div class="yass-columnFr">
+<h2>Utiliser preg_match_all()</h2>
+<p>La fonction <code class="yass-codespan">preg_match_all()</code> vous indiquera combien de correspondances ont été trouvées pour un modèle dans un
+chaîne.</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<p>Use a regular expression to do a case-insensitive count of the number of
+occurrences of "ain" in a string:</p>
+<div  class="code" id="code_13" data-ace-editor-id="13" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_13" >
+ &lt;?php
+$str = &quot;The rain in SPAIN falls mainly on the plains.&quot;;
+$pattern = &quot;/ain/i&quot;;
+echo preg_match_all($pattern, $str); // Outputs 4
+?&gt;
+</pre>
+</div>
+</div>
+
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Using preg_replace()</h2>
+<p>The <code class="yass-codespan">preg_replace()</code> function will replace all of the matches of the pattern in a string with
+another string.</p>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Utiliser preg_replace()</h2>
+<p>La fonction <code class="yass-codespan">preg_replace()</code> remplacera toutes les correspondances du modèle dans une chaîne par
+une autre chaîne.</p>
+</div>
+
+</div>
+<div class="yass-example">
+<h3>Example</h3>
+<p>Use a case-insensitive regular expression to replace Microsoft with
+tebessa-univ in a string:</p>
+<div  class="code" id="code_31" data-ace-editor-id="31" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_31" >
+ &lt;?php
+<br>$str = &quot;Visit Microsoft!&quot;;
+$pattern = &quot;/microsoft/i&quot;;
+echo preg_replace($pattern, &quot;tebessa-univ&quot;, $str); 
+// Outputs &quot;Visit tebessa-univ!&quot;
+
+
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Regular Expression Modifiers</h2>
+<p>Modifiers can change how a search is performed.</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:22%">Modifier</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>i</td>
+    <td>Performs a case-insensitive search</td>
+  </tr>
+  <tr>
+    <td>m</td>
+    <td>Performs a multiline search (patterns that search for the
+beginning or end of a string will match the beginning or end
+of each line)</td>
+  </tr>
+  <tr>
+    <td>u</td>
+    <td>Enables correct matching of UTF-8 encoded patterns</td>
+  </tr>
+</table>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Modificateurs d'expressions régulières</h2>
+<p>Les modificateurs peuvent changer la façon dont une recherche est effectuée.</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:22%">Modificateur</th>
+     <th>Description</th>
+   </tr>
+   <tr>
+     <td>je</td>
+     <td>Effectue une recherche insensible à la casse</td>
+   </tr>
+   <tr>
+     <td>m</td>
+     <td>Effectue une recherche multiligne (modèles qui recherchent le
+le début ou la fin d'une chaîne correspondra au début ou à la fin
+de chaque ligne)</td>
+   </tr>
+   <tr>
+     <td>u</td>
+     <td>Permet une correspondance correcte des modèles encodés en UTF-8</td>
+   </tr>
+</table>
+</div>
+
+</div>
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Regular Expression Patterns</h2>
+<p>Brackets are used to find a range of characters:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:22%">Expression</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>[abc]</td>
+    <td>Find one character from the options between the brackets</td>
+  </tr>
+  <tr>
+    <td>[^abc]</td>
+    <td>Find any character NOT between the brackets</td>
+  </tr>
+  <tr>
+    <td>[0-9]</td>
+    <td>Find one character from the range 0 to 9</td>
+  </tr>
+</table>
+
+<h2>Metacharacters</h2>
+<p>Metacharacters are characters with a special meaning:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:22%">Metacharacter</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td>Find a match for any one of the patterns separated by | as in: cat|dog|fish</td>
+  </tr>
+  <tr>
+    <td>.</td>
+    <td>Find just one instance of any character</td>
+  </tr>
+  <tr>
+    <td>^</td>
+    <td>Finds a match as the beginning of a string as in: ^Hello</td>
+  </tr>
+  <tr>
+    <td>$</td>
+    <td>Finds a match at the end of the string as in: World$</td>
+  </tr>
+  <tr>
+    <td>\d</td>
+    <td>Find a digit</td>
+  </tr>
+  <tr>
+    <td>\s</td>
+    <td>Find a whitespace character</td>
+  </tr>
+  <tr>
+    <td>\b</td>
+    <td>Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b</td>
+  </tr>
+  <tr>
+    <td>\uxxxx</td>
+    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
+  </tr>
+</table>
+
+<h2>Quantifiers</h2>
+<p>Quantifiers define quantities:</p>
+<table class="yass-table-all notranslate">
+  <tr>
+    <th style="width:22%">Quantifier</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>n+</td>
+    <td>Matches any string that contains at least one <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n*</td>
+    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n?</td>
+    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n{x}</td>
+    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
+  </tr>
+  <tr>
+    <td>n{x,y}</td>
+    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
+  </tr>
+  <tr>
+    <td>n{x,}</td>
+    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
+  </tr>
+</table>
+
+<div class="yass-note yass-panel">
+<p><strong>Note:</strong> If your expression needs to search for one of the special characters you can use a
+backslash ( \ ) to escape them.
+For example, to search for one or more question marks you can use the following
+expression: $pattern = '/\?+/';</p>
+</div>
+</div>
+
+<div class="yass-columnFr">
+
+<h2>Modèles d'expressions régulières</h2>
+<p>Les crochets sont utilisés pour trouver une plage de caractères :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:22%">Expression</th>
+     <th>Description</th>
+   </tr>
+   <tr>
+     <td>[abc]</td>
+     <td>Trouvez un caractère parmi les options entre crochets</td>
+   </tr>
+   <tr>
+     <td>[^abc]</td>
+     <td>Rechercher tout caractère NON entre crochets</td>
+   </tr>
+   <tr>
+     <td>[0-9]</td>
+     <td>Trouvez un caractère entre 0 et 9</td>
+   </tr>
+</table>
+
+<h2>Métacaractères</h2>
+<p>Les métacaractères sont des caractères ayant une signification particulière :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:22%">Métacaractère</th>
+     <th>Description</th>
+   </tr>
+   <tr>
+     <td>|</td>
+     <td>Trouvez une correspondance pour l'un des motifs séparés par | comme dans : chat|chien|poisson</td>
+   </tr>
+   <tr>
+     <td>.</td>
+     <td>Trouvez une seule instance de n'importe quel caractère</td>
+   </tr>
+   <tr>
+     <td>^</td>
+     <td>Trouve une correspondance comme début d'une chaîne comme dans : ^Hello</td>
+   </tr>
+   <tr>
+     <td>$</td>
+     <td>Trouve une correspondance à la fin de la chaîne comme dans : World$</td>
+   </tr>
+   <tr>
+     <td>\d</td>
+     <td>Rechercher un chiffre</td>
+   </tr>
+   <tr>
+     <td>\s</td>
+     <td>Rechercher un caractère d'espace blanc</td>
+   </tr>
+   <tr>
+     <td>\b</td>
+     <td>Trouvez une correspondance au début d'un mot comme ceci : \bWORD, ou à la fin d'un mot comme ceci : WORD\b</td>
+   </tr>
+   <tr>
+     <td>\uxxxx</td>
+     <td>Recherchez le caractère Unicode spécifié par le nombre hexadécimal xxxx</td>
+   </tr>
+</table>
+
+<h2>Quantificateurs</h2>
+<p>Les quantificateurs définissent les quantités :</p>
+<table class="yass-table-all notranslate">
+   <tr>
+     <th style="width:22%">Quantificateur</th>
+     <th>Description</th>
+   </tr>
+   <tr>
+     <td>n+</td>
+     <td>Correspond à toute chaîne contenant au moins un <em>n</em></td>
+   </tr>
+   <tr>
+     <td>n*</td>
+     <td>Reconnaît n'importe quelle chaîne qui contient zéro ou plusieurs occurrences de <em>n</em></td>
+   </tr>
+   <tr>
+     <td>n ?</td>
+     <td>Reconnaît n'importe quelle chaîne contenant zéro ou une occurrence de <em>n</em></td>
+   </tr>
+   <tr>
+     <td>n{x}</td>
+     <td>Reconnaît toute chaîne contenant une séquence de <i>X</i> <i>n</i></td>
+   </tr>
+   <tr>
+     <td>n{x,y}</td>
+     <td>Reconnaît n'importe quelle chaîne contenant une séquence de X à Y <i>n</i></td>
+   </tr>
+   <tr>
+     <td>n{x,}</td>
+     <td>Reconnaît toute chaîne contenant une séquence d'au moins X <i>n</i></td>
+   </tr>
+</table>
+
+<div class="yass-note yass-panel">
+<p><strong>Remarque :</strong> Si votre expression doit rechercher l'un des caractères spéciaux, vous pouvez utiliser un
+barre oblique inverse ( \ ) pour les échapper.
+Par exemple, pour rechercher un ou plusieurs points d'interrogation, vous pouvez utiliser les éléments suivants
+expression : $motif = '/\?+/';</p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="yass-columnEn">
+
+<h2>Grouping</h2>
+<p>You can use parentheses <code class="yass-codespan">( )</code> to apply quantifiers to entire patterns. They also can be used
+to select parts of the pattern to be used as a match.</p>
+</div>
+<div class="yass-columnFr">
+
+<h2>Regroupement</h2>
+<p>Vous pouvez utiliser des parenthèses <code class="yass-codespan">( )</code> pour appliquer des quantificateurs à des motifs entiers. Ils peuvent également être utilisés
+pour sélectionner des parties du motif à utiliser comme correspondance.</p>
+</div>
+
+</div>
+
+<div class="yass-example">
+<h3>Example</h3>
+<p>Use grouping to search for the word "banana" by looking for <em>ba</em> followed by
+two instances of <em>na</em>:</p>
+<div  class="code" id="code_113" data-ace-editor-id="113" data-ace-editor-allow-execution="true" data-ace-editor-hide-vars="false" data-ace-editor-script-name="page.php" data-ace-editor-default-get="" data-ace-editor-default-post=""><pre class="editor" id="code_editor_113" >
+&lt;?php
+$str = &quot;Apples and bananas.&quot;;
+$pattern = &quot;/ba(na){2}/i&quot;;
+echo preg_match($pattern, $str); // Outputs 1
+?&gt;
+</pre>
+</div>
+</div>
+
+<div class="yass-clear nextprev"><a class="yass-left yass-btn" href="php_math.html">❮ Prior</a><a class="yass-right yass-btn" href="php_date.html">Next ❯</a></div>
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "yass-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "yass-topnav";
+  }
+}
+</script>
+
+
+<script type='text/javascript' src='libs/ace/ace.js'></script>
+<script type='text/javascript' src='libs/FileSaver.js'></script>
+<script type='text/javascript' src='js/php-einfach-online-php-editor.js'></script>
+
+<script>
+jQuery('div[data-ace-editor-id]').each(function() {
+	var url='http://127.0.0.1/phpcoder/execute.php'; 
+	//var url='proxy.php'; // In case the browser supports cross domain requests, you can use this proxy script to forward the requests over your own server
+	var language = 'en'; //Choose 'de' for German
+	new OnlinePHPEditor(this, language, url);
+});
+</script>
+
+
+
+</body>
+</html>
